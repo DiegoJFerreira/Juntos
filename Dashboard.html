@@ -2,38 +2,243 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Dashboard</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <title>Dashboard</title>
 </head>
 
 <body>
+        <header>
+                <i class="fa-solid fa-bars"></i>
+                <h1>Dashboard</h1>
+                <i class="fa-regular fa-bell"></i>
+        </header>
+        <section>
+                <h2>Visao Geral</h2>
+                <div class="pediodo">
+                        <p>Periodo:</p>
+                        <select>
+                                <option>Janeiro</option>
+                                <option>Fevereiro</option>
+                                <option>Março</option>
+                                <option>Abril</option>
+                                <option>Maio</option>
+                                <option>Junho</option>
+                                <option>Julho</option>
+                                <option>Agosto</option>
+                                <option>Setembro</option>
+                                <option>Outubro</option>
+                                <option>Novembro</option>
+                                <option>Dezembro</option>
+                        </select>
+                </div>
+                <div class="cards">
+                        <div class="card">
+                                <h3>Total de Doações</h3>
+                                <div class="card-info">
+                                        <i class="fa-solid fa-money-bill-wave verde"></i>
+                                        <p>2.850 kg</p>
+                                </div>
+                        </div>
+                        <div class="card">
+                                <h3>Total de Eventos</h3>
+                                <div class="card-info">
+                                        <i class="fa-regular fa-calendar-days laranja"></i>
+                                        <p>48</p>
+                                </div>
+                        </div>
+                        <div class="card">
+                                <h3>Voluntários Ativos</h3>
+                                <div class="card-info">
+                                        <i class="fa-solid fa-users roxo"></i>
+                                        <p>320</p>
+                                </div>
+                        </div>
+                        <div class="card">
+                                <h3>Pessoas Beneficiadas</h3>
+                                <div class="card-info">
+                                        <i class="fa-solid fa-heart vermelho"></i>
+                                        <p>6.420</p>
+                                </div>
+                        </div>
+                </div>
+        </section>
 
-    <article class="menu">
-        <div id="logo">
-            <img src="src/logoBranca.png" alt="Logo do Juntos">
-            <h1>Juntos</h1>
-            <button>Fechar</button>
-        </div>
-        <nav>
-            <div><img src="src/icone home branco.png" alt="Ícone de início"><a href="home.html">Inicio</a></div>
-            <div><img src="src/icone ong branco.png" alt="Ícone de ONGs próximas de mim"><a href="ong.html">ONGs
-                    proximas de mim</a></div>
-            <div><img src="src/icone minha area branco.png" alt="Ícone da minha área"><a href="minhaArea.html">Minha
-                    Área</a></div>
-            <div><img src="src/icone dashboard branco.png" alt="Ícone do dashboard"><a
-                    href="dashboard.html">Dashboard</a></div>
-            <div><img src="src/icone boletim branco.png" alt="Ícone de boletim"><a href="boletim.html">Boletim</a></div>
-            <div><img src="src/icone quem somos branco.png" alt="Ícone de quem somos"><a href="quemSomos.html">Quem
-                    Somos</a></div>
-            <div><img src="src/icone faq branco.png" alt="Ícone de FAQ"><a href="faq.html">FAQ</a></div>
-            <div><img src="src/icone privacidade branco.png" alt="Ícone de política de privacidade"><a
-                    href="politicaPrivacidade.html">Política de Privacidade</a></div>
-            <div><img src="src/icone termos branco.png" alt="Ícone de termos de serviço"><a
-                    href="termosServico.html">Termos de Serviço</a></div>
-        </nav>
-    </article>
+        <section class="grafico-section">
+                <h2>Doações por Mês (kg)</h2>
+                <div class="grafico">
+                        <div class="barra">
+                                <p>1.230</p>
+                                <div class="barra-preenchida" id="Janeiro"></div>
+                                <p>Janeiro</p>
+                        </div>
+                        <div class="barra">
+                                <p>1.500</p>
+                                <div class="barra-preenchida" id="Fevereiro"></div>
+                                <p>Fevereiro</p>
+                        </div>
+                        <div class="barra">
+                                <p>1.800</p>
+                                <div class="barra-preenchida" id="Março"></div>
+                                <p>Março</p>    
+                        </div>
+                        <div class="barra">
+                                <p>2.100</p>
+                                <div class="barra-preenchida" id="Abril"></div>
+                                <p>Abril</p>
+                        </div>
+                        <div class="barra">
+                                <p>2.400</p>
+                                <div class="barra-preenchida" id="Maio"></div>
+                                <p>Maio</p>
+                        </div>
+                        <div class="barra">
+                                <p>2.700</p>
+                                <div class="barra-preenchida" id="Junho"></div>
+                                <p>Junho</p>
+                        </div>
+                        <div class="barra">
+                                <p>3.000</p>
+                                <div class="barra-preenchida" id="Julho"></div>
+                                <p>Julho</p>
+                        </div>
+                        <div class="barra">
+                                <p>3.300</p>
+                                <div class="barra-preenchida" id="Agosto"></div>
+                                <p>Agosto</p>
+                        </div>
+                        <div class="barra">
+                                <p>3.600</p>
+                                <div class="barra-preenchida" id="Setembro"></div>
+                                <p>Setembro</p>
+                        </div>
+                        <div class="barra">
+                                <p>3.900</p>
+                                <div class="barra-preenchida" id="Outubro"></div>
+                                <p>Outubro</p>
+                        </div>
+                        <div class="barra">
+                                <p>4.200</p>
+                                <div class="barra-preenchida" id="Novembro"></div>
+                                <p>Novembro</p>
+                        </div>
+                        <div class="barra">
+                                <p>4.500</p>
+                                <div class="barra-preenchida" id="Dezembro"></div>
+                                <p>Dezembro</p>
+                        </div>
+                </div>        
+        </section>
+
+        <section class="ranking">
+                <h2>Top Doadores <p>(kg)</p></h2>
+                <ol class="ranking-lista">
+                        <li class="ranking-item">
+                                <p class="ranking-nome">Supermercado Bom Preço</p>
+                                <p class="ranking-peso">500 kg</p>
+                        </li>
+                        <li class="ranking-item">
+                                <p class="ranking-nome">Mercado Uniao</p>
+                                <p class="ranking-peso">450 kg</p>
+                        </li>
+                        <li class="ranking-item">
+                                <p class="ranking-nome">Alimentos do Bem</p>
+                                <p class="ranking-peso">400 kg</p>
+                        </li>
+                        <li class="ranking-item">
+                                <p class="ranking-nome">Atacadao Solidário</p>
+                                <p class="ranking-peso">350 kg</p>
+                        </li>
+                        <li class="ranking-item">
+                                <p class="ranking-nome">Padaria municipal</p>
+                                <p class="ranking-peso">300 kg</p>
+                        </li>
+                </ol>
+        </section>
+
+        <section class="ranking">
+                <h2>Top ONGs <p>(mais eventos)</p></h2>
+                <ol class="ranking-lista">
+                        <li class="ranking-item">
+                                <p class="ranking-nome">Projeto Esperança</p>
+                                <p class="ranking-peso">50 eventos</p>
+                        </li>
+                        <li class="ranking-item">
+                                <p class="ranking-nome">Rede de Apoio</p>
+                                <p class="ranking-peso">45 eventos</p>
+                        </li>
+                        <li class="ranking-item">
+                                <p class="ranking-nome">Programa de Alimentação</p>
+                                <p class="ranking-peso">40 eventos</p>
+                        </li>
+                        <li class="ranking-item">
+                                <p class="ranking-nome">ONG de Apoio</p>
+                                <p class="ranking-peso">35 eventos</p>
+                        </li>
+                        <li class="ranking-item">
+                                <p class="ranking-nome">Programa de Voluntariado</p>
+                                <p class="ranking-peso">30 eventos</p>
+                        </li>
+                </ol>
+        </section>
+
+        <section class="ranking">
+                <h2>Top Voluntários <p>(mais participações)</p></h2>
+                <ol class="ranking-lista">
+                        <li class="ranking-item">
+                                <p class="ranking-nome">Ana Silva</p>
+                                <p class="ranking-peso">50 participações</p>
+                        </li>
+                        <li class="ranking-item">
+                                <p class="ranking-nome">Carlos Oliveira</p>
+                                <p class="ranking-peso">45 participações</p>
+                        </li>
+                        <li class="ranking-item">
+                                <p class="ranking-nome">Maria Santos</p>
+                                <p class="ranking-peso">40 participações</p>
+                        </li>
+                        <li class="ranking-item">
+                                <p class="ranking-nome">João Pereira</p>
+                                <p class="ranking-peso">35 participações</p>
+                        </li>
+                        <li class="ranking-item">
+                                <p class="ranking-nome">Pedro Costa</p>
+                                <p class="ranking-peso">30 participações</p>
+                        </li>
+                </ol>
+        </section>
+
+        <article class="menu">
+                <div id="logo">
+                        <img src="src/logoBranca.png" alt="Logo do Juntos">
+                        <h1>Juntos</h1>
+                        <button>Fechar</button>
+                </div>
+                <nav>
+                        <div><img src="src/icone home branco.png" alt="Ícone de início"><a href="home.html">Inicio</a>
+                        </div>
+                        <div><img src="src/icone ong branco.png" alt="Ícone de ONGs próximas de mim"><a
+                                        href="ong.html">ONGs
+                                        proximas de mim</a></div>
+                        <div><img src="src/icone minha area branco.png" alt="Ícone da minha área"><a
+                                        href="minhaArea.html">Minha
+                                        Área</a></div>
+                        <div><img src="src/icone dashboard branco.png" alt="Ícone do dashboard"><a
+                                        href="dashboard.html">Dashboard</a></div>
+                        <div><img src="src/icone boletim branco.png" alt="Ícone de boletim"><a
+                                        href="boletim.html">Boletim</a></div>
+                        <div><img src="src/icone quem somos branco.png" alt="Ícone de quem somos"><a
+                                        href="quemSomos.html">Quem
+                                        Somos</a></div>
+                        <div><img src="src/icone faq branco.png" alt="Ícone de FAQ"><a href="faq.html">FAQ</a></div>
+                        <div><img src="src/icone privacidade branco.png" alt="Ícone de política de privacidade"><a
+                                        href="politicaPrivacidade.html">Política de Privacidade</a></div>
+                        <div><img src="src/icone termos branco.png" alt="Ícone de termos de serviço"><a
+                                        href="termosServico.html">Termos de Serviço</a></div>
+                </nav>
+        </article>
 </body>
 
 </html>
