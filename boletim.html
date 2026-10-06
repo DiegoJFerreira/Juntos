@@ -2,38 +2,124 @@
 <html lang="pt-br">
 
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-        <title>Boletim</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Boletim</title>
 </head>
 
 <body>
+    <header>
+        <i class="fa-solid fa-bars"></i>
+        <h1>Boletim</h1>
+        <i class="fa-regular fa-bell"></i>
+    </header>
+    <main>
+        <div>
+            <p>Acompanhe os relatórios de impacto das ações realizadas pelas ONGs</p>
+            <p>Filtrar por ONG</p>
+            <select>
+                <option value="Todas">Todas</option>
+                <option value="Projeto Amor">Projeto Amor</option>
+                <option value="Viver com Dignidade">Viver com Dignidade</option>
+                <option value="Comunidade Solidária">Comunidade Solidária</option>
+                <option value="Alimentar o Futuro">Alimentar o Futuro</option>
+                <option value="Educação para Todos">Educação para Todos</option>
+                <option value="Saúde em Ação">Saúde em Ação</option>
+                <option value="Direitos Humanos">Direitos Humanos</option>
+                <option value="Meio Ambiente">Meio Ambiente</option>
+            </select>
+        </div>
 
-        <article class="menu">
-                <div id="logo">
-                        <img src="src/logoBranca.png" alt="Logo do Juntos">
-                        <h1>Juntos</h1>
-                        <button>Fechar</button>
-                </div>
-                <nav>
-                        <div><i class="fas fa-home white"></i><a href="home.html">Inicio</a></div>
-                        <div><i class="fas fa-hand-holding-heart white"></i><a href="ong.html">ONGs
-                                        proximas de mim</a></div>
-                        <div><i class="fas fa-user-alt white"></i><a href="minhaArea.html">Minha
-                                        Área</a></div>
-                        <div><i class="fas fa-chart-bar white"></i><a href="dashboard.html">Dashboard</a></div>
-                        <div><i class="fas fa-newspaper white"></i><a href="boletim.html">Boletim</a></div>
-                        <div><i class="fas fa-question-circle white"></i><a href="quemSomos.html">Quem
-                                        Somos</a></div>
-                        <div><i class="fas fa-question-circle white"></i><a href="faq.html">FAQ</a></div>
-                        <div><i class="fas fa-lock white"></i><a href="politicaPrivacidade.html">Política de
-                                        Privacidade</a></div>
-                        <div><i class="fas fa-file-alt white"></i><a href="termosServico.html">Termos de Serviço</a>
-                        </div>
-                </nav>
-        </article>
+        <Section>
+            <ul>
+                <li class="Projeto Amor">
+                    <div>
+                        <img src="" alt="">
+                        <h4>Projeto Amor</h4>
+                        <p>Boletim - Abril/2025</p>
+                    </div>
+                    <h2>Boletim de Ações</h2>
+                    <h3>Abril/2025</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-hand-holding-heart green"></i>
+                            <h4>Doações recebidas</h4>
+                            <p>1.250 Kg</p>
+                            <p>de alimentos</p>
+                        </li>
+                        <li>
+                            <i class="fas fa-users green"></i>
+                            <h4>Ações Realizadas</h4>
+                            <p>5 ações</p>
+                            <p>de distribuições</p>
+                        </li>
+                        <li>
+                            <i class="fas fa-hands-helping green"></i>
+                            <h4>Pessoas beneficiadas</h4>
+                            <p>2.300</p>
+                            <p>pessoas</p>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="Viver com Dignidade">
+                    <div>
+                        <img src="" alt="">
+                        <h4>Viver com Dignidade</h4>
+                        <p>Boletim - Maio/2025</p>
+                    </div>
+                    <h2>Boletim de Ações</h2>
+                    <h3>Maio/2025</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-hand-holding-heart green"></i>
+                            <h4>Doações recebidas</h4>
+                            <p>1.500 Kg</p>
+                            <p>de alimentos</p>
+                        </li>
+                        <li>
+                            <i class="fas fa-users green"></i>
+                            <h4>Ações Realizadas</h4>
+                            <p>7 ações</p>
+                            <p>de distribuições</p>
+                        </li>
+                        <li>
+                            <i class="fas fa-hands-helping green"></i>
+                            <h4>Pessoas beneficiadas</h4>
+                            <p>2.500</p>
+                            <p>pessoas</p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </Section>
+    </main>
+
+    <article class="menu">
+        <div id="logo">
+            <img src="src/logoBranca.png" alt="Logo do Juntos">
+            <h1>Juntos</h1>
+            <button>Fechar</button>
+        </div>
+        <nav>
+            <div><i class="fas fa-home white"></i><a href="home.html">Inicio</a></div>
+            <div><i class="fas fa-hand-holding-heart white"></i><a href="ong.html">ONGs
+                    proximas de mim</a></div>
+            <div><i class="fas fa-user-alt white"></i><a href="minhaArea.html">Minha
+                    Área</a></div>
+            <div><i class="fas fa-chart-bar white"></i><a href="dashboard.html">Dashboard</a></div>
+            <div><i class="fas fa-newspaper white"></i><a href="boletim.html">Boletim</a></div>
+            <div><i class="fas fa-question-circle white"></i><a href="quemSomos.html">Quem
+                    Somos</a></div>
+            <div><i class="fas fa-question-circle white"></i><a href="faq.html">FAQ</a></div>
+            <div><i class="fas fa-lock white"></i><a href="politicaPrivacidade.html">Política de
+                    Privacidade</a></div>
+            <div><i class="fas fa-file-alt white"></i><a href="termosServico.html">Termos de Serviço</a>
+            </div>
+        </nav>
+    </article>
 </body>
 
 </html>

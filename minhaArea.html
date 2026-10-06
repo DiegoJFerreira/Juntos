@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Minha area</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Minha area</title>
 </head>
 
 <body>
@@ -17,22 +22,306 @@
     </header>
 
     <nav>
-        <ul>
-            <li>
-                <p>Doador</p>
-            </li>
-            <li>
-                <p>Voluntário</p>
-            </li>
-            <li>
-                <p>ONG</p>
-            </li>
-        </ul>
+        <section>
+            <select name="tipo_usuario" id="tipo_usuario">
+                <option value="Doador">Doador</option>
+                <option value="Voluntario">Voluntário</option>
+                <option value="ONG">ONG</option>
+            </select>
+        </section>
     </nav>
+    <section>
+        <h2>Seu Perfil</h2>
+        <img src="" alt="Foto de perfil">
+        <p>CNPJ: 12.345.678/0001-90</p>
+        <i class="fas fa-location-dot"></i>
+        <p>São Paulo - SP</p>
+        <button>Editar Perfil</button>
+    </section>
 
     <main>
-        <div class="Doador">
+        <div class="ONG">
+            <Section>
+                <div>
+                    <h2>Resumo do Mês</h2>
+                    <button>Ver todas</button>
+                </div>
+                <ul>
+                    <li>
+                        <i class="fas fa-donate"></i>
+                        <h3>Doações recebidas</h3>
+                        <p>R$ 1.500,00</p>
+                        <button>Ver detalhes</button>
+                    </li>
+                    <li>
+                        <i class="fas fa-calendar-check"></i>
+                        <h3>Eventos realizados</h3>
+                        <p>5 eventos</p>
+                        <button>Ver detalhes</button>
+                    </li>
+                    <li>
+                        <i class="fas fa-boxes"></i>
+                        <h3>Doações distribuídas</h3>
+                        <p>10 doações</p>
+                        <button>Ver detalhes</button>
+                    </li>
+                </ul>
+            </Section>
 
+            <section>
+                <div>
+                    <h2>Estoque</h2>
+                    <button>Ver todas</button>
+                </div>
+                <ul>
+                    <li>
+                        <h3>Alimentos</h3>
+                        <p>50 itens</p>
+                        <button>Ver detalhes</button>
+                    </li>
+                    <li>
+                        <h3>Produtos de Higiene</h3>
+                        <p>15 itens</p>
+                        <button>Ver detalhes</button>
+                    </li>
+                    <li>
+                        <h3>Roupas</h3>
+                        <p>30 itens</p>
+                        <button>Ver detalhes</button>
+                    </li>
+                    <li>
+                        <h3>Brinquedos</h3>
+                        <p>20 itens</p>
+                        <button>Ver detalhes</button>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <div>
+                    <h2>Suas Ações</h2>
+                    <button>Ver todas</button>
+                </div>
+                <ul>
+                    <li>
+                        <img src="" alt="">
+                        <h3>Campanha de Alimentos</h3>
+                        <div>
+                            <p>10/05/2026</p>
+                            <p>.</p>
+                            <p>09h às 16h</p>
+                        </div>
+                        <p class="status açoes">Andamento</p>
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                        <h3>Doação de Roupas</h3>
+                        <div>
+                            <p>15/06/2026</p>
+                            <p>.</p>
+                            <p>08h às 14h</p>
+                        </div>
+                        <p class="status açoes">Concluído</p>
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                        <h3>Distribuição de Alimentos</h3>
+                        <div>
+                            <p>20/07/2026</p>
+                            <p>.</p>
+                            <p>10h às 15h</p>
+                        </div>
+                        <p class="status açoes">Pendente</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <div>
+                    <h2>Transações</h2>
+                    <button>Ver todas</button>
+                </div>
+                <ul>
+                    <li>
+                        <h3>Doação de Roupas</h3>
+                        <p>10/05/2026</p>
+                        <p>R$ 200,00</p>
+                        <p class="status recebimento">Recebida</p>
+                    </li>
+                    <li>
+                        <h3>Campanha de Alimentos</h3>
+                        <p>15/06/2026</p>
+                        <p>R$ 500,00</p>
+                        <p class="status recebimento">Recebida</p>
+                    </li>
+                    <li>
+                        <h3>Distribuição de Alimentos</h3>
+                        <p>20/07/2026</p>
+                        <p>R$ 300,00</p>
+                        <p class="status recebimento">Recebida</p>
+                    </li>
+            </section>
+        </div>
+
+        <div class="Doador">
+            <section>
+                <h2>Escolha uma ONG para doar</h2>
+                <div>
+                    <div>
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Pesquisar ONG">
+                    </div>
+                    <div>
+                        <i class="fas fa-filter"></i>
+                        <button>Filtro</button>
+                    </div>
+                </div>
+                <div>
+                    <select>
+                        <option value="Destaque">Em Destaque</option>
+                        <option value="Proximas">Mais Próximas</option>
+                    </select>
+                </div>
+
+                <div class="Destaque">
+                    <ul>
+                        <li>
+                            <img src="" alt="">
+                            <h3>Projeto Amor</h3>
+                            <div>
+                                <p>São Paulo - SP</p>
+                                <p>.</p>
+                                <p>168.2km</p>
+                            </div>
+                            <p class="Area de atuação">Moradores de rua</p>
+                            <p>Atua no acolhimento e distribuição de alimentos de pessoas em situação de vulnerabilidade
+                            </p>
+                            <button>Doar</button>
+                        </li>
+                        <li>
+                            <img src="" alt="">
+                            <h3>Projeto Esperança</h3>
+                            <div>
+                                <p>Vila Mariana - SP</p>
+                                <p>.</p>
+                                <p>168.2km</p>
+                            </div>
+                            <p class="Area de atuação">Orfanatos</p>
+                            <p>Apoia crianças e adolescentes em situação de vulnerabilidade</p>
+                            <button>Doar</button>
+                        </li>
+                        <li>
+                            <img src="" alt="">
+                            <h3>Viver com Dignidade</h3>
+                            <div>
+                                <p>Ipiranga - SP</p>
+                                <p>.</p>
+                                <p>120.2km</p>
+                            </div>
+                            <p class="Area de atuação">Idosos</p>
+                            <p>Apoia pessoas idosas em situação de vulnerabilidade</p>
+                            <button>Doar</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="Proximas">
+                    <ul>
+                        <li>
+                            <img src="" alt="">
+                            <h3>Projeto Esperança</h3>
+                            <div>
+                                <p>Coronel Fabriciano - MG</p>
+                                <p>.</p>
+                                <p>10.5km</p>
+                            </div>
+                            <p class="Area de atuação">Moradores de rua</p>
+                            <p>Atua no acolhimento e distribuição de alimentos de pessoas em situação de vulnerabilidade
+                            </p>
+                            <button>Doar</button>
+                        </li>
+                        <li>
+                            <img src="" alt="">
+                            <h3>Projeto Luz</h3>
+                            <div>
+                                <p>Ipatinga - MG</p>
+                                <p>.</p>
+                                <p>15.2km</p>
+                            </div>
+                            <p class="Area de atuação">Orfanatos</p>
+                            <p>Apoia crianças e adolescentes em situação de vulnerabilidade</p>
+                            <button>Doar</button>
+                        </li>
+                        <li>
+                            <img src="" alt="">
+                            <h3>Projeto Viver com Dignidade</h3>
+                            <div>
+                                <p>Timoteo - MG</p>
+                                <p>.</p>
+                                <p>5.0km</p>
+                            </div>
+                            <p class="Area de atuação">Idosos</p>
+                            <p>Apoia pessoas idosas em situação de vulnerabilidade</p>
+                            <button>Doar</button>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <h2>Mapa de ONGs proximas</h2>
+                <div>
+                    <img src="" alt="Mapa de ONGs proximas">
+                </div>
+            </section>
+            <section>
+                <h2>Minhas Doações</h2>
+                <div>
+                    <ul>
+                        <li>
+                            <i class="fas fa-donate"></i>
+                            <h3>Total doado</h3>
+                            <p>R$ 200,00</p>
+                        </li>
+                        <li>
+                            <i class="fas fa-exchange-alt"></i>
+                            <h3>Transações</h3>
+                            <p>12</p>
+                        </li>
+                    </ul>
+                </div>
+                    <ul>
+                        <li>
+                            <img src="" alt="Doação de Roupas">
+                            <h3>Doação de Roupas</h3>
+                            <div>
+                                <p>10/05/2026</p>
+                                <p>.</p>
+                                <p>R$ 200,00</p>
+                            </div>
+                            <p class="status doação">Concluída</p>
+                        </li>
+                        <li>
+                            <img src="" alt="Campanha de Alimentos">
+                            <h3>Campanha de Alimentos</h3>
+                            <div>
+                                <p>15/06/2026</p>
+                                <p>.</p>
+                                <p>R$ 500,00</p>
+                            </div>
+                            <p class="status doação">Concluída</p>
+                        </li>
+                        <li>
+                            <img src="" alt="Distribuição de Alimentos">
+                            <h3>Distribuição de Alimentos</h3>
+                            <div>
+                                <p>20/07/2026</p>
+                                <p>.</p>
+                                <p>R$ 300,00</p>
+                            </div>
+                            <p class="status doação">Pendente</p>
+                        </li>
+                    </ul>
+            </section>
         </div>
 
         <div class="Voluntario">
@@ -95,7 +384,7 @@
 
             <section>
                 <div>
-                    <h2>Minhas Doações</h2>
+                    <h2>Ações Disponíveis</h2>
                     <button>Ver todas</button>
                 </div>
                 <ul>
@@ -125,6 +414,7 @@
             </section>
         </div>
     </main>
+
     <article class="menu">
         <div id="logo">
             <img src="src/logoBranca.png" alt="Logo do Juntos">
