@@ -1,37 +1,165 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Juntos</title>
+        <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-        <title>Home</title>
 </head>
 
 <body>
-
-        <article class="menu">
+        <header>
+                <i class="fa-solid fa-bars"></i>
+                <div class="logo">
+                        <img src="src/logoPreta.png" alt="Juntos">
+                        <h1>Juntos</h1>
+                </div>
+        </header>
+        <main>
+                <section>
+                        <ul>
+                                <li>
+                                        <div>
+                                                <img src="src/home1.jpg"
+                                                        alt="imagem de mulheres separando alimentos para doação">
+                                                <h3>NOTÍCIA</h3>
+                                                <h2>Solidariedade que transforma vidas.</h2>
+                                                <p>Conectamos doadores, voluntários e ONGs para um mundo melhor.</p>
+                                                <Button>Saiba mais</Button>
+                                        </div>
+                                </li>
+                                <li>
+                                        <div>
+                                                <img src="src/home2.jpg"
+                                                        alt="imagem de pessoas ajudando outras pessoas">
+                                                <h3>NOTÍCIA</h3>
+                                                <h2>Voluntariado com impacto positivo</h2>
+                                                <p>Descubra como o voluntariado pode criar mudanças significativas em
+                                                        nossas comunidades.</p>
+                                                <Button>Saiba mais</Button>
+                                        </div>
+                                </li>
+                        </ul>
+                </section>
+                <section>
+                        <div>
+                                <h2>Notícias</h2>
+                                <button>Ver todos</button>
+                        </div>
+                        <ul>
+                                <li>
+                                        <div>
+                                                <img src="src/noticias1.jpg"
+                                                        alt="imagem de pessoas doando roupas para pessoas necessitadas">
+                                        </div>
+                                        <div>
+                                                <h3>Campanha de inverno arrecada 2 toneladas de alimentos</h3>
+                                                <p>7 de outubro de 2026</p>
+                                        </div>
+                                </li>
+                                <li>
+                                        <div>
+                                                <img src="src/noticias2.jpg"
+                                                        alt="imagem de pessoas doando roupas para pessoas necessitadas">
+                                        </div>
+                                        <div>
+                                                <h3>Voluntários transformam vidas com ações solidárias</h3>
+                                                <p>15 de outubro de 2026</p>
+                                        </div>
+                                </li>
+                        </ul>
+                </section>
+                <section>
+                        <div>
+                                <h2>Destaques</h2>
+                                <button>Ver todos</button>
+                        </div>
+                        <ul>
+                                <li>
+                                        <div>
+                                                <h4>12</h4>
+                                                <h4>NOV</h4>
+                                        </div>
+                                        <div>
+                                                <h3>Doação de roupas e cobertores</h3>
+                                                <p>Vila Mariana - São Paulo/SP</p>
+                                                <div>
+                                                        <i class="fa-solid fa-clock"></i>
+                                                        <p>14h às 17h</p>
+                                                </div>
+                                                <div>
+                                                        <i class="fa-solid fa-user"></i>
+                                                        <p>12 Voluntários confirmados</p>
+                                                </div>
+                                        </div>
+                                </li>
+                                <li>
+                                        <div>
+                                                <h4>27</h4>
+                                                <h4>DEZ</h4>
+                                        </div>
+                                        <div>
+                                                <h3>Entrega de cestas básicas</h3>
+                                                <p>Jardim da Saúde - São Paulo/SP</p>
+                                                <div>
+                                                        <i class="fa-solid fa-clock"></i>
+                                                        <p>08h às 11h</p>
+                                                </div>
+                                                <div>
+                                                        <i class="fa-solid fa-user"></i>
+                                                        <p>18 Voluntários confirmados</p>
+                                                </div>
+                                        </div>
+                                </li>
+                                <li>
+                                        <div>
+                                                <h4>03</h4>
+                                                <h4>SET</h4>
+                                        </div>
+                                        <div>
+                                                <h3>Ação de higiene e limpeza</h3>
+                                                <p>Centro - Santos/SP</p>
+                                                <div>
+                                                        <i class="fa-solid fa-clock"></i>
+                                                        <p>10h às 13h</p>
+                                                </div>
+                                                <div>
+                                                        <i class="fa-solid fa-user"></i>
+                                                        <p>08 Voluntários confirmados</p>
+                                                </div>
+                                        </div>
+                                </li>
+                        </ul>
+        </main>
+                <article class="menu">
                 <div id="logo">
                         <img src="src/logoBranca.png" alt="Logo do Juntos">
                         <h1>Juntos</h1>
                         <button>Fechar</button>
                 </div>
                 <nav>
-                        <div><i class="fas fa-home white"></i><a href="home.html">Inicio</a></div>
-                        <div><i class="fas fa-hand-holding-heart white"></i><a href="ong.html">ONGs
-                                        proximas de mim</a></div>
-                        <div><i class="fas fa-user-alt white"></i><a href="minhaArea.html">Minha
-                                        Área</a></div>
-                        <div><i class="fas fa-chart-bar white"></i><a href="dashboard.html">Dashboard</a></div>
-                        <div><i class="fas fa-newspaper white"></i><a href="boletim.html">Boletim</a></div>
-                        <div><i class="fas fa-question-circle white"></i><a href="quemSomos.html">Quem
-                                        Somos</a></div>
-                        <div><i class="fas fa-question-circle white"></i><a href="faq.html">FAQ</a></div>
-                        <div><i class="fas fa-lock white"></i><a href="politicaPrivacidade.html">Política de
-                                        Privacidade</a></div>
-                        <div><i class="fas fa-file-alt white"></i><a href="termosServico.html">Termos de Serviço</a>
+                        <div><img src="src/icone home branco.png" alt="Ícone de início"><a href="home.html">Inicio</a>
                         </div>
+                        <div><img src="src/icone ong branco.png" alt="Ícone de ONGs próximas de mim"><a
+                                        href="ong.html">ONGs
+                                        proximas de mim</a></div>
+                        <div><img src="src/icone minha area branco.png" alt="Ícone da minha área"><a
+                                        href="minhaArea.html">Minha
+                                        Área</a></div>
+                        <div><img src="src/icone dashboard branco.png" alt="Ícone do dashboard"><a
+                                        href="dashboard.html">Dashboard</a></div>
+                        <div><img src="src/icone boletim branco.png" alt="Ícone de boletim"><a
+                                        href="boletim.html">Boletim</a></div>
+                        <div><img src="src/icone quem somos branco.png" alt="Ícone de quem somos"><a
+                                        href="quemSomos.html">Quem
+                                        Somos</a></div>
+                        <div><img src="src/icone faq branco.png" alt="Ícone de FAQ"><a href="faq.html">FAQ</a></div>
+                        <div><img src="src/icone privacidade branco.png" alt="Ícone de política de privacidade"><a
+                                        href="politicaPrivacidade.html">Política de Privacidade</a></div>
+                        <div><img src="src/icone termos branco.png" alt="Ícone de termos de serviço"><a
+                                        href="termosServico.html">Termos de Serviço</a></div>
                 </nav>
         </article>
 </body>
