@@ -21,15 +21,13 @@
     </header>
 
     <nav>
-        <section>
-            <select name="tipo_usuario" id="tipo_usuario">
-                <option value="Doador">Doador</option>
-                <option value="Voluntario">Voluntário</option>
-                <option value="ONG">ONG</option>
-            </select>
-        </section>
+        <select class="seletor arrasta">
+            <option value="Doador">Doador</option>
+            <option value="Voluntario">Voluntário</option>
+            <option value="ONG">ONG</option>
+        </select>
     </nav>
-    <section>
+    <section class="perfil">
         <h2>Seu Perfil</h2>
         <img src="src/Logo Educação e comunidade.jpg" alt="Foto de perfil do Educação e comunidade">
         <p>CNPJ: 12.345.678/0001-90</p>
@@ -39,13 +37,103 @@
     </section>
 
     <main>
+        <div class="Voluntario">
+            <section>
+                <div>
+                    <h2>Próximas Participações</h2>
+                    <button class = "ver todas">Ver todas</button>
+                </div>
+                <ul class = "lista scroll">
+                    <li>
+                        <h3>Distribuição de Alimentos</h3>
+                        <p>Mooca - SP</p>
+                        <div>
+                            <img src="" alt="relogio">
+                            <p>9h às 13h</p>
+                        </div>
+                        <button>Confirmar Presença</button>
+                    </li>
+                    <li>
+                        <h3>Café Solidário</h3>
+                        <p>Vila Mariana - SP</p>
+                        <div>
+                            <img src="" alt="relogio">
+                            <p>8h às 12h</p>
+                        </div>
+                        <button>Confirmar Presença</button>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <div>
+                    <h2>Minhas Participações</h2>
+                    <button class="ver todas">Ver todas</button>
+                </div>
+                <ul class = "lista scroll">
+                    <li>
+                        <img src="" alt="">
+                        <h3>Doação de Roupas</h3>
+                        <p>Centro - SP</p>
+                        <p>10/05/2026</p>
+                        <h4>presença confirmada</h4>
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                        <h3>Ação de Inverno</h3>
+                        <p>Vila Mariana - SP</p>
+                        <p>15/06/2026</p>
+                        <h4>presença confirmada</h4>
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                        <h3>Alimento para todos</h3>
+                        <p>Mooca - SP</p>
+                        <p>20/07/2026</p>
+                        <h4>presença confirmada</h4>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <div>
+                    <h2>Ações Disponíveis</h2>
+                    <button class = "ver todas">Ver todas</button>
+                </div>
+                <ul class = "lista scroll">
+                    <li>
+                        <img src="" alt="">
+                        <h3>Campanha do Agasalho</h3>
+                        <p>Centro - SP</p>
+                        <div>
+                            <p>21/10/2026</p>
+                            <p>09h às 16h</p>
+                        </div>
+                        <p>15 vagas</p>
+                        <button>Quero Participar</button>
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                        <h3>Ação de Inverno</h3>
+                        <p>Vila Mariana - SP</p>
+                        <div>
+                            <p>15/06/2026</p>
+                            <p>08h às 14h</p>
+                        </div>
+                        <p>20 vagas</p>
+                        <button>Quero Participar</button>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
         <div class="ONG">
             <Section>
                 <div>
                     <h2>Resumo do Mês</h2>
-                    <button>Ver todas</button>
+                    <button class = "ver todas">Ver todas</button>
                 </div>
-                <ul>
+                <ul class="lista scroll">
                     <li>
                         <i class="fas fa-donate"></i>
                         <h3>Doações recebidas</h3>
@@ -70,9 +158,9 @@
             <section>
                 <div>
                     <h2>Estoque</h2>
-                    <button>Ver todas</button>
+                    <button class = "ver todas">Ver todas</button>
                 </div>
-                <ul>
+                <ul class="lista scroll">
                     <li>
                         <h3>Alimentos</h3>
                         <p>50 itens</p>
@@ -99,9 +187,9 @@
             <section>
                 <div>
                     <h2>Suas Ações</h2>
-                    <button>Ver todas</button>
+                    <button class = "ver todas">Ver todas</button>
                 </div>
-                <ul>
+                <ul class="lista scroll">
                     <li>
                         <img src="src/Doação de alimentos.jpg" alt="doação de alimentos">
                         <h3>Campanha de Alimentos</h3>
@@ -138,9 +226,9 @@
             <section>
                 <div>
                     <h2>Transações</h2>
-                    <button>Ver todas</button>
+                    <button class = "ver todas">Ver todas</button>
                 </div>
-                <ul>
+                <ul class="lista scroll">
                     <li>
                         <h3>Doação de Roupas</h3>
                         <p>10/05/2026</p>
@@ -159,6 +247,7 @@
                         <p>R$ 300,00</p>
                         <p class="status recebimento">Recebida</p>
                     </li>
+                </ul>
             </section>
         </div>
 
@@ -176,14 +265,14 @@
                     </div>
                 </div>
                 <div>
-                    <select>
+                    <select class="seletor arrasta">
                         <option value="Destaque">Em Destaque</option>
                         <option value="Proximas">Mais Próximas</option>
                     </select>
                 </div>
 
                 <div class="Destaque">
-                    <ul>
+                    <ul class="lista scroll">
                         <li>
                             <img src="src/projeto amor.jpg" alt="logo do projeto amor">
                             <h3>Projeto Amor</h3>
@@ -192,7 +281,7 @@
                                 <p>.</p>
                                 <p>168.2km</p>
                             </div>
-                            <p class="Area de atuação">Moradores de rua</p>
+                            <p class="status">Moradores de rua</p>
                             <p>Atua no acolhimento e distribuição de alimentos de pessoas em situação de vulnerabilidade
                             </p>
                             <button>Doar</button>
@@ -205,7 +294,7 @@
                                 <p>.</p>
                                 <p>168.2km</p>
                             </div>
-                            <p class="Area de atuação">Orfanatos</p>
+                            <p class="status">Orfanatos</p>
                             <p>Apoia crianças e adolescentes em situação de vulnerabilidade</p>
                             <button>Doar</button>
                         </li>
@@ -217,7 +306,7 @@
                                 <p>.</p>
                                 <p>120.2km</p>
                             </div>
-                            <p class="Area de atuação">Idosos</p>
+                            <p class="status">Idosos</p>
                             <p>Apoia pessoas idosas em situação de vulnerabilidade</p>
                             <button>Doar</button>
                         </li>
@@ -225,7 +314,7 @@
                 </div>
 
                 <div class="Proximas">
-                    <ul>
+                    <ul class="lista scroll">
                         <li>
                             <img src="src/projeto esperança.jpg" alt="logo projeto esperança">
                             <h3>Projeto Esperança</h3>
@@ -234,7 +323,7 @@
                                 <p>.</p>
                                 <p>10.5km</p>
                             </div>
-                            <p class="Area de atuação">Moradores de rua</p>
+                            <p class="status">Moradores de rua</p>
                             <p>Atua no acolhimento e distribuição de alimentos de pessoas em situação de vulnerabilidade
                             </p>
                             <button>Doar</button>
@@ -247,7 +336,7 @@
                                 <p>.</p>
                                 <p>15.2km</p>
                             </div>
-                            <p class="Area de atuação">Orfanatos</p>
+                            <p class="status">Orfanatos</p>
                             <p>Apoia crianças e adolescentes em situação de vulnerabilidade</p>
                             <button>Doar</button>
                         </li>
@@ -259,7 +348,7 @@
                                 <p>.</p>
                                 <p>5.0km</p>
                             </div>
-                            <p class="Area de atuação">Idosos</p>
+                            <p class="status">Idosos</p>
                             <p>Apoia pessoas idosas em situação de vulnerabilidade</p>
                             <button>Doar</button>
                         </li>
@@ -275,7 +364,7 @@
             <section>
                 <h2>Minhas Doações</h2>
                 <div>
-                    <ul>
+                    <ul class="lista lado-lado">
                         <li>
                             <i class="fas fa-donate"></i>
                             <h3>Total doado</h3>
@@ -340,11 +429,12 @@
                         <button>Confirmar Presença</button>
                     </li>
                     <li>
-                        <h3>Café Solidário</h3>
-                        <p>Vila Mariana - SP</p>
+                        <img src="" alt="Doação de Roupas">
+                        <h3>Doação de Roupas</h3>
                         <div>
-                            <img src="" alt="relogio">
-                            <p>8h às 12h</p>
+                            <p>10/05/2026</p>
+                            <p>.</p>
+                            <p>R$ 200,00</p>
                         </div>
                         <button>Confirmar Presença</button>
                     </li>
@@ -392,51 +482,57 @@
                         <h3>Campanha do Agasalho</h3>
                         <p>Centro - SP</p>
                         <div>
-                            <p>21/10/2026</p>
-                            <p>09h às 16h</p>
+                            <p>15/06/2026</p>
+                            <p>.</p>
+                            <p>R$ 500,00</p>
                         </div>
-                        <p>15 vagas</p>
-                        <button>Quero Participar</button>
+                        <p class="status">Concluída</p>
                     </li>
                     <li>
                         <img src="src/ação de inverno.jpg" alt="ação de inverno">
                         <h3>Ação de Inverno</h3>
                         <p>Vila Mariana - SP</p>
                         <div>
-                            <p>15/06/2026</p>
-                            <p>08h às 14h</p>
+                            <p>20/07/2026</p>
+                            <p>.</p>
+                            <p>R$ 300,00</p>
                         </div>
-                        <p>20 vagas</p>
-                        <button>Quero Participar</button>
+                        <p class="status">Pendente</p>
                     </li>
                 </ul>
             </section>
         </div>
     </main>
 
-    <article class="menu">
-        <div id="logo">
-            <img src="src/logoBranca.png" alt="Logo do Juntos">
-            <h1>Juntos</h1>
-            <button>Fechar</button>
-        </div>
-        <nav>
-            <div><i class="fas fa-home white"></i><a href="home.html">Inicio</a></div>
-            <div><i class="fas fa-hand-holding-heart white"></i><a href="ong.html">ONGs
-                    proximas de mim</a></div>
-            <div><i class="fas fa-user-alt white"></i><a href="minhaArea.html">Minha
-                    Área</a></div>
-            <div><i class="fas fa-chart-bar white"></i><a href="dashboard.html">Dashboard</a></div>
-            <div><i class="fas fa-newspaper white"></i><a href="boletim.html">Boletim</a></div>
-            <div><i class="fas fa-question-circle white"></i><a href="quemSomos.html">Quem
-                    Somos</a></div>
-            <div><i class="fas fa-question-circle white"></i><a href="faq.html">FAQ</a></div>
-            <div><i class="fas fa-lock white"></i><a href="politicaPrivacidade.html">Política de
-                    Privacidade</a></div>
-            <div><i class="fas fa-file-alt white"></i><a href="termosServico.html">Termos de Serviço</a>
-            </div>
-        </nav>
-    </article>
+            <article class="menu">
+                <div class="logo">
+                        <img src="src/logoBranca.png" alt="Logo do Juntos">
+                        <h1>Juntos</h1>
+                        <button>Fechar</button>
+                </div>
+                <nav class = "redirecionador menu">
+                        <div><img src="src/icone home branco.png" alt="Ícone de início"><a href="home.html">Inicio</a>
+                        </div>
+                        <div><img src="src/icone ong branco.png" alt="Ícone de ONGs próximas de mim"><a
+                                        href="ong.html">ONGs
+                                        proximas de mim</a></div>
+                        <div><img src="src/icone minha area branco.png" alt="Ícone da minha área"><a
+                                        href="minhaArea.html">Minha
+                                        Área</a></div>
+                        <div><img src="src/icone dashboard branco.png" alt="Ícone do dashboard"><a
+                                        href="dashboard.html">Dashboard</a></div>
+                        <div><img src="src/icone boletim branco.png" alt="Ícone de boletim"><a
+                                        href="boletim.html">Boletim</a></div>
+                        <div><img src="src/icone quem somos branco.png" alt="Ícone de quem somos"><a
+                                        href="quemSomos.html">Quem
+                                        Somos</a></div>
+                        <div><img src="src/icone faq branco.png" alt="Ícone de FAQ"><a href="faq.html">FAQ</a></div>
+                        <div><img src="src/icone privacidade branco.png" alt="Ícone de política de privacidade"><a
+                                        href="politicaPrivacidade.html">Política de Privacidade</a></div>
+                        <div><img src="src/icone termos branco.png" alt="Ícone de termos de serviço"><a
+                                        href="termosServico.html">Termos de Serviço</a></div>
+                </nav>
+        </article>
 </body>
 
 </html>
