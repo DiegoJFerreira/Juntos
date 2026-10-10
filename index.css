@@ -493,6 +493,11 @@ p {
     object-fit: cover;
 }
 
+.cardTextoInferior h3 {
+    font-size: 18pt;
+    margin-bottom: 2%;
+}
+
 .cardTextoInferior h4 {
     font-size: 14pt;
     margin-bottom: 2%;
