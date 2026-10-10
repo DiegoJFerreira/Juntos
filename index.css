@@ -151,7 +151,7 @@ header .verTodos {
     align-items: stretch;
     justify-content: start;
     overflow: hidden;
-    border: 1px solid ##CFCFC9;
+    border: 1px solid #CFCFC9;
     box-shadow: -1.5px 2px 4px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
 }
