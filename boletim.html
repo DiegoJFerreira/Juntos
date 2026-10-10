@@ -10,77 +10,91 @@
 </head>
 
 <body id="boletim">
-        <header>
-                <button class="abrirMenu" aria-label="Abrir menu" aria-expanded="false">
-                        <i class="fa-solid fa-bars"></i>
-                </button>
-                <div class="logo">
-                        <img src="src/logoPreta.png" alt="Juntos">
-                        <h1>Boletim</h1>
-                </div>
-                <div>
-                        <a class="verTodos" href="Login.html">Login</a>
-                </div>
-        </header>
-    <main>
-        <div>
-            <p>Acompanhe os relatórios de impacto das ações realizadas pelas ONGs</p>
-            <p>Filtrar por ONG</p>
-            <select class="seletorCaixa">
-                <option value="Todas">Todas</option>
-                <option value="Projeto Amor">Projeto Amor</option>
-                <option value="Viver com Dignidade">Viver com Dignidade</option>
-                <option value="Comunidade Solidária">Comunidade Solidária</option>
-                <option value="Alimentar o Futuro">Alimentar o Futuro</option>
-                <option value="Educação para Todos">Educação para Todos</option>
-                <option value="Saúde em Ação">Saúde em Ação</option>
-                <option value="Direitos Humanos">Direitos Humanos</option>
-                <option value="Meio Ambiente">Meio Ambiente</option>
-            </select>
+    <header>
+        <button class="abrirMenu" aria-label="Abrir menu" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="logo">
+            <img src="src/logoPreta.png" alt="Juntos">
+            <h1>Boletim</h1>
         </div>
+        <div>
+            <a class="verTodos" href="Login.html">Login</a>
+        </div>
+    </header>
+    <main>
+        <span class="centralizado">
+            <div>
+                <p>Acompanhe os relatórios de impacto das ações realizadas pelas ONGs</p>
+                <p class="texto-cinza-claro">Filtrar por ONG</p>
+                <select class="seletorCaixa">
+                    <option value="Todas">Todas</option>
+                    <option value="Projeto Amor">Projeto Amor</option>
+                    <option value="Viver com Dignidade">Viver com Dignidade</option>
+                    <option value="Comunidade Solidária">Comunidade Solidária</option>
+                    <option value="Alimentar o Futuro">Alimentar o Futuro</option>
+                    <option value="Educação para Todos">Educação para Todos</option>
+                    <option value="Saúde em Ação">Saúde em Ação</option>
+                    <option value="Direitos Humanos">Direitos Humanos</option>
+                    <option value="Meio Ambiente">Meio Ambiente</option>
+                </select>
+            </div>
 
-        <Section>
-            <ul class="listaScroll">
-                <li class="projetoAmor">
-                    <div>
-                        <img src="src/projeto amor.jpg" alt="logo projeto amor">
-                        <h4>Projeto Amor</h4>
-                        <p>Boletim - Abril/2025</p>
-                    </div>
-                    <img src="src/imagem_boletim.jpeg" alt="Imagem do boletim abril de 2026">
-                    
-                </li>
+            <Section class="section-boletim">
+                <span class="lista2Lados-boletim">
+                    <ul>
+                        <li class="projetoAmor">
+                            <div class="alinhamento">
+                                <img src="src/projeto amor.jpg" alt="logo projeto amor" class="logo-boletim">
+                                <h4>Projeto Amor</h4>
+                            </div>
+                            <div>
+                                <p>Boletim - Abril/2025</p>
+                            </div>
+                            <img src="src/imagem_boletim.jpeg" alt="Imagem do boletim abril de 2026"
+                                class="imagem-vertical">
+                        </li>
+                    </ul>
+                </span>
 
-                <li class="viverComDignidade">
-                    <div>
-                        <img src="src/projeto viver com dignidade.jpg" alt="logo viver com dignidade">
-                        <h4>Viver com Dignidade</h4>
-                        <p>Boletim - Maio/2025</p>
-                    </div>
-                    
-                    <img src="src/imagem_Boletim2.jpg" alt="Imagem boletim maio de 2026">
-                </li>
-            </ul>
-        </Section>
+                <span class="lista2Lados-boletim">
+                    <ul>
+                        <li class="projetoAmor">
+                            <div class="alinhamento">
+                                <img src="src/projeto viver com dignidade.jpg" alt="logo viver com dignidade"
+                                    class="logo-boletim">
+                                <h4>Viver com Dignidade</h4>
+                            </div>
+                            <div>
+                                <p>Boletim - Maio/2025</p>
+                            </div>
+
+                            <img src="src/imagem_Boletim2.jpg" alt="Imagem boletim maio de 2026"
+                                class="imagem-vertical">
+                        </li>
+                    </ul>
+                </span>
+            </Section>
+        </span>
     </main>
 
-        <article id="menu" class="menuClose">
-                <div>
-                        <div class="logo">
-                                <img src="src/logoBranca.png" alt="Logo do Juntos">
-                                <h1>Juntos</h1>
-                        </div>
-                        <button class="fecharMenu"><i class="fa fa-close"></i></button>
-                </div>
-                <nav class="redirecionadorMenu">
-                        <div><i class="fas fa-home white"></i><a href="home.html">Inicio</a></div>
-                        <div><i class="fas fa-user-alt white"></i><a href="minhaArea.html">Minha Área</a></div>
-                        <div><i class="fas fa-chart-bar white"></i><a href="dashboard.html">Dashboard</a></div>
-                        <div><i class="fas fa-newspaper white"></i><a href="boletim.html">Boletim</a></div>
-                        <div><i class="fas fa-question-circle white"></i><a href="quemSomos.html">Quem Somos</a></div>
-                </nav>
-        </article>
-        <script src="script.js" defer></script>
+    <article id="menu" class="menuClose">
+        <div>
+            <div class="logo">
+                <img src="src/logoBranca.png" alt="Logo do Juntos">
+                <h1>Juntos</h1>
+            </div>
+            <button class="fecharMenu"><i class="fa fa-close"></i></button>
+        </div>
+        <nav class="redirecionadorMenu">
+            <div><i class="fas fa-home white"></i><a href="home.html">Inicio</a></div>
+            <div><i class="fas fa-user-alt white"></i><a href="minhaArea.html">Minha Área</a></div>
+            <div><i class="fas fa-chart-bar white"></i><a href="dashboard.html">Dashboard</a></div>
+            <div><i class="fas fa-newspaper white"></i><a href="boletim.html">Boletim</a></div>
+            <div><i class="fas fa-question-circle white"></i><a href="quemSomos.html">Quem Somos</a></div>
+        </nav>
+    </article>
+    <script src="script.js" defer></script>
 </body>
 
 </html>
