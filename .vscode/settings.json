@@ -1,5 +1,6 @@
 {
     "powerquery.client.additionalSymbolsDirectories": [
-        "c:/Users/diego/OneDrive/Documentos/Sync/FACULDADE!/PW/Juntos/.vscode/excel-pq-symbols"
+        "c:/Users/diego/OneDrive/Documentos/Sync/FACULDADE!/PW/Juntos/.vscode/excel-pq-symbols",
+        "c:/Users/diego/Downloads/Juntos/.vscode/excel-pq-symbols"
     ]
 }
