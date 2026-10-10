@@ -10,15 +10,23 @@
 </head>
 
 <body id="boletim">
-    <header>
-        <i class="fa-solid fa-bars"></i>
-        <h1>Boletim</h1>
-    </header>
+        <header>
+                <button class="abrirMenu" aria-label="Abrir menu" aria-expanded="false">
+                        <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="logo">
+                        <img src="src/logoPreta.png" alt="Juntos">
+                        <h1>Boletim</h1>
+                </div>
+                <div>
+                        <a class="verTodos" href="Login.html">Login</a>
+                </div>
+        </header>
     <main>
         <div>
             <p>Acompanhe os relatórios de impacto das ações realizadas pelas ONGs</p>
             <p>Filtrar por ONG</p>
-            <select class = seletor caixa>
+            <select class="seletorCaixa">
                 <option value="Todas">Todas</option>
                 <option value="Projeto Amor">Projeto Amor</option>
                 <option value="Viver com Dignidade">Viver com Dignidade</option>
@@ -32,8 +40,8 @@
         </div>
 
         <Section>
-            <ul class = lista scroll>
-                <li class="Projeto Amor">
+            <ul class="listaScroll">
+                <li class="projetoAmor">
                     <div>
                         <img src="" alt="">
                         <h4>Projeto Amor</h4>
@@ -43,7 +51,7 @@
                     
                 </li>
 
-                <li class="Viver com Dignidade">
+                <li class="viverComDignidade">
                     <div>
                         <img src="" alt="">
                         <h4>Viver com Dignidade</h4>
@@ -56,29 +64,23 @@
         </Section>
     </main>
 
-    <article class="menu">
-        <div id="logo">
-            <img src="src/logoBranca.png" alt="Logo do Juntos">
-            <h1>Juntos</h1>
-            <button>Fechar</button>
-        </div>
-        <nav>
-            <div><i class="fas fa-home white"></i><a href="home.html">Inicio</a></div>
-            <div><i class="fas fa-hand-holding-heart white"></i><a href="ong.html">ONGs
-                    proximas de mim</a></div>
-            <div><i class="fas fa-user-alt white"></i><a href="minhaArea.html">Minha
-                    Área</a></div>
-            <div><i class="fas fa-chart-bar white"></i><a href="dashboard.html">Dashboard</a></div>
-            <div><i class="fas fa-newspaper white"></i><a href="boletim.html">Boletim</a></div>
-            <div><i class="fas fa-question-circle white"></i><a href="quemSomos.html">Quem
-                    Somos</a></div>
-            <div><i class="fas fa-question-circle white"></i><a href="faq.html">FAQ</a></div>
-            <div><i class="fas fa-lock white"></i><a href="politicaPrivacidade.html">Política de
-                    Privacidade</a></div>
-            <div><i class="fas fa-file-alt white"></i><a href="termosServico.html">Termos de Serviço</a>
-            </div>
-        </nav>
-    </article>
+        <article id="menu" class="menuClose">
+                <div>
+                        <div class="logo">
+                                <img src="src/logoBranca.png" alt="Logo do Juntos">
+                                <h1>Juntos</h1>
+                        </div>
+                        <button class="fecharMenu"><i class="fa fa-close"></i></button>
+                </div>
+                <nav class="redirecionadorMenu">
+                        <div><i class="fas fa-home white"></i><a href="home.html">Inicio</a></div>
+                        <div><i class="fas fa-user-alt white"></i><a href="minhaArea.html">Minha Área</a></div>
+                        <div><i class="fas fa-chart-bar white"></i><a href="dashboard.html">Dashboard</a></div>
+                        <div><i class="fas fa-newspaper white"></i><a href="boletim.html">Boletim</a></div>
+                        <div><i class="fas fa-question-circle white"></i><a href="quemSomos.html">Quem Somos</a></div>
+                </nav>
+        </article>
+        <script src="script.js" defer></script>
 </body>
 
 </html>

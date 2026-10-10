@@ -1,0 +1,435 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #FDFDFD;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menuClose {
+    display: none;
+}
+
+.menuOpen {
+    display: block;
+    position: fixed;
+    left: 0;
+    height: calc(100% - 0px);
+    width: 100%;
+    background-color: #015e29;
+    top: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo * {
+    margin-top: 0;
+}
+
+.logo>h1 {
+    font-size: 38pt;
+}
+
+.logo>img {
+    width: auto;
+    height: 47px;
+    padding: 0;
+    margin: 0;
+}
+
+#menu * {
+    color: #FDFDFD;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+#menu>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu>div * {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.fecharMenu {
+    background: none;
+    border: none;
+}
+
+.fecharMenu i {
+    color: #FDFDFD;
+    font-size: 38pt;
+}
+
+.redirecionadorMenu {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: space-evenly;
+}
+
+.redirecionadorMenu * {
+    font-size: 15pt;
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: space-between;
+    position: relative;
+}
+
+header h1 {
+    font-size: 30pt;
+    padding: 0;
+    margin: 0;
+}
+
+.abrirMenu {
+    border: none;
+    background: none;
+    padding: 3.5px;
+    cursor: pointer;
+}
+
+.abrirMenu i {
+    font-size: 30pt;
+    padding: 3.5px;
+}
+
+
+.listaScroll {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.listaScroll>button {
+    border: none;
+    background: none;
+}
+
+.textoBotao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.textoBotao h2 {
+    font-size: 25pt;
+    margin: 5px;
+    padding: 0;
+}
+
+.verTodos {
+    border: none;
+    background: none;
+    font-size: 13pt;
+    font-weight: bold;
+    cursor: pointer;
+    color: #056534;
+}
+
+header .verTodos {
+    font-size: 20pt;
+}
+
+.lista2Lados {
+    display: flex;
+    align-items: stretch;
+    justify-content: start;
+    overflow: hidden;
+    border: 1px solid ##CFCFC9;
+    box-shadow: -1.5px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.lista2Lados>div:first-child {
+    width: 30%;
+    flex-shrink: 0;
+}
+
+.lista2Lados>div:first-child img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.lista2Lados>div:first-child i {
+    font-size: 50pt;
+}
+
+.lista2Lados>div:last-child {
+    flex: 5;
+    padding: 8px;
+    min-width: 0;
+}
+
+.lista2Lados h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+    padding: 5px;
+}
+
+.lista2Lados h3 {
+    font-size: 16pt;
+}
+
+.lista2Lados p {
+    font-size: 13pt;
+}
+
+#login .lista2Lados {
+    align-items: center;
+    width: 45%;
+    aspect-ratio: 2/1;
+}
+
+.caixas2Lado {
+    padding-left: 30px;
+}
+
+.caixas2Lado>.lista2Lados {
+    justify-content: space-between;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    box-shadow: 0px 0px;
+}
+
+.caixas2Lado>.lista2Lados>.lista2Lados {
+    height: 100px;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.caixas2Lado>.lista2Lados>.lista2Lados * {
+    margin: 5px;
+}
+```css
+#pesquisaFiltro {
+    display: flex;
+    align-items: stretch;
+    gap: 24px;
+    width: 100%;
+    padding: 0;
+    margin: 15px 0 25px;
+    box-sizing: border-box;
+}
+
+#pesquisa {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    
+    flex: 1;
+    min-width: 0;
+    height: 90px;
+    box-sizing: border-box;
+    
+    padding: 0 24px;
+    margin: 0;
+    
+    border: 1px solid #CFCFC9;
+    border-radius: 18px;
+    background-color: #FFFFFF;
+}
+
+#pesquisa i {
+    font-size: 30px;
+    color: #333333;
+    flex-shrink: 0;
+}
+
+#pesquisa input {
+    flex: 1;
+    min-width: 0;
+    
+    border: none;
+    outline: none;
+    background: transparent;
+    
+    font-family: inherit;
+    font-size: 20px;
+    color: #333333;
+}
+
+#pesquisa input::placeholder {
+    color: #929292;
+}
+
+.botaoFiltro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+
+    width: 170px;
+    flex-shrink: 0;
+
+    border: 1px solid #CFCFC9;
+    border-radius: 18px;
+    background-color: #FFFFFF;
+
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333333;
+
+    cursor: pointer;
+}
+
+.botaoFiltro i {
+    font-size: 24px;
+}
+
+.botaoFiltro:hover {
+    background-color: #F5F5F5;
+}
+```
+.iconeTexto {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.iconeData {
+    flex: 1;
+}
+
+.iconeData>div {
+    margin: 15px;
+    width: 60px;
+    aspect-ratio: 1/1.25;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px solid #CFCFC9;
+    box-shadow: -1.5px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.iconeData h4 {
+    font-size: 16pt;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.iconeData h4:first-child {
+    color: #015F29;
+}
+
+.carrosel {
+    display: flex;
+    gap: 20px;
+
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.carrosel::-webkit-scrollbar {
+    display: none;
+}
+
+.carrosel>li {
+    position: relative;
+    flex: 0 0 100%;
+    width: 100%;
+    aspect-ratio: 2/1;
+    border-radius: 25px;
+    overflow: hidden;
+    scroll-snap-align: start;
+    color: rgb(255, 255, 255);
+}
+
+.carrosel>li>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carrosel>li>div {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    padding: 35px;
+
+    background: linear-gradient(transparent,
+            rgba(0, 0, 0, 0.8));
+}
+
+.carrosel>li>div h2 {
+    font-size: 32px;
+}
+
+.carrosel>li>div h3 {
+    font-size: 26px;
+}
+
+.carrosel>li>div p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.carrosel>li>div button {
+    display: inline-block;
+    align-self: flex-start;
+
+    background-color: #056534;
+    color: white;
+
+    padding: 12px 25px;
+    border-radius: 12px;
+
+    text-decoration: none;
+}
+
+
+.indicadores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    margin-top: 20px;
+}
+
+.indicador {
+    width: 12px;
+    height: 12px;
+    border: none;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.indicador.ativo {
+    background-color: #056534;
+    transform: scale(1.15);
+}

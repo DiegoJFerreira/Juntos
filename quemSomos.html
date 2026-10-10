@@ -9,14 +9,23 @@
     <title>Quem Somos</title>
 </head>
 
-<body id="quem somos">
-    
+<body id="quemSomos">
     <main>
         <header>
-            <i class="fa-solid fa-bars"></i>
-            <h1>Quem Somos</h1>
+            <button class="abrirMenu" aria-label="Abrir menu" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="logo">
+                <img src="src/logoPreta.png" alt="Juntos">
+                <h1>Quem Somos</h1>
+            </div>
+            <div>
+                <a class="verTodos" href="Login.html">Login</a>
+            </div>
         </header>
-        <img src=src/quemSomos.jpg alt="Equipe Juntos reunida em uma campanha de doação de alimentos">
+
+        <img src="src/quemSomos.jpg" alt="Equipe Juntos reunida em uma campanha de doação de alimentos">
+
         <section>
             <h3>Nossa História</h3>
             <p>O Juntos nasceu em 2024 com o propósito de conectar pessoas que querem ajudar com organizações que
@@ -26,7 +35,7 @@
 
         <section>
             <h3>Nossos Valores</h3>
-            <ul class="icones lado-lado">
+            <ul class="iconesLadoLado">
                 <li class="icone">
                     <div>
                         <i class="fas fa-handshake green"></i>
@@ -55,42 +64,42 @@
         </section>
 
         <section>
-            <h3>Areas de Atuação</h3>
+            <h3>Áreas de Atuação</h3>
             <p>Atuamos em diferentes frentes para levar alimentos e esperança a quem mais precisa.</p>
-            <ul class="lista lado-lado">
+            <ul class="listaLadoLado">
                 <li>
                     <div>
-                        <img src=src/moradoresDeRua.jpg alt="Pessoa em situação de rua recebendo apoio comunitário">
+                        <img src="src/moradoresDeRua.jpg" alt="Pessoa em situação de rua recebendo apoio comunitário">
                         <h4>Moradores de Rua</h4>
                     </div>
                 </li>
                 <li>
                     <div>
-                        <img src=src/orfanatos.jpg alt="Crianças recebendo alimentos e carinho em um orfanato">
+                        <img src="src/orfanatos.jpg" alt="Crianças recebendo alimentos e carinho em um orfanato">
                         <h4>Orfanatos</h4>
                     </div>
                 </li>
                 <li>
                     <div>
-                        <img src=src/asilos.jpg alt="Idosos em asilo recebendo doações e atenção">
+                        <img src="src/asilos.jpg" alt="Idosos em asilo recebendo doações e atenção">
                         <h4>Asilos</h4>
                     </div>
                 </li>
                 <li>
                     <div>
-                        <img src=src/comunidades.jpg alt="Comunidade recebendo ajuda e alimentos">
+                        <img src="src/comunidades.jpg" alt="Comunidade recebendo ajuda e alimentos">
                         <h4>Comunidades</h4>
                     </div>
                 </li>
                 <li>
                     <div>
-                        <img src=src/familiasCarentes.jpg alt="Famílias carentes recebendo doações de alimentos">
+                        <img src="src/familiasCarentes.jpg" alt="Famílias carentes recebendo doações de alimentos">
                         <h4>Famílias Carentes</h4>
                     </div>
                 </li>
                 <li>
                     <div>
-                        <img src=src/comunidadesReligiosas.jpg
+                        <img src="src/comunidadesReligiosas.jpg"
                             alt="Instituição religiosa apoiando a comunidade com doações">
                         <h4>Instituições Religiosas</h4>
                     </div>
@@ -99,26 +108,23 @@
         </section>
     </main>
 
-    <article class="menu">
-        <div id="logo">
-            <img src="src/logoBranca.png" alt="Logo do Juntos">
-            <h1>Juntos</h1>
-            <button>Fechar</button>
-        </div>
-        <nav>
-            <div><i class="fas fa-home white"></i><a href="home.html">Inicio</a></div>
-            <div><i class="fas fa-hand-holding-heart white"></i><a href="ong.html">ONGs
-                    proximas de mim</a></div>
-            <div><i class="fas fa-user-alt white"></i><a href="minhaArea.html">Minha
-                    Área</a></div>
-            <div><i class="fas fa-chart-bar white"></i><a
-                    href="dashboard.html">Dashboard</a></div>
-            <div><i class="fas fa-newspaper white"></i><a href="boletim.html">Boletim</a></div>
-            <div><i class="fas fa-question-circle white"></i><a href="faq.html">FAQ</a></div>
-            <div><i class="fas fa-lock white"></i><a
-                    href="politicaPrivacidade.html">Política de Privacidade</a></div>
-            <div><i class="fas fa-file-alt white"></i><a
-                    href="termosServico.html">Termos de Serviço</a></div>
-        </nav>
-    </article>
+        <article id="menu" class="menuClose">
+                <div>
+                        <div class="logo">
+                                <img src="src/logoBranca.png" alt="Logo do Juntos">
+                                <h1>Juntos</h1>
+                        </div>
+                        <button class="fecharMenu"><i class="fa fa-close"></i></button>
+                </div>
+                <nav class="redirecionadorMenu">
+                        <div><i class="fas fa-home white"></i><a href="home.html">Inicio</a></div>
+                        <div><i class="fas fa-user-alt white"></i><a href="minhaArea.html">Minha Área</a></div>
+                        <div><i class="fas fa-chart-bar white"></i><a href="dashboard.html">Dashboard</a></div>
+                        <div><i class="fas fa-newspaper white"></i><a href="boletim.html">Boletim</a></div>
+                        <div><i class="fas fa-question-circle white"></i><a href="quemSomos.html">Quem Somos</a></div>
+                </nav>
+        </article>
+        <script src="script.js" defer></script>
 </body>
+
+</html>

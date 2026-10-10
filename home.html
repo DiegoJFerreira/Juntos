@@ -5,25 +5,31 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>Juntos</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 </head>
 
 <body id="home">
         <header>
-                <i class="fa-solid fa-bars"></i>
+                <button class="abrirMenu" aria-label="Abrir menu" aria-expanded="false">
+                        <i class="fa-solid fa-bars"></i>
+                </button>
                 <div class="logo">
                         <img src="src/logoPreta.png" alt="Juntos">
                         <h1>Juntos</h1>
                 </div>
+                <div>
+                        <a class="verTodos" href="Login.html">Login</a>
+                </div>
         </header>
         <main>
                 <section>
-                        <ul class = "imagem scroll">
+                        <ul class="carrosel">
                                 <li>
+                                        <img src="src/home1.jpg"
+                                                alt="imagem de mulheres separando alimentos para doação">
                                         <div>
-                                                <img src="src/home1.jpg"
-                                                        alt="imagem de mulheres separando alimentos para doação">
                                                 <h3>NOTÍCIA</h3>
                                                 <h2>Solidariedade que transforma vidas.</h2>
                                                 <p>Conectamos doadores, voluntários e ONGs para um mundo melhor.</p>
@@ -31,9 +37,8 @@
                                         </div>
                                 </li>
                                 <li>
+                                        <img src="src/home2.jpg" alt="imagem de pessoas ajudando outras pessoas">
                                         <div>
-                                                <img src="src/home2.jpg"
-                                                        alt="imagem de pessoas ajudando outras pessoas">
                                                 <h3>NOTÍCIA</h3>
                                                 <h2>Voluntariado com impacto positivo</h2>
                                                 <p>Descubra como o voluntariado pode criar mudanças significativas em
@@ -41,15 +46,43 @@
                                                 <Button>Saiba mais</Button>
                                         </div>
                                 </li>
+                                <li>
+                                        <img src="src/noticias2.jpg"
+                                                alt="imagem de voluntários distribuindo alimentos e roupas para pessoas em vulnerabilidade">
+                                        <div>
+                                                <h3>NOTÍCIA</h3>
+                                                <h2>Voluntários transformam vidas com ações solidárias</h2>
+                                                <p>Projetos locais mobilizam pessoas para apoiar comunidades em momentos
+                                                        de necessidade.</p>
+                                                <button>Saiba mais</button>
+                                        </div>
+                                </li>
+                                <li>
+                                        <img src="src/noticias1.jpg"
+                                                alt="imagem de pessoas doando roupas para pessoas necessitadas">
+                                        <div>
+                                                <h3>NOTÍCIA</h3>
+                                                <h2>Campanha de inverno arrecada 2 toneladas de alimentos</h2>
+                                                <p>Uma ação coletiva fortalece a ajuda às famílias e amplia o impacto da
+                                                        solidariedade.</p>
+                                                <button>Saiba mais</button>
+                                        </div>
+                                </li>
                         </ul>
+                        <div class="indicadores">
+                                <button class="indicador ativo"></button>
+                                <button class="indicador"></button>
+                                <button class="indicador"></button>
+                                <button class="indicador"></button>
+                        </div>
                 </section>
                 <section>
-                        <div>
+                        <div class="textoBotao">
                                 <h2>Notícias</h2>
-                                <button class = "ver todos">Ver todos</button>
+                                <button class="verTodos">Ver todos</button>
                         </div>
-                        <ul class = "lista 2 lados">
-                                <li>
+                        <ul class="listaScroll">
+                                <li class="lista2Lados">
                                         <div>
                                                 <img src="src/noticias1.jpg"
                                                         alt="imagem de pessoas doando roupas para pessoas necessitadas">
@@ -59,7 +92,7 @@
                                                 <p>7 de outubro de 2026</p>
                                         </div>
                                 </li>
-                                <li>
+                                <li class="lista2Lados">
                                         <div>
                                                 <img src="src/noticias2.jpg"
                                                         alt="imagem de pessoas doando roupas para pessoas necessitadas">
@@ -72,96 +105,91 @@
                         </ul>
                 </section>
                 <section>
-                        <div>
+                        <div class="textoBotao">
                                 <h2>Destaques</h2>
-                                <button class = "ver todos">Ver todos</button>
+                                <button class="verTodos">Ver todos</button>
                         </div>
-                        <ul class = "lista 2 lados">
-                                <li>
-                                        <div>
-                                                <h4>12</h4>
-                                                <h4>NOV</h4>
+                        <ul class="listaScroll">
+                                <li class="lista2Lados">
+                                        <div class="iconeData">
+                                                <div>
+                                                        <h4>12</h4>
+                                                        <h4>NOV</h4>
+                                                </div>
                                         </div>
                                         <div>
                                                 <h3>Doação de roupas e cobertores</h3>
                                                 <p>Vila Mariana - São Paulo/SP</p>
-                                                <div>
+                                                <div class="iconeTexto">
                                                         <i class="fa-solid fa-clock"></i>
                                                         <p>14h às 17h</p>
                                                 </div>
-                                                <div>
+                                                <div class="iconeTexto">
                                                         <i class="fa-solid fa-user"></i>
                                                         <p>12 Voluntários confirmados</p>
                                                 </div>
                                         </div>
                                 </li>
-                                <li>
-                                        <div>
-                                                <h4>27</h4>
-                                                <h4>DEZ</h4>
+                                <li class="lista2Lados">
+                                        <div class="iconeData">
+                                                <div>
+                                                        <h4>27</h4>
+                                                        <h4>DEZ</h4>
+                                                </div>
                                         </div>
                                         <div>
                                                 <h3>Entrega de cestas básicas</h3>
                                                 <p>Jardim da Saúde - São Paulo/SP</p>
-                                                <div>
+                                                <div class="iconeTexto">
                                                         <i class="fa-solid fa-clock"></i>
                                                         <p>08h às 11h</p>
                                                 </div>
-                                                <div>
+                                                <div class="iconeTexto">
                                                         <i class="fa-solid fa-user"></i>
                                                         <p>18 Voluntários confirmados</p>
                                                 </div>
                                         </div>
                                 </li>
-                                <li>
-                                        <div>
-                                                <h4>03</h4>
-                                                <h4>SET</h4>
+                                <li class="lista2Lados">
+                                        <div class="iconeData">
+                                                <div>
+                                                        <h4>03</h4>
+                                                        <h4>SET</h4>
+                                                </div>
                                         </div>
                                         <div>
                                                 <h3>Ação de higiene e limpeza</h3>
                                                 <p>Centro - Santos/SP</p>
-                                                <div>
+                                                <div class="iconeTexto">
                                                         <i class="fa-solid fa-clock"></i>
                                                         <p>10h às 13h</p>
                                                 </div>
-                                                <div>
+                                                <div class="iconeTexto">
                                                         <i class="fa-solid fa-user"></i>
                                                         <p>08 Voluntários confirmados</p>
                                                 </div>
                                         </div>
                                 </li>
                         </ul>
+                </section>
         </main>
-        <article class="menu">
-                <div class="logo">
-                        <img src="src/logoBranca.png" alt="Logo do Juntos">
-                        <h1>Juntos</h1>
-                        <button>Fechar</button>
-                </div>
-                <nav class = "redirecionador menu">
-                        <div><img src="src/icone home branco.png" alt="Ícone de início"><a href="home.html">Inicio</a>
+        <article id="menu" class="menuClose">
+                <div>
+                        <div class="logo">
+                                <img src="src/logoBranca.png" alt="Logo do Juntos">
+                                <h1>Juntos</h1>
                         </div>
-                        <div><img src="src/icone ong branco.png" alt="Ícone de ONGs próximas de mim"><a
-                                        href="ong.html">ONGs
-                                        proximas de mim</a></div>
-                        <div><img src="src/icone minha area branco.png" alt="Ícone da minha área"><a
-                                        href="minhaArea.html">Minha
-                                        Área</a></div>
-                        <div><img src="src/icone dashboard branco.png" alt="Ícone do dashboard"><a
-                                        href="dashboard.html">Dashboard</a></div>
-                        <div><img src="src/icone boletim branco.png" alt="Ícone de boletim"><a
-                                        href="boletim.html">Boletim</a></div>
-                        <div><img src="src/icone quem somos branco.png" alt="Ícone de quem somos"><a
-                                        href="quemSomos.html">Quem
-                                        Somos</a></div>
-                        <div><img src="src/icone faq branco.png" alt="Ícone de FAQ"><a href="faq.html">FAQ</a></div>
-                        <div><img src="src/icone privacidade branco.png" alt="Ícone de política de privacidade"><a
-                                        href="politicaPrivacidade.html">Política de Privacidade</a></div>
-                        <div><img src="src/icone termos branco.png" alt="Ícone de termos de serviço"><a
-                                        href="termosServico.html">Termos de Serviço</a></div>
+                        <button class="fecharMenu"><i class="fa fa-close"></i></button>
+                </div>
+                <nav class="redirecionadorMenu">
+                        <div><i class="fas fa-home white"></i><a href="home.html">Inicio</a></div>
+                        <div><i class="fas fa-user-alt white"></i><a href="minhaArea.html">Minha Área</a></div>
+                        <div><i class="fas fa-chart-bar white"></i><a href="dashboard.html">Dashboard</a></div>
+                        <div><i class="fas fa-newspaper white"></i><a href="boletim.html">Boletim</a></div>
+                        <div><i class="fas fa-question-circle white"></i><a href="quemSomos.html">Quem Somos</a></div>
                 </nav>
         </article>
+        <script src="script.js" defer></script>
 </body>
 
 </html>
