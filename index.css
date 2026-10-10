@@ -223,7 +223,7 @@ p {
 .caixas2Lado>.lista2Lados>.lista2Lados * {
     margin: 5px;
 }
-```css
+
 #pesquisaFiltro {
     display: flex;
     align-items: stretch;
@@ -303,7 +303,7 @@ p {
 .botaoFiltro:hover {
     background-color: #F5F5F5;
 }
-```
+
 .iconeTexto {
     display: flex;
     align-items: center;
