@@ -1,6 +1,7 @@
-img{
+img {
     width: 50px;
 }
+
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #FDFDFD;
@@ -9,10 +10,12 @@ body {
 a {
     text-decoration: none;
 }
-.banner{
+
+.banner {
     width: 100%;
     height: auto;
 }
+
 .menuClose {
     display: none;
 }
@@ -160,7 +163,7 @@ header .verTodos {
     justify-content: start;
     overflow: hidden;
     border: 1px solid #CFCFC9;
-    box-shadow: -1.5px 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: -1.5px 1.5px 4px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
 }
 
@@ -246,15 +249,15 @@ p {
     display: flex;
     align-items: center;
     gap: 16px;
-    
+
     flex: 1;
     min-width: 0;
     height: 90px;
     box-sizing: border-box;
-    
+
     padding: 0 24px;
     margin: 0;
-    
+
     border: 1px solid #CFCFC9;
     border-radius: 18px;
     background-color: #FFFFFF;
@@ -269,11 +272,11 @@ p {
 #pesquisa input {
     flex: 1;
     min-width: 0;
-    
+
     border: none;
     outline: none;
     background: transparent;
-    
+
     font-family: inherit;
     font-size: 20px;
     color: #333333;
@@ -332,7 +335,7 @@ p {
     justify-content: center;
     border-radius: 5px;
     border: 1px solid #CFCFC9;
-    box-shadow: -1.5px 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: -1.5px 1.5px 4px rgba(0, 0, 0, 0.5);
 }
 
 .iconeData h4 {
@@ -442,23 +445,25 @@ p {
     transform: scale(1.15);
 }
 
-.iconesLadoLado{
+.iconesLadoLado {
     display: flex;
-    list-style-type:none;
+    list-style-type: none;
     justify-content: space-around;
 }
-.iconesLadoLado li{
+
+.iconesLadoLado li {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.iconesLadoLado i{
+
+.iconesLadoLado i {
     color: #237141;
     font-size: 40pt;
 }
 
-.listaLadoLado{
+.listaLadoLado {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -466,7 +471,8 @@ p {
     gap: 30px;
     padding: 0;
 }
-.cardTextoInferior{
+
+.cardTextoInferior {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -475,34 +481,129 @@ p {
     overflow: hidden;
     box-sizing: border-box;
 }
-.cardTextoInferior *{
+
+.cardTextoInferior * {
     padding: 0;
 }
-.cardTextoInferior img{
+
+.cardTextoInferior img {
     top: 0;
     width: 100%;
     height: auto;
     object-fit: cover;
 }
-.cardTextoInferior h4{
+
+.cardTextoInferior h4 {
     font-size: 14pt;
     margin-bottom: 2%;
 }
-.listaLadoLado .cardTextoInferior{
+
+.listaLadoLado .cardTextoInferior {
     list-style-type: none;
     width: calc(50% - 30px);
     border: 1px solid #CFCFC9;
     border-radius: 10px;
     box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
 }
-.cardInfo{
+
+.cardInfo {
     display: flex;
     align-items: center;
     gap: 15px;
 }
+
 .cardInfo i {
     font-size: 70pt;
 }
-.cardInfo p{
+
+.cardInfo p {
     font-size: 20pt;
+}
+
+#dashboard span {
+    font-size: 13pt;
+    color: #333333;
+    font-weight: lighter;
+}
+
+.rankingLista {
+    list-style: none;
+    counter-reset: item;
+}
+.rankingLista li{   
+    display: flex;
+    counter-increment: item;
+    align-items: center;
+    
+}
+
+.rankingLista li::before{
+    display: flex;
+    content: counter(item);
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #237141;
+    border-radius: 100%;
+}
+
+.rankingLista .rankingPrimeiros::before{
+    border: 1px solid #E68A00;
+}
+.rankingLista div {
+    display: flex;
+}
+
+.rankingLista div h4 {
+    font-weight: bolder;
+}
+
+.rankingLista div h3 {
+    font-weight: bold;
+}
+.grafico{
+    display: flex;
+    align-items: flex-end;
+    overflow:auto;
+    margin-left: 40px;
+}
+
+.barra{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.barraPreenchida{
+    width: 30px;
+    border-radius: 10px;
+    height: 100px;
+}
+.barra > div{
+    display: flex;
+    align-items: end
+}
+.barra:nth-child(1) .barraPreenchida{
+    background-color: #309d4a;
+    height: 50px;
+}
+.barra:nth-child(2) .barraPreenchida{
+    background-color: #2b9045;
+    height: 60px;
+}
+.barra:nth-child(3) .barraPreenchida{
+    background-color: #1e8d41;
+    height: 70px;
+}
+.barra:nth-child(4) .barraPreenchida{
+    background-color: #1e8d41;
+    height: 80px;
+}
+.barra:nth-child(5) .barraPreenchida{
+    background-color: #137e38;
+    height: 90px;
+}
+.barra:nth-child(6) .barraPreenchida{
+    background-color: #137e38;
 }
