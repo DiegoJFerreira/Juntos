@@ -620,12 +620,12 @@ p {
     background-color: #137e38;
 }
 
-.texto-cinza-claro {
-    color: #cccccc;
+.texto-cinza {
+    color:#323433;
 }
 
 .section-boletim {
-display: flex;
+    display: flex;
     justify-content: space-between;
     gap: 30px;
     width: 100%;
@@ -635,9 +635,11 @@ display: flex;
     box-sizing: border-box;
 }
 
-.lista2Lados-boletim {
-    flex: 1;
+.caixaBoletim {
     display: flex;
+    flex-direction: column; 
+    align-items: self-start;    
+    width: 100%;
     background-color: #ffffff;
     border: 1px solid #e0e0e0;
     border-radius: 12px;
@@ -646,35 +648,23 @@ display: flex;
     box-sizing: border-box;
 }
 
-.lista2Lados-boletim ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 200%;
-}
-
-.projetoAmor {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;    
-    text-align: center;    
-    width: 100%;
-}
-
 .imagem-vertical {
-    width: 115px;  
-    height: 400px; 
-    object-fit: cover;
-    border-radius: none;
-    margin-top: none;
+    width: 100%;  
+    height: auto; 
+    object-fit: contain;
+    border-radius: 10px;
 }
 
 .centralizado {
     text-align: center;
 }
 
-.projetoAmor h4 {
-    font-size: 150%;
+.caixaBoletim h4 {
+    font-size: 22pt;
+}
+
+.caixaBoletim p{
+    font-size: 13pt;
 }
 
 .logo-boletim {
@@ -686,9 +676,38 @@ display: flex;
 
 .alinhamento {
     display: flex;
-    align-items: center; 
+    align-items:center; 
     gap: 15px; 
+    margin-bottom: 20px;
+}
+
+.alinhamento div {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start; 
     margin-bottom: 10px;
+}
+
+.alinhamento div * {
+    padding: 1px;
+}
+
+.barraInferior{
+    margin-top: 20px;
+    gap: 10px;
+    display: flex;
+}
+
+.barraInferior button{
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+.barraInferior i{
+    font-size: 20pt;
+}
+.barraInferior p{
+    font-size: 15pt;
 }
 
 li.lista2Lados {
@@ -851,7 +870,7 @@ body#login main section:last-child form > div:nth-child(3) > a {
     display: inline-block;
     margin-bottom: 14px;
 }
-body#login main section:last-child form > div:nth-child(3) > div a {
+.botaoLogin{
     display: block;
     width: 100%;
     padding: 13px;
