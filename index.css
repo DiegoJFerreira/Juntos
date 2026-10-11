@@ -483,7 +483,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     aspect-ratio: 2/1.4;
     overflow: hidden;
     box-sizing: border-box;
@@ -701,6 +701,45 @@ li.lista2Lados button {
     right: 20px;
     padding: 8px 16px;
     cursor: pointer;
+}
+.colorVerdeP{
+    color: #056534;
+}
+.colorVerdeE{
+    color: #015F29;
+}
+.colorVerdeS{
+    color: #237141;
+}
+.colorBranco{
+    color:#FDFDFD
+}
+.colorCinzaBorda{
+    color: #CFCFC9;
+}
+.colorPreto{
+    color: #333333;
+}
+.colorLaranja{
+    color: #dd6b20;
+}
+.colorAzul{
+    color: #2b6cb0;
+}
+.colorRoxo i{
+    color: purple;
+}
+.colorVermelho i {
+    color: red;
+}
+.tamanhoLetra{
+    font-size: 20px;
+}
+.colorLaranja i{
+    color: #dd6b20;
+}
+.colorVerdeE i{
+    color: #015F29;
 }
 body#login main {
     width: 100%;
