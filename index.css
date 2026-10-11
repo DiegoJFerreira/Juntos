@@ -740,6 +740,7 @@ body#login .listaScroll > button {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.181);
     cursor: pointer;
 }
+
 body#login .lista2Lados {
     display: flex;
     justify-content: center;
