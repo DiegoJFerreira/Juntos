@@ -6,51 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <title>Minha area</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <title>Minha area</title>
+    <title>Minha Área</title>
 </head>
 
-<body id="minha area">
+<body id="minhaArea">
+
     <header>
         <button class="abrirMenu" aria-label="Abrir menu" aria-expanded="false">
             <i class="fa-solid fa-bars"></i>
         </button>
+
         <div class="logo">
             <img src="src/logoPreta.png" alt="Juntos">
             <h1>Minha Área</h1>
         </div>
+
         <div>
             <a class="verTodos" href="Login.html">Login</a>
         </div>
     </header>
 
-    <nav>
-        <select class="seletorArrasta">
-            <option value="Doador">Doador</option>
-            <option value="Voluntario">Voluntário</option>
-            <option value="ONG">ONG</option>
-        </select>
+    <nav class="seletorArrasta">
+        <button type="button">Doador</button>
+        <button type="button" class="ativo">Voluntário</button>
+        <button type="button">ONG</button>
     </nav>
-    <section class="perfil">
-        <h2>Seu Perfil</h2>
-        <img src="src/Logo Educação e comunidade.jpg" alt="Foto de perfil do Educação e comunidade">
-        <p>CNPJ: 12.345.678/0001-90</p>
-        <i class="fas fa-location-dot"></i>
-        <p>São Paulo - SP</p>
-        <button>Editar Perfil</button>
-    </section>
 
     <main>
+
+        <!-- ÁREA DO VOLUNTÁRIO -->
         <div class="Voluntario">
+
             <section>
                 <div class="textoBotao">
                     <h2>Próximas Participações</h2>
                     <button class="verTodos">Ver todas</button>
                 </div>
+
                 <ul class="listaScroll">
                     <li class="lista2Lados">
                         <div class="iconeData">
@@ -59,16 +51,22 @@
                                 <h4>MAI</h4>
                             </div>
                         </div>
+
                         <div>
                             <h3>Distribuição de Alimentos</h3>
                             <p>Mooca - SP</p>
+
                             <div class="iconeTexto">
                                 <i class="fa fa-clock"></i>
                                 <p>9h às 13h</p>
                             </div>
+                        </div>
+
+                        <div class="botaoPequeno">
                             <button>Confirmar Presença</button>
                         </div>
                     </li>
+
                     <li class="lista2Lados">
                         <div class="iconeData">
                             <div>
@@ -76,14 +74,19 @@
                                 <h4>MAI</h4>
                             </div>
                         </div>
+
                         <div>
                             <h3>Café Solidário</h3>
                             <p>Vila Mariana - SP</p>
+
                             <div class="iconeTexto">
                                 <i class="fa fa-clock"></i>
                                 <p>8h às 12h</p>
                             </div>
-                            <button>Confirmar Presença</button>
+
+                            <div class="botaoPequeno">
+                                <button>Confirmar Presença</button>
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -94,38 +97,47 @@
                     <h2>Minhas Participações</h2>
                     <button class="verTodos">Ver todas</button>
                 </div>
+
                 <ul class="listaScroll">
                     <li class="lista2Lados">
-                        <div>
-                            <img class="fotoPerfil" src="src/Doação de roupas.jpg" alt="imagem de doação de roupa">
+                        <div class="perfil">
+                            <img class="fotoPerfil" src="src/Doação de roupas.jpg"
+                                alt="Imagem de doação de roupa">
                         </div>
-                        <div>
+
+                        <div class="perfilConteudo">
                             <h3>Doação de Roupas</h3>
                             <p>Centro - SP</p>
                             <p>10/05/2026</p>
-                            <h4>presença confirmada</h4>
+                            <h4 class="verTodos">Presença confirmada</h4>
                         </div>
                     </li>
+
                     <li class="lista2Lados">
-                        <div>
-                            <img class="fotoPerfil" src="src/ação de inverno.jpg" alt="foto de ação de inverno">
+                        <div class="perfil">
+                            <img class="fotoPerfil" src="src/ação de inverno.jpg"
+                                alt="Foto de ação de inverno">
                         </div>
-                        <div>
+
+                        <div class="perfilConteudo">
                             <h3>Ação de Inverno</h3>
                             <p>Vila Mariana - SP</p>
                             <p>15/06/2026</p>
-                            <h4>presença confirmada</h4>
+                            <h4>Presença confirmada</h4>
                         </div>
                     </li>
+
                     <li class="lista2Lados">
-                        <div>
-                            <img class="fotoPerfil" src="src/alimento para todos.jpg" alt="foto de alimento para todos">
+                        <div class="perfil">
+                            <img class="fotoPerfil" src="src/alimento para todos.jpg"
+                                alt="Foto de Alimento para Todos">
                         </div>
-                        <div>
-                            <h3>Alimento para todos</h3>
+
+                        <div class="perfilConteudo">
+                            <h3>Alimento para Todos</h3>
                             <p>Mooca - SP</p>
                             <p>20/07/2026</p>
-                            <h4>presença confirmada</h4>
+                            <h4>Presença confirmada</h4>
                         </div>
                     </li>
                 </ul>
@@ -136,146 +148,175 @@
                     <h2>Ações Disponíveis</h2>
                     <button class="verTodos">Ver todas</button>
                 </div>
+
                 <ul class="listaScroll">
                     <li class="lista2Lados">
-                        <div>
-                            <img class="fotoPerfil" src="src/campanha do agasalho.jpg" alt="foto da campanha de agasalho">
+                        <div class="perfil">
+                            <img class="fotoPerfil" src="src/campanha do agasalho.jpg"
+                                alt="Foto da campanha de agasalho">
                         </div>
-                        <div>
+
+                        <div class="perfilConteudo">
                             <h3>Campanha do Agasalho</h3>
                             <p>Centro - SP</p>
+
                             <div class="dataHora">
                                 <p>21/10/2026</p>
-                                <p>.</p>
+                                <p class="separador">•</p>
                                 <p>09h às 16h</p>
                             </div>
+
                             <p class="verTodos">15 vagas</p>
-                            <button>Quero Participar</button>
+
+                            <div class="botaoPequeno">
+                                <button>Quero Participar</button>
+                            </div>
                         </div>
                     </li>
+
                     <li class="lista2Lados">
-                        <div>
-                            <img class="fotoPerfil" src="src/ação de inverno.jpg" alt="foto de ação de inverno">
+                        <div class="perfil">
+                            <img class="fotoPerfil" src="src/ação de inverno.jpg"
+                                alt="Foto de ação de inverno">
                         </div>
-                        <div>
+
+                        <div class="perfilConteudo">
                             <h3>Ação de Inverno</h3>
                             <p>Vila Mariana - SP</p>
+
                             <div class="dataHora">
                                 <p>15/06/2026</p>
-                                <p>.</p>
+                                <p class="separador">•</p>
                                 <p>08h às 14h</p>
                             </div>
+
                             <p class="verTodos">25 vagas</p>
-                            <button>Quero Participar</button>
+
+                            <div class="botaoPequeno">
+                                <button>Quero Participar</button>
+                            </div>
                         </div>
                     </li>
                 </ul>
             </section>
+
         </div>
 
+        <!-- ÁREA DA ONG -->
         <div class="ONG">
-            <Section>
+
+            <section>
                 <div class="textoBotao">
                     <h2>Resumo do Mês</h2>
                     <button class="verTodos">Ver todas</button>
                 </div>
+
                 <ul class="listaScroll">
                     <li class="lista2Lados">
                         <div>
                             <i class="fas fa-donate"></i>
                         </div>
+
                         <div>
                             <h3>Doações recebidas</h3>
                             <p>R$ 1.500,00</p>
                         </div>
-                        <i class="fa fa-chevron-down"></i>
                     </li>
+
                     <li class="lista2Lados">
                         <div>
                             <i class="fas fa-calendar-check"></i>
                         </div>
+
                         <div>
                             <h3>Eventos realizados</h3>
                             <p>5 eventos</p>
                         </div>
-                        <i class="fa fa-chevron-down"></i>
                     </li>
+
                     <li class="lista2Lados">
                         <div>
                             <i class="fas fa-boxes"></i>
                         </div>
+
                         <div>
                             <h3>Doações distribuídas</h3>
                             <p>10 doações</p>
                         </div>
-                        <i class="fa fa-chevron-down"></i>
                     </li>
                 </ul>
-            </Section>
+            </section>
 
             <section>
                 <div class="textoBotao">
                     <h2>Estoque</h2>
                     <button class="verTodos">Ver todas</button>
                 </div>
+
                 <ul class="listaScroll">
                     <li class="lista2Lados">
                         <div>
-                            <i class="fa"></i>
+                            <i class="fas fa-utensils"></i>
                         </div>
+
                         <div>
                             <h3>Alimentos</h3>
                             <p>50 itens</p>
                         </div>
+
                         <div class="estoque">
-                            <i class="fa fa-chevron-down"></i>
-                            <div class="barraPreenchida"></div>
-                            <div class="barraTotal"></div>
-                        </div>
-                    </li>
-                    <li class="lista2Lados">
-                        <div>
-                            <i class="fa"></i>
-                        </div>
-                        <div>
-                            <h3>Produtos de Higiene</h3>
-                            <p>15 itens</p>
-                        </div>
-                        <div class="estoque">
-                            <i class="fa fa-chevron-down"></i>
-                            <div class="barraPreenchida"></div>
-                            <div class="barraTotal"></div>
-                        </div>
-                    </li>
-                    <li class="lista2Lados">
-                        <div>
-                            <i class="fa"></i>
-                        </div>
-                        <div>
-                            <h3>Roupas</h3>
-                            <p>30 itens</p>
-                        </div>
-                        <div class="estoque">
-                            <i class="fa fa-chevron-down"></i>
-                            <div class="barraPreenchida"></div>
-                            <div class="barraTotal"></div>
-                        </div>
-                    </li>
-                    <li class="lista2Lados">
-                        <div>
-                            <i class="fa"></i>
-                        </div>
-                        <div>
-                            <h3>Brinquedos</h3>
-                            <p>20 itens</p>
-                        </div>
-                        <div class="estoque">
-                            <i class="fa fa-chevron-down"></i>
                             <div class="barraPreenchida"></div>
                             <div class="barraTotal"></div>
                         </div>
                     </li>
 
+                    <li class="lista2Lados">
+                        <div>
+                            <i class="fas fa-pump-soap"></i>
+                        </div>
+
+                        <div>
+                            <h3>Produtos de Higiene</h3>
+                            <p>15 itens</p>
+                        </div>
+
+                        <div class="estoque">
+                            <div class="barraPreenchida"></div>
+                            <div class="barraTotal"></div>
+                        </div>
+                    </li>
+
+                    <li class="lista2Lados">
+                        <div>
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+
+                        <div>
+                            <h3>Roupas</h3>
+                            <p>30 itens</p>
+                        </div>
+
+                        <div class="estoque">
+                            <div class="barraPreenchida"></div>
+                            <div class="barraTotal"></div>
+                        </div>
+                    </li>
+
+                    <li class="lista2Lados">
+                        <div>
+                            <i class="fas fa-puzzle-piece"></i>
+                        </div>
+
+                        <div>
+                            <h3>Brinquedos</h3>
+                            <p>20 itens</p>
+                        </div>
+
+                        <div class="estoque">
+                            <div class="barraPreenchida"></div>
+                            <div class="barraTotal"></div>
+                        </div>
+                    </li>
                 </ul>
             </section>
 
@@ -284,47 +325,62 @@
                     <h2>Suas Ações</h2>
                     <button class="verTodos">Ver todas</button>
                 </div>
+
                 <ul class="listaScroll">
                     <li class="lista2Lados">
-                        <div>
-                            <img src="src/Doação de alimentos.jpg" alt="doação de alimentos">
+                        <div class="perfil">
+                            <img class="fotoPerfil" src="src/Doação de alimentos.jpg"
+                                alt="Doação de alimentos">
                         </div>
-                        <div>
+
+                        <div class="perfilConteudo">
                             <h3>Campanha de Alimentos</h3>
-                            <div>
+
+                            <div class="dataHora">
                                 <p>10/05/2026</p>
-                                <p>.</p>
+                                <p class="separador">•</p>
                                 <p>09h às 16h</p>
                             </div>
-                            <p class="statusAçoes">Andamento</p>
+
+                            <p class="statusAções">Andamento</p>
                         </div>
                     </li>
+
                     <li class="lista2Lados">
-                        <div>
-                            <img src="src/Doação de roupas.jpg" alt="doação de roupas">
+                        <div class="perfil">
+                            <img class="fotoPerfil" src="src/Doação de roupas.jpg"
+                                alt="Doação de roupas">
                         </div>
-                        <div>
+
+                        <div class="perfilConteudo">
                             <h3>Doação de Roupas</h3>
-                            <div>
+
+                            <div class="dataHora">
                                 <p>15/06/2026</p>
-                                <p>.</p>
+                                <p class="separador">•</p>
                                 <p>08h às 14h</p>
                             </div>
-                            <p class="statusAçoes">Concluído</p>
+
+                            <p class="statusAções">Concluído</p>
                         </div>
                     </li>
+
                     <li class="lista2Lados">
-                        <div>
-                            <img src="src/Distribuição de alimentos.jpg" alt="distribuição de alimentos">
+                        <div class="perfil">
+                            <img class="fotoPerfil" src="src/Distribuição de alimentos.jpg"
+                                alt="Distribuição de alimentos">
                         </div>
-                        <div>
+
+                        <div class="perfilConteudo">
                             <h3>Distribuição de Alimentos</h3>
-                            <div>
+
+                            <div class="dataHora">
                                 <p>20/07/2026</p>
-                                <p>.</p>
+                                <p class="separador">•</p>
                                 <p>10h às 15h</p>
                             </div>
-                            <p class="statusAçoes">Pendente</p>
+
+                            <p class="statusAções">Pendente</p>
                         </div>
                     </li>
                 </ul>
@@ -335,11 +391,13 @@
                     <h2>Transações</h2>
                     <button class="verTodos">Ver todas</button>
                 </div>
+
                 <ul class="listaScroll">
                     <li class="lista2Lados">
                         <div>
-                            <i></i>
+                            <i class="fa-solid fa-sack-dollar"></i>
                         </div>
+
                         <div>
                             <h3>Doação de Roupas</h3>
                             <p>10/05/2026</p>
@@ -347,10 +405,12 @@
                             <p class="statusRecebimento">Recebida</p>
                         </div>
                     </li>
+
                     <li class="lista2Lados">
                         <div>
-                            <i></i>
+                            <i class="fa-solid fa-sack-dollar"></i>
                         </div>
+
                         <div>
                             <h3>Campanha de Alimentos</h3>
                             <p>15/06/2026</p>
@@ -358,10 +418,12 @@
                             <p class="statusRecebimento">Recebida</p>
                         </div>
                     </li>
+
                     <li class="lista2Lados">
                         <div>
-                            <i></i>
+                            <i class="fa-solid fa-sack-dollar"></i>
                         </div>
+
                         <div>
                             <h3>Distribuição de Alimentos</h3>
                             <p>20/07/2026</p>
@@ -371,69 +433,88 @@
                     </li>
                 </ul>
             </section>
+
         </div>
 
         <div class="Doador">
+
             <section>
                 <h2>Escolha uma ONG para doar</h2>
+
                 <div id="pesquisaFiltro">
                     <label id="pesquisa">
                         <i class="fas fa-search" aria-hidden="true"></i>
-                        <input type="text" placeholder="Buscar ONG, cidade ou área de atuação...">
+                        <input type="text"
+                            placeholder="Buscar ONG, cidade ou área de atuação...">
                     </label>
 
                     <button class="botaoFiltro" type="button">
                         <i class="fas fa-filter" aria-hidden="true"></i>
                         <span>Filtros</span>
                     </button>
+                </div>
+            </section>
+
         </div>
-        ```
-        </div>
-        <div>
-            <select class="seletorArrasta">
-                <option value="Destaque">Em Destaque</option>
-                <option value="Proximas">Mais Próximas</option>
-            </select>
-        </div>
+
+        <nav class="seletorArrasta">
+            <button type="button">Em Destaque</button>
+            <button type="button" class="ativo">Mais Próximas</button>
+        </nav>
 
         <div class="Destaque">
             <ul class="listaScroll">
                 <li class="lista2Lados">
-                    <div>
-                        <img src="src/projeto amor.jpg" alt="logo do projeto amor">
+                    <div class="perfil">
+                        <img class="fotoPerfil" src="src/projeto amor.jpg"
+                            alt="Logo do Projeto Amor">
                     </div>
+
                     <div>
                         <h3>Projeto Amor</h3>
-                        <div>
+
+                        <div class="dataHora">
                             <p>São Paulo - SP</p>
-                            <p>.</p>
+                            <p class="separador">•</p>
                             <p>168.2km</p>
                         </div>
+
                         <p class="status">Moradores de rua</p>
-                        <p>Atua no acolhimento e distribuição de alimentos de pessoas em situação de
-                            vulnerabilidade
+                        <p>
+                            Atua no acolhimento e distribuição de alimentos
+                            de pessoas em situação de vulnerabilidade.
                         </p>
                     </div>
-                    <button>Doar</button>
-                    <div>
+
+                    <div class="botaoPequeno">
+                        <button>Doar</button>
                     </div>
                 </li>
+
                 <li class="lista2Lados">
-                    <div>
-                        <img src="src/projeto esperança.jpg" alt="logo projeto esperança">
+                    <div class="perfil">
+                        <img class="fotoPerfil" src="src/projeto esperança.jpg"
+                            alt="Logo do Projeto Esperança">
                     </div>
+
                     <div>
                         <h3>Projeto Esperança</h3>
-                        <div>
+
+                        <div class="dataHora">
                             <p>Vila Mariana - SP</p>
-                            <p>.</p>
+                            <p class="separador">•</p>
                             <p>168.2km</p>
                         </div>
+
                         <p class="status">Orfanatos</p>
-                        <p>Apoia crianças e adolescentes em situação de vulnerabilidade</p>
+                        <p>
+                            Apoia crianças e adolescentes em situação de
+                            vulnerabilidade.
+                        </p>
                     </div>
-                    <button>Doar</button>
-                    <div>
+
+                    <div class="botaoPequeno">
+                        <button>Doar</button>
                     </div>
                 </li>
             </ul>
@@ -442,67 +523,91 @@
         <div class="Proximas">
             <ul class="listaScroll">
                 <li class="lista2Lados">
-                    <div>
-                        <img src="src/projeto luz.jpg" alt="logo do projeto luz">
+                    <div class="perfil">
+                        <img class="fotoPerfil" src="src/projeto luz.jpg"
+                            alt="Logo do Projeto Luz">
                     </div>
+
                     <div>
                         <h3>Projeto Luz</h3>
-                        <div>
+
+                        <div class="dataHora">
                             <p>Ipatinga - MG</p>
-                            <p>.</p>
+                            <p class="separador">•</p>
                             <p>15.2km</p>
                         </div>
+
                         <p class="status">Orfanatos</p>
-                        <p>Apoia crianças e adolescentes em situação de vulnerabilidade</p>
+                        <p>
+                            Apoia crianças e adolescentes em situação de
+                            vulnerabilidade.
+                        </p>
                     </div>
-                    <button>Doar</button>
-                    <div>
+
+                    <div class="botaoPequeno">
+                        <button>Doar</button>
                     </div>
                 </li>
+
                 <li class="lista2Lados">
-                    <div>
-                        <img src="src/projeto viver com dignidade.jpg" alt="logo viver com dignidade">
+                    <div class="perfil">
+                        <img class="fotoPerfil"
+                            src="src/projeto viver com dignidade.jpg"
+                            alt="Logo do Projeto Viver com Dignidade">
                     </div>
+
                     <div>
                         <h3>Projeto Viver com Dignidade</h3>
-                        <div>
-                            <p>Timoteo - MG</p>
-                            <p>.</p>
+
+                        <div class="dataHora">
+                            <p>Timóteo - MG</p>
+                            <p class="separador">•</p>
                             <p>5.0km</p>
                         </div>
+
                         <p class="status">Idosos</p>
-                        <p>Apoia pessoas idosas em situação de vulnerabilidade</p>
+                        <p>
+                            Apoia pessoas idosas em situação de vulnerabilidade.
+                        </p>
                     </div>
-                    <button>Doar</button>
-                    <div>
+
+                    <div class="botaoPequeno">
+                        <button>Doar</button>
                     </div>
                 </li>
             </ul>
         </div>
-        </section>
+
         <section>
-            <h2>Mapa de ONGs proximas</h2>
+            <h2>Mapa de ONGs próximas</h2>
+
             <div>
-                <img src="src/imagemMapa.jpg" alt="Mapa de ONGs proximas">
+                <img class="mapa" src="src/imagemMapa.jpg"
+                    alt="Mapa de ONGs próximas">
             </div>
         </section>
+
         <section>
             <h2>Minhas Doações</h2>
+
             <div class="caixas2Lado">
                 <ul class="lista2Lados">
                     <li class="lista2Lados">
-                        <div class="fotoPerfil">
+                        <div>
                             <i class="fas fa-donate"></i>
                         </div>
+
                         <div>
                             <h3>Total doado</h3>
                             <p>R$ 200,00</p>
                         </div>
                     </li>
+
                     <li class="lista2Lados">
-                        <div class="fotoPerfil">
+                        <div>
                             <i class="fas fa-exchange-alt"></i>
                         </div>
+
                         <div>
                             <h3>Transações</h3>
                             <p>12</p>
@@ -510,52 +615,59 @@
                     </li>
                 </ul>
             </div>
+
             <ul class="listaScroll">
                 <li class="lista2Lados">
-                    <div>
-                        <img src="src/doação de roupa.jpg" alt="Doação de Roupas">
+                    <div class="perfil">
+                        <img class="fotoPerfil" src="src/doação de roupa.jpg"
+                            alt="Doação de roupas">
                     </div>
-                    <div>
+
+                    <div class="perfilConteudo">
                         <h3>Doação de Roupas</h3>
-                        <div>
                             <p>10/05/2026</p>
-                            <p>.</p>
                             <p>R$ 200,00</p>
-                        </div>
                     </div>
-                    <p class="status">Concluída</p>
+
+                                        <div class="botaoPequeno">
+                        <p>Concluída</p>
+                    </div>
                 </li>
+
                 <li class="lista2Lados">
-                    <div>
-                        <img src="src/Doação de alimentos.jpg" alt="campanha de alimentos">
+                    <div class="perfil">
+                        <img class="fotoPerfil" src="src/Doação de alimentos.jpg"
+                            alt="Campanha de alimentos">
                     </div>
-                    <div>
+
+                    <div class="perfilConteudo">
                         <h3>Campanha de Alimentos</h3>
-                        <div>
                             <p>15/06/2026</p>
-                            <p>.</p>
                             <p>R$ 500,00</p>
-                        </div>
                     </div>
-                    <p class="status">Concluída</p>
+                    <div class="botaoPequeno">
+                        <p>Concluída</p>
+                    </div>
                 </li>
+
                 <li class="lista2Lados">
-                    <div>
-                        <img src="src/Distribuição de alimentos.jpg" alt="distribuição de roupas">
+                    <div class="perfil">
+                        <img class="fotoPerfil"
+                            src="src/Distribuição de alimentos.jpg"
+                            alt="Distribuição de alimentos">
                     </div>
-                    <div>
+
+                    <div class="perfilConteudo">
                         <h3>Distribuição de Alimentos</h3>
-                        <div>
                             <p>20/07/2026</p>
-                            <p>.</p>
                             <p>R$ 300,00</p>
-                        </div>
                     </div>
+
                     <p class="status">Pendente</p>
                 </li>
             </ul>
         </section>
-        </div>
+
     </main>
 
     <article id="menu" class="menuClose">
@@ -564,18 +676,42 @@
                 <img src="src/logoBranca.png" alt="Logo do Juntos">
                 <h1>Juntos</h1>
             </div>
-            <button class="fecharMenu"><i class="fa fa-close"></i></button>
+
+            <button class="fecharMenu" aria-label="Fechar menu">
+                <i class="fa fa-close"></i>
+            </button>
         </div>
+
         <nav class="redirecionadorMenu">
-            <div><i class="fas fa-home white"></i><a href="home.html">Inicio</a></div>
-            <div><i class="fas fa-user-alt white"></i><a href="minhaArea.html">Minha Área</a></div>
-            <div><i class="fas fa-chart-bar white"></i><a href="dashboard.html">Dashboard</a></div>
-            <div><i class="fas fa-newspaper white"></i><a href="boletim.html">Boletim</a></div>
-            <div><i class="fas fa-question-circle white"></i><a href="quemSomos.html">Quem Somos</a></div>
+            <div>
+                <i class="fas fa-home white"></i>
+                <a href="home.html">Início</a>
+            </div>
+
+            <div>
+                <i class="fas fa-user-alt white"></i>
+                <a href="minhaArea.html">Minha Área</a>
+            </div>
+
+            <div>
+                <i class="fas fa-chart-bar white"></i>
+                <a href="dashboard.html">Dashboard</a>
+            </div>
+
+            <div>
+                <i class="fas fa-newspaper white"></i>
+                <a href="boletim.html">Boletim</a>
+            </div>
+
+            <div>
+                <i class="fas fa-question-circle white"></i>
+                <a href="quemSomos.html">Quem Somos</a>
+            </div>
         </nav>
     </article>
 
     <script src="script.js" defer></script>
+
 </body>
 
 </html>
