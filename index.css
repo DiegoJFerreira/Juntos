@@ -612,3 +612,86 @@ p {
 .barra:nth-child(6) .barraPreenchida{
     background-color: #137e38;
 }
+
+.texto-cinza-claro {
+    color: #cccccc;
+}
+
+.section-boletim {
+display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.lista2Lados-boletim {
+    flex: 1;
+    display: flex;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+}
+
+.lista2Lados-boletim ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 200%;
+}
+
+.projetoAmor {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    text-align: center;    
+    width: 100%;
+}
+
+.imagem-vertical {
+    width: 115px;  
+    height: 400px; 
+    object-fit: cover;
+    border-radius: none;
+    margin-top: none;
+}
+
+.centralizado {
+    text-align: center;
+}
+
+.projetoAmor h4 {
+    font-size: 150%;
+}
+
+.logo-boletim {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 70%;
+}
+
+.alinhamento {
+    display: flex;
+    align-items: center; 
+    gap: 15px; 
+    margin-bottom: 10px;
+}
+
+li.lista2Lados {
+    position: relative;
+    padding-right: 90px;
+}
+li.lista2Lados button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
