@@ -869,6 +869,70 @@ body#login main section:last-child form > div:nth-child(3) p {
     text-align: center;
     font-size: 18px;
 }
+
+
+@media (max-width: 480px) {
+    body#login .logo > h1 {
+        font-size: 28pt;
+    }
+ 
+    body#login .logo > img {
+        height: 36px;
+    }
+ 
+    body#login main section:last-child form {
+        gap: 14px;
+    }
+ 
+    body#login main section:last-child form label,
+    body#login main section:last-child form a {
+        font-size: 17px;
+    }
+ 
+    body#login main section:last-child form input {
+        height: 48px;
+        font-size: 16px;
+    }
+}
+ 
+@media (min-width: 768px) {
+    body#login main section:last-child form {
+        max-width: 700px;
+    }
+ 
+    body#login main section:last-child form > div:nth-child(1),
+    body#login main section:last-child form > div:nth-child(2) {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+    }
+ 
+    body#login main section:last-child form > div > .campo {
+        flex: 1;
+        min-width: 0;
+    }
+ 
+    body#login main section:last-child form > div > .campo + .campo {
+        margin-top: 0;
+    }
+ 
+    body#login main section:last-child form > div:nth-child(3) > div {
+        max-width: 360px;
+        margin: 0 auto;
+    }
+}
+ 
+@media (min-width: 1024px) {
+    body#login main section:last-child form {
+        max-width: 780px;
+    }
+ 
+    body#login .listaScroll > button:hover {
+        transform: translateY(-3px);
+        transition: transform 0.2s;
+    }
+}
+ 
 @media (max-width: 750px) {
     body#login main {
         padding: 20px 16px;
@@ -1082,4 +1146,286 @@ body#login .lista2Lados p {
     color: #056534;
     font-weight: bold;
     border-bottom-color: #056534;
+}
+@media (max-width: 767px) {
+    .section-boletim {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .lista2Lados-boletim {
+        padding: 16px;
+    }
+
+    .lista2Lados-boletim ul {
+        width: 100%;
+    }
+
+    .carrosel > li > div {
+        padding: 18px;
+    }
+
+    .carrosel > li > div h2 {
+        font-size: 20px;
+    }
+
+    .carrosel > li > div h3 {
+        font-size: 16px;
+    }
+
+    .carrosel > li > div p {
+        font-size: 14px;
+        line-height: 1.3;
+    }
+
+    .carrosel > li > div button {
+        padding: 8px 16px;
+    }
+
+    #pesquisaFiltro {
+        gap: 12px;
+    }
+
+    #pesquisa {
+        height: 64px;
+        padding: 0 14px;
+        gap: 10px;
+    }
+
+    #pesquisa input {
+        font-size: 16px;
+    }
+
+    .botaoFiltro {
+        width: 110px;
+        font-size: 16px;
+        gap: 8px;
+    }
+
+    .caixas2Lado {
+        padding-left: 0;
+    }
+
+    .mapa {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .cardInfo i {
+        font-size: 50pt;
+    }
+
+    .cardInfo p {
+        font-size: 16pt;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24pt;
+    }
+
+    .textoBotao h2 {
+        font-size: 20pt;
+    }
+
+    .listaLadoLado {
+        gap: 15px;
+    }
+
+    .listaLadoLado .cardTextoInferior {
+        width: calc(50% - 8px);
+    }
+
+    .cardTextoInferior h3 {
+        font-size: 13pt;
+    }
+
+    .cardTextoInferior h4 {
+        font-size: 11pt;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 24px;
+        box-sizing: border-box;
+    }
+
+    .menuOpen {
+        padding: 0 8%;
+        box-sizing: border-box;
+        overflow-y: auto;
+    }
+
+    header h1 {
+        font-size: 34pt;
+    }
+
+    .textoBotao h2 {
+        font-size: 28pt;
+    }
+
+    .listaScroll {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .listaScroll > li,
+    .listaScroll > button {
+        width: calc(50% - 10px);
+        box-sizing: border-box;
+    }
+
+    .listaScroll > button {
+        text-align: left;
+    }
+
+    .listaScroll > button > .lista2Lados {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .carrosel > li {
+        aspect-ratio: 5/2;
+    }
+
+    .carrosel > li > div {
+        padding: 30px;
+    }
+
+    .carrosel > li > div h2 {
+        font-size: 28px;
+    }
+
+    .carrosel > li > div h3 {
+        font-size: 22px;
+    }
+
+    .carrosel > li > div p {
+        font-size: 16px;
+    }
+
+    .listaLadoLado .cardTextoInferior {
+        width: calc(33.333% - 20px);
+    }
+
+    #pesquisa {
+        height: 80px;
+    }
+
+    .caixas2Lado {
+        padding-left: 0;
+    }
+
+    .mapa {
+        display: block;
+        width: 100%;
+        max-width: 700px;
+        margin: 20px auto;
+    }
+
+    .seletorArrasta {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .grafico {
+        margin-left: 0;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .iconesLadoLado {
+        gap: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        padding: 0 40px;
+    }
+
+    .menuOpen {
+        padding: 0 15%;
+    }
+
+    .redirecionadorMenu a:hover,
+    .abrirMenu:hover,
+    .fecharMenu:hover {
+        opacity: 0.7;
+    }
+
+    header h1 {
+        font-size: 38pt;
+    }
+
+    .textoBotao h2 {
+        font-size: 30pt;
+    }
+
+    .carrosel > li {
+        flex: 0 0 calc(50% - 10px);
+        width: calc(50% - 10px);
+        aspect-ratio: 2/1;
+    }
+
+    .carrosel > li > div {
+        padding: 24px;
+    }
+
+    .carrosel > li > div h2 {
+        font-size: 24px;
+    }
+
+    .carrosel > li > div h3 {
+        font-size: 19px;
+    }
+
+    .carrosel > li > div p {
+        font-size: 15px;
+    }
+
+    .carrosel > li > div button:hover {
+        background-color: #015F29;
+        cursor: pointer;
+    }
+
+    .listaLadoLado .cardTextoInferior {
+        width: calc(25% - 23px);
+    }
+
+    .botaoFiltro {
+        width: 190px;
+    }
+
+    .mapa,
+    .seletorArrasta {
+        max-width: 900px;
+    }
+
+    .cardInfo i {
+        font-size: 60pt;
+    }
+}
+
+@media (min-width: 1400px) {
+    body {
+        max-width: 1320px;
+    }
+
+    .carrosel > li > div h2 {
+        font-size: 28px;
+    }
+
+    .carrosel > li > div h3 {
+        font-size: 22px;
+    }
+
+    .carrosel > li > div p {
+        font-size: 17px;
+    }
 }
