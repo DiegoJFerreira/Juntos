@@ -1,0 +1,225 @@
+{
+  "ong": [
+    {
+      "id": 1,
+    "nome": "Projeto Amor",
+    "foto": "https://picsum.photos/seed/juntos1/200/200",
+    "altFoto": "Logo - Projeto Amor",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "distanciaKm": 168.2,
+    "categoria": "Moradores de rua",
+    "descricao": "Atua no acolhimento e distribuição de alimentos de pessoas em situação de vulnerabilidade."
+  },
+  {
+    "id": 2,
+    "nome": "Mãos que Alimentam",
+    "foto": "https://picsum.photos/seed/juntos2/200/200",
+    "altFoto": "Logo - Mãos que Alimentam",
+    "cidade": "Belo Horizonte",
+    "estado": "MG",
+    "distanciaKm": 3.4,
+    "categoria": "Combate à fome",
+    "descricao": "Prepara e distribui marmitas para famílias carentes e pessoas em situação de rua toda semana."
+  },
+  {
+    "id": 3,
+    "nome": "Patinhas Felizes",
+    "foto": "https://picsum.photos/seed/juntos3/200/200",
+    "altFoto": "Logo - Patinhas Felizes",
+    "cidade": "Barbacena",
+    "estado": "MG",
+    "distanciaKm": 5.8,
+    "categoria": "Proteção animal",
+    "descricao": "Resgata, cuida e promove a adoção responsável de cães e gatos abandonados."
+  },
+  {
+    "id": 4,
+    "nome": "Livro Aberto",
+    "foto": "https://picsum.photos/seed/juntos4/200/200",
+    "altFoto": "Logo - Livro Aberto",
+    "cidade": "Juiz de Fora",
+    "estado": "MG",
+    "distanciaKm": 112.6,
+    "categoria": "Educação",
+    "descricao": "Oferece reforço escolar e acesso a livros para crianças de comunidades periféricas."
+  },
+  {
+    "id": 5,
+    "nome": "Vestir com Carinho",
+    "foto": "https://picsum.photos/seed/juntos5/200/200",
+    "altFoto": "Logo - Vestir com Carinho",
+    "cidade": "Rio de Janeiro",
+    "estado": "RJ",
+    "distanciaKm": 245.9,
+    "categoria": "Doação de roupas",
+    "descricao": "Arrecada e distribui roupas e cobertores para pessoas em situação de vulnerabilidade."
+  },
+  {
+    "id": 6,
+    "nome": "Sorriso de Esperança",
+    "foto": "https://picsum.photos/seed/juntos6/200/200",
+    "altFoto": "Logo - Sorriso de Esperança",
+    "cidade": "Belo Horizonte",
+    "estado": "MG",
+    "distanciaKm": 168.2,
+    "categoria": "Saúde infantil",
+    "descricao": "Apoia crianças em tratamento hospitalar com atividades lúdicas e acompanhamento às famílias."
+  },
+  {
+    "id": 7,
+    "nome": "Casa do Idoso Feliz",
+    "foto": "https://picsum.photos/seed/juntos7/200/200",
+    "altFoto": "Logo - Casa do Idoso Feliz",
+    "cidade": "Barbacena",
+    "estado": "MG",
+    "distanciaKm": 2.1,
+    "categoria": "Idosos",
+    "descricao": "Oferece moradia, alimentação e atividades de convivência para idosos sem apoio familiar."
+  },
+  {
+    "id": 8,
+    "nome": "Verde Vida",
+    "foto": "https://picsum.photos/seed/juntos8/200/200",
+    "altFoto": "Logo - Verde Vida",
+    "cidade": "Ouro Preto",
+    "estado": "MG",
+    "distanciaKm": 154.3,
+    "categoria": "Meio ambiente",
+    "descricao": "Realiza mutirões de plantio e limpeza de nascentes, além de educação ambiental em escolas."
+  },
+  {
+    "id": 9,
+    "nome": "Futuro Presente",
+    "foto": "https://picsum.photos/seed/juntos9/200/200",
+    "altFoto": "Logo - Futuro Presente",
+    "cidade": "Barbacena",
+    "estado": "MG",
+    "distanciaKm": 1.7,
+    "categoria": "Educação",
+    "descricao": "Oferece cursos profissionalizantes gratuitos para jovens de baixa renda."
+  },
+  {
+    "id": 10,
+    "nome": "Abraço Solidário",
+    "foto": "https://picsum.photos/seed/juntos10/200/200",
+    "altFoto": "Logo - Abraço Solidário",
+    "cidade": "Campinas",
+    "estado": "SP",
+    "distanciaKm": 402.5,
+    "categoria": "Moradores de rua",
+    "descricao": "Distribui kits de higiene, cobertores e refeições quentes nas noites de frio."
+  },
+  {
+    "id": 11,
+    "nome": "Cesta Cheia",
+    "foto": "https://picsum.photos/seed/juntos11/200/200",
+    "altFoto": "Logo - Cesta Cheia",
+    "cidade": "Conselheiro Lafaiete",
+    "estado": "MG",
+    "distanciaKm": 48.9,
+    "categoria": "Combate à fome",
+    "descricao": "Monta e entrega cestas básicas mensais para famílias cadastradas."
+  },
+  {
+    "id": 12,
+    "nome": "Anjos de Quatro Patas",
+    "foto": "https://picsum.photos/seed/juntos12/200/200",
+    "altFoto": "Logo - Anjos de Quatro Patas",
+    "cidade": "Juiz de Fora",
+    "estado": "MG",
+    "distanciaKm": 109.3,
+    "categoria": "Proteção animal",
+    "descricao": "Mantém um abrigo para animais resgatados e realiza feiras de adoção aos fins de semana."
+  },
+  {
+    "id": 13,
+    "nome": "Esperança Viva",
+    "foto": "https://picsum.photos/seed/juntos13/200/200",
+    "altFoto": "Logo - Esperança Viva",
+    "cidade": "Vitória",
+    "estado": "ES",
+    "distanciaKm": 489.0,
+    "categoria": "Saúde",
+    "descricao": "Apoia pacientes em tratamento de longa duração com transporte, hospedagem e alimentação."
+  },
+  {
+    "id": 14,
+    "nome": "Mãos Dadas",
+    "foto": "https://picsum.photos/seed/juntos14/200/200",
+    "altFoto": "Logo - Mãos Dadas",
+    "cidade": "São João del-Rei",
+    "estado": "MG",
+    "distanciaKm": 62.4,
+    "categoria": "Pessoas com deficiência",
+    "descricao": "Promove inclusão e oficinas de arte e esporte adaptados para pessoas com deficiência."
+  },
+  {
+    "id": 15,
+    "nome": "Semear Cultura",
+    "foto": "https://picsum.photos/seed/juntos15/200/200",
+    "altFoto": "Logo - Semear Cultura",
+    "cidade": "Tiradentes",
+    "estado": "MG",
+    "distanciaKm": 70.8,
+    "categoria": "Cultura",
+    "descricao": "Leva música, teatro e oficinas de artes para crianças e adolescentes de bairros periféricos."
+  },
+  {
+    "id": 16,
+    "nome": "Lar Doce Lar",
+    "foto": "https://picsum.photos/seed/juntos16/200/200",
+    "altFoto": "Logo - Lar Doce Lar",
+    "cidade": "Belo Horizonte",
+    "estado": "MG",
+    "distanciaKm": 171.6,
+    "categoria": "Acolhimento infantil",
+    "descricao": "Acolhe crianças e adolescentes afastados da família e oferece apoio psicológico e escolar."
+  },
+  {
+    "id": 17,
+    "nome": "Rede da Bondade",
+    "foto": "https://picsum.photos/seed/juntos17/200/200",
+    "altFoto": "Logo - Rede da Bondade",
+    "cidade": "Santos Dumont",
+    "estado": "MG",
+    "distanciaKm": 38.2,
+    "categoria": "Voluntariado",
+    "descricao": "Conecta voluntários a ações locais de limpeza, reformas e campanhas de arrecadação."
+  },
+  {
+    "id": 18,
+    "nome": "Água para Todos",
+    "foto": "https://picsum.photos/seed/juntos18/200/200",
+    "altFoto": "Logo - Água para Todos",
+    "cidade": "Montes Claros",
+    "estado": "MG",
+    "distanciaKm": 632.1,
+    "categoria": "Água e saneamento",
+    "descricao": "Instala cisternas e filtros em comunidades rurais com dificuldade de acesso à água potável."
+  },
+  {
+    "id": 19,
+    "nome": "Mulheres em Rede",
+    "foto": "https://picsum.photos/seed/juntos19/200/200",
+    "altFoto": "Logo - Mulheres em Rede",
+    "cidade": "Rio de Janeiro",
+    "estado": "RJ",
+    "distanciaKm": 251.3,
+    "categoria": "Apoio a mulheres",
+    "descricao": "Oferece acolhimento, orientação jurídica e capacitação profissional para mulheres em situação de violência."
+  },
+  {
+    "id": 20,
+    "nome": "Pão Quentinho",
+    "foto": "https://picsum.photos/seed/juntos20/200/200",
+    "altFoto": "Logo - Pão Quentinho",
+    "cidade": "Barbacena",
+    "estado": "MG",
+    "distanciaKm": 0.9,
+    "categoria": "Combate à fome",
+    "descricao": "Padaria solidária que distribui pães e lanches para pessoas em situação de rua todas as manhãs."
+  }
+]
+
+  }
