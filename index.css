@@ -1055,6 +1055,7 @@ body#login .lista2Lados p {
     font-size: 16px;
     line-height: 1.5;
 }
+
 @media (max-width: 750px) {
     body#login .listaScroll {
         flex-direction: column;

@@ -9,7 +9,9 @@
     "estado": "SP",
     "distanciaKm": 168.2,
     "categoria": "Moradores de rua",
-    "descricao": "Atua no acolhimento e distribuição de alimentos de pessoas em situação de vulnerabilidade."
+    "descricao": "Atua no acolhimento e distribuição de alimentos de pessoas em situação de vulnerabilidade.",
+    "tipo": "EmDestaque"
+
   },
   {
     "id": 2,
@@ -20,7 +22,8 @@
     "estado": "MG",
     "distanciaKm": 3.4,
     "categoria": "Combate à fome",
-    "descricao": "Prepara e distribui marmitas para famílias carentes e pessoas em situação de rua toda semana."
+    "descricao": "Prepara e distribui marmitas para famílias carentes e pessoas em situação de rua toda semana.",
+    "tipo": "MaisPróximas"
   },
   {
     "id": 3,
@@ -31,7 +34,8 @@
     "estado": "MG",
     "distanciaKm": 5.8,
     "categoria": "Proteção animal",
-    "descricao": "Resgata, cuida e promove a adoção responsável de cães e gatos abandonados."
+    "descricao": "Resgata, cuida e promove a adoção responsável de cães e gatos abandonados.",
+    "tipo": "MaisPróximas"
   },
   {
     "id": 4,
@@ -42,7 +46,8 @@
     "estado": "MG",
     "distanciaKm": 112.6,
     "categoria": "Educação",
-    "descricao": "Oferece reforço escolar e acesso a livros para crianças de comunidades periféricas."
+    "descricao": "Oferece reforço escolar e acesso a livros para crianças de comunidades periféricas.",
+    "tipo": "Em Destaque"
   },
   {
     "id": 5,
@@ -53,7 +58,8 @@
     "estado": "RJ",
     "distanciaKm": 245.9,
     "categoria": "Doação de roupas",
-    "descricao": "Arrecada e distribui roupas e cobertores para pessoas em situação de vulnerabilidade."
+    "descricao": "Arrecada e distribui roupas e cobertores para pessoas em situação de vulnerabilidade.",
+    "tipo": "Em Destaque"
   },
   {
     "id": 6,
@@ -64,7 +70,8 @@
     "estado": "MG",
     "distanciaKm": 168.2,
     "categoria": "Saúde infantil",
-    "descricao": "Apoia crianças em tratamento hospitalar com atividades lúdicas e acompanhamento às famílias."
+    "descricao": "Apoia crianças em tratamento hospitalar com atividades lúdicas e acompanhamento às famílias.",
+    "tipo": "Em Destaque"
   },
   {
     "id": 7,
@@ -75,7 +82,8 @@
     "estado": "MG",
     "distanciaKm": 2.1,
     "categoria": "Idosos",
-    "descricao": "Oferece moradia, alimentação e atividades de convivência para idosos sem apoio familiar."
+    "descricao": "Oferece moradia, alimentação e atividades de convivência para idosos sem apoio familiar.",
+    "tipo": "MaisPróximas"
   },
   {
     "id": 8,
@@ -86,7 +94,8 @@
     "estado": "MG",
     "distanciaKm": 154.3,
     "categoria": "Meio ambiente",
-    "descricao": "Realiza mutirões de plantio e limpeza de nascentes, além de educação ambiental em escolas."
+    "descricao": "Realiza mutirões de plantio e limpeza de nascentes, além de educação ambiental em escolas.",
+    "tipo": "Em Destaque"
   },
   {
     "id": 9,
@@ -97,7 +106,8 @@
     "estado": "MG",
     "distanciaKm": 1.7,
     "categoria": "Educação",
-    "descricao": "Oferece cursos profissionalizantes gratuitos para jovens de baixa renda."
+    "descricao": "Oferece cursos profissionalizantes gratuitos para jovens de baixa renda.",
+    "tipo": "MaisPróximas"
   },
   {
     "id": 10,
@@ -108,7 +118,8 @@
     "estado": "SP",
     "distanciaKm": 402.5,
     "categoria": "Moradores de rua",
-    "descricao": "Distribui kits de higiene, cobertores e refeições quentes nas noites de frio."
+    "descricao": "Distribui kits de higiene, cobertores e refeições quentes nas noites de frio.",
+    "tipo": "Em Destaque"
   },
   {
     "id": 11,
@@ -119,7 +130,8 @@
     "estado": "MG",
     "distanciaKm": 48.9,
     "categoria": "Combate à fome",
-    "descricao": "Monta e entrega cestas básicas mensais para famílias cadastradas."
+    "descricao": "Monta e entrega cestas básicas mensais para famílias cadastradas.",
+    "tipo": "MaisPróximas"
   },
   {
     "id": 12,
@@ -130,7 +142,8 @@
     "estado": "MG",
     "distanciaKm": 109.3,
     "categoria": "Proteção animal",
-    "descricao": "Mantém um abrigo para animais resgatados e realiza feiras de adoção aos fins de semana."
+    "descricao": "Mantém um abrigo para animais resgatados e realiza feiras de adoção aos fins de semana.",
+    "tipo": "Em Destaque"
   },
   {
     "id": 13,
@@ -141,7 +154,8 @@
     "estado": "ES",
     "distanciaKm": 489.0,
     "categoria": "Saúde",
-    "descricao": "Apoia pacientes em tratamento de longa duração com transporte, hospedagem e alimentação."
+    "descricao": "Apoia pacientes em tratamento de longa duração com transporte, hospedagem e alimentação.",
+    "tipo": "Em Destaque"
   },
   {
     "id": 14,
@@ -152,7 +166,8 @@
     "estado": "MG",
     "distanciaKm": 62.4,
     "categoria": "Pessoas com deficiência",
-    "descricao": "Promove inclusão e oficinas de arte e esporte adaptados para pessoas com deficiência."
+    "descricao": "Promove inclusão e oficinas de arte e esporte adaptados para pessoas com deficiência.",
+    "tipo": "MaisPróximas"
   },
   {
     "id": 15,
@@ -163,7 +178,8 @@
     "estado": "MG",
     "distanciaKm": 70.8,
     "categoria": "Cultura",
-    "descricao": "Leva música, teatro e oficinas de artes para crianças e adolescentes de bairros periféricos."
+    "descricao": "Leva música, teatro e oficinas de artes para crianças e adolescentes de bairros periféricos.",
+    "tipo": "Em Destaque"
   },
   {
     "id": 16,
@@ -174,7 +190,8 @@
     "estado": "MG",
     "distanciaKm": 171.6,
     "categoria": "Acolhimento infantil",
-    "descricao": "Acolhe crianças e adolescentes afastados da família e oferece apoio psicológico e escolar."
+    "descricao": "Acolhe crianças e adolescentes afastados da família e oferece apoio psicológico e escolar.",
+    "tipo": "Em Destaque"
   },
   {
     "id": 17,
@@ -185,7 +202,8 @@
     "estado": "MG",
     "distanciaKm": 38.2,
     "categoria": "Voluntariado",
-    "descricao": "Conecta voluntários a ações locais de limpeza, reformas e campanhas de arrecadação."
+    "descricao": "Conecta voluntários a ações locais de limpeza, reformas e campanhas de arrecadação.",
+    "tipo": "MaisPróximas"
   },
   {
     "id": 18,
@@ -196,7 +214,8 @@
     "estado": "MG",
     "distanciaKm": 632.1,
     "categoria": "Água e saneamento",
-    "descricao": "Instala cisternas e filtros em comunidades rurais com dificuldade de acesso à água potável."
+    "descricao": "Instala cisternas e filtros em comunidades rurais com dificuldade de acesso à água potável.",
+    "tipo": "Em Destaque"
   },
   {
     "id": 19,
@@ -207,7 +226,8 @@
     "estado": "RJ",
     "distanciaKm": 251.3,
     "categoria": "Apoio a mulheres",
-    "descricao": "Oferece acolhimento, orientação jurídica e capacitação profissional para mulheres em situação de violência."
+    "descricao": "Oferece acolhimento, orientação jurídica e capacitação profissional para mulheres em situação de violência.",
+    "tipo": "Em Destaque"
   },
   {
     "id": 20,
@@ -218,7 +238,8 @@
     "estado": "MG",
     "distanciaKm": 0.9,
     "categoria": "Combate à fome",
-    "descricao": "Padaria solidária que distribui pães e lanches para pessoas em situação de rua todas as manhãs."
+    "descricao": "Padaria solidária que distribui pães e lanches para pessoas em situação de rua todas as manhãs.",
+    "tipo": "MaisPróximas"
   }
 ]
 
