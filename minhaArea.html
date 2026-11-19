@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <title>Minha Área</title>
+    <title>Minha Área - Juntos</title>
 </head>
 
-<body id="minhaArea">
+<body id="minhaArea" class="claro">
 
     <header>
-        <button class="abrirMenu" aria-label="Abrir menu" aria-expanded="false">
+        <button type="button" class="abrirMenu" aria-label="Abrir menu" aria-expanded="false">
             <i class="fa-solid fa-bars"></i>
         </button>
 
@@ -21,12 +21,13 @@
             <h1>Minha Área</h1>
         </div>
 
-        <div>
+        <div class="headerAcoes">
             <a class="verTodos" href="Login.html">Login</a>
+            <button type="button" id="tema" aria-label="Mudar tema"><i class="fa fa-sun"></i></button>
         </div>
     </header>
 
-    <nav id = "TiposUsuario" class="seletorArrasta">
+    <nav id="TiposUsuario" class="seletorArrasta">
         <button type="button">Doador</button>
         <button type="button" class="ativo">Voluntário</button>
         <button type="button">ONG</button>
@@ -34,12 +35,13 @@
 
     <main>
         <section class="Tipos">
+            <!-- ÁREA DO VOLUNTÁRIO -->
             <div class="Voluntário">
 
                 <section>
                     <div class="textoBotao">
                         <h2 class="colorPreto">Próximas Participações</h2>
-                        <button class="verTodos">Ver todas</button>
+                        <button type="button" class="verTodos">Ver todas</button>
                     </div>
 
                     <ul class="listaScroll">
@@ -62,7 +64,7 @@
                             </div>
 
                             <div class="botaoPequeno">
-                                <button>Confirmar Presença</button>
+                                <button type="button">Confirmar Presença</button>
                             </div>
                         </li>
 
@@ -82,10 +84,56 @@
                                     <i class="fa fa-clock"></i>
                                     <p>8h às 12h</p>
                                 </div>
+                            </div>
 
-                                <div class="botaoPequeno">
-                                    <button>Confirmar Presença</button>
+                            <div class="botaoPequeno">
+                                <button type="button">Confirmar Presença</button>
+                            </div>
+                        </li>
+
+                        <li class="lista2Lados itemExtra oculto">
+                            <div class="iconeData">
+                                <div>
+                                    <h4>07</h4>
+                                    <h4>JUN</h4>
                                 </div>
+                            </div>
+
+                            <div>
+                                <h3>Triagem de Cestas Básicas</h3>
+                                <p>Tatuapé - SP</p>
+
+                                <div class="iconeTexto">
+                                    <i class="fa fa-clock"></i>
+                                    <p>14h às 17h</p>
+                                </div>
+                            </div>
+
+                            <div class="botaoPequeno">
+                                <button type="button">Confirmar Presença</button>
+                            </div>
+                        </li>
+
+                        <li class="lista2Lados itemExtra oculto">
+                            <div class="iconeData">
+                                <div>
+                                    <h4>14</h4>
+                                    <h4>JUN</h4>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h3>Entrega de Cobertores</h3>
+                                <p>Centro - São Paulo/SP</p>
+
+                                <div class="iconeTexto">
+                                    <i class="fa fa-clock"></i>
+                                    <p>19h às 22h</p>
+                                </div>
+                            </div>
+
+                            <div class="botaoPequeno">
+                                <button type="button">Confirmar Presença</button>
                             </div>
                         </li>
                     </ul>
@@ -94,7 +142,7 @@
                 <section>
                     <div class="textoBotao">
                         <h2 class="colorPreto">Minhas Participações</h2>
-                        <button class="verTodos">Ver todas</button>
+                        <button type="button" class="verTodos">Ver todas</button>
                     </div>
 
                     <ul class="listaScroll">
@@ -126,8 +174,7 @@
 
                         <li class="lista2Lados">
                             <div class="perfil">
-                                <img class="fotoPerfil" src="src/alimento para todos.jpg"
-                                    alt="Foto de Alimento para Todos">
+                                <img class="fotoPerfil" src="src/alimento para todos.jpg" alt="Foto de Alimento para Todos">
                             </div>
 
                             <div class="perfilConteudo">
@@ -137,20 +184,45 @@
                                 <h4 class="verTodos">Presença confirmada</h4>
                             </div>
                         </li>
+
+                        <li class="lista2Lados itemExtra oculto">
+                            <div class="perfil">
+                                <img class="fotoPerfil" src="src/Doação de alimentos.jpg" alt="Foto de mutirão de alimentos">
+                            </div>
+
+                            <div class="perfilConteudo">
+                                <h3>Mutirão do Alimento</h3>
+                                <p>Ipiranga - SP</p>
+                                <p>02/08/2026</p>
+                                <h4 class="verTodos">Presença confirmada</h4>
+                            </div>
+                        </li>
+
+                        <li class="lista2Lados itemExtra oculto">
+                            <div class="perfil">
+                                <img class="fotoPerfil" src="src/Distribuição de alimentos.jpg" alt="Foto de distribuição comunitária">
+                            </div>
+
+                            <div class="perfilConteudo">
+                                <h3>Sopa Solidária</h3>
+                                <p>Sé - SP</p>
+                                <p>18/08/2026</p>
+                                <h4 class="verTodos">Presença confirmada</h4>
+                            </div>
+                        </li>
                     </ul>
                 </section>
 
                 <section>
                     <div class="textoBotao">
                         <h2 class="colorPreto">Ações Disponíveis</h2>
-                        <button class="verTodos">Ver todas</button>
+                        <button type="button" class="verTodos">Ver todas</button>
                     </div>
 
                     <ul class="listaScroll">
                         <li class="lista2Lados">
                             <div class="perfil">
-                                <img class="fotoPerfil" src="src/campanha do agasalho.jpg"
-                                    alt="Foto da campanha de agasalho">
+                                <img class="fotoPerfil" src="src/campanha do agasalho.jpg" alt="Foto da campanha de agasalho">
                             </div>
 
                             <div class="perfilConteudo">
@@ -164,10 +236,10 @@
                                 </div>
 
                                 <p class="verTodos">15 vagas</p>
+                            </div>
 
-                                <div class="botaoPequeno">
-                                    <button>Quero Participar</button>
-                                </div>
+                            <div class="botaoPequeno">
+                                <button type="button">Quero Participar</button>
                             </div>
                         </li>
 
@@ -187,10 +259,56 @@
                                 </div>
 
                                 <p class="verTodos">25 vagas</p>
+                            </div>
 
-                                <div class="botaoPequeno">
-                                    <button>Quero Participar</button>
+                            <div class="botaoPequeno">
+                                <button type="button">Quero Participar</button>
+                            </div>
+                        </li>
+
+                        <li class="lista2Lados itemExtra oculto">
+                            <div class="perfil">
+                                <img class="fotoPerfil" src="src/alimento para todos.jpg" alt="Foto da ação de cestas">
+                            </div>
+
+                            <div class="perfilConteudo">
+                                <h3>Montagem de Cestas</h3>
+                                <p>Santana - SP</p>
+
+                                <div class="dataHora">
+                                    <p>29/10/2026</p>
+                                    <p class="separador">•</p>
+                                    <p>13h às 17h</p>
                                 </div>
+
+                                <p class="verTodos">10 vagas</p>
+                            </div>
+
+                            <div class="botaoPequeno">
+                                <button type="button">Quero Participar</button>
+                            </div>
+                        </li>
+
+                        <li class="lista2Lados itemExtra oculto">
+                            <div class="perfil">
+                                <img class="fotoPerfil" src="src/Logo Educação e comunidade.jpg" alt="Foto da ação educativa">
+                            </div>
+
+                            <div class="perfilConteudo">
+                                <h3>Reforço Comunitário</h3>
+                                <p>Pinheiros - SP</p>
+
+                                <div class="dataHora">
+                                    <p>05/11/2026</p>
+                                    <p class="separador">•</p>
+                                    <p>09h às 12h</p>
+                                </div>
+
+                                <p class="verTodos">12 vagas</p>
+                            </div>
+
+                            <div class="botaoPequeno">
+                                <button type="button">Quero Participar</button>
                             </div>
                         </li>
                     </ul>
@@ -199,12 +317,12 @@
             </div>
 
             <!-- ÁREA DA ONG -->
-            <div class="ONG">
+            <div class="ONG oculto">
 
                 <section>
                     <div class="textoBotao">
                         <h2 class="colorPreto">Resumo do Mês</h2>
-                        <button class="verTodos">Ver todas</button>
+                        <button type="button" class="verTodos">Ver todas</button>
                     </div>
 
                     <ul class="listaScroll">
@@ -240,77 +358,156 @@
                                 <p>10 doações</p>
                             </div>
                         </li>
+
+                        <li class="lista2Lados itemExtra oculto">
+                            <div class="colorVerdeE">
+                                <i class="fas fa-users"></i>
+                            </div>
+
+                            <div>
+                                <h3>Voluntários engajados</h3>
+                                <p>38 voluntários</p>
+                            </div>
+                        </li>
                     </ul>
                 </section>
 
                 <section>
                     <div class="textoBotao">
                         <h2 class="colorPreto">Estoque</h2>
-                        <button class="verTodos">Ver todas</button>
+                        <button type="button" class="verTodos">Ver todas</button>
                     </div>
 
                     <ul class="listaScroll">
-                        <li class="lista2Lados">
+                        <li class="lista2Lados itemEstoque" data-estoque-id="alimentos" data-qtd="50" data-max="60">
                             <div class="colorVerdeE">
                                 <i class="fas fa-utensils"></i>
                             </div>
 
                             <div>
                                 <h3>Alimentos</h3>
-                                <p>50 itens</p>
+                                <p class="qtdEstoque">50 itens</p>
+                                <span class="alertaEstoque oculto">Estoque baixo</span>
                             </div>
 
-                            <div class="estoque">
-                                <div class="barraPreenchida"></div>
-                                <div class="barraTotal"></div>
+                            <div class="estoqueContainer">
+                                <div class="estoque" aria-label="Nível de estoque">
+                                    <div class="barraPreenchida nivel-80"></div>
+                                </div>
+                                <div class="controleEstoque">
+                                    <button type="button" class="btnEstoque" data-acao="diminuir" aria-label="Diminuir alimentos">-</button>
+                                    <button type="button" class="btnEstoque" data-acao="aumentar" aria-label="Aumentar alimentos">+</button>
+                                </div>
                             </div>
                         </li>
 
-                        <li class="lista2Lados">
+                        <li class="lista2Lados itemEstoque" data-estoque-id="higiene" data-qtd="15" data-max="50">
                             <div class="colorVerdeE">
                                 <i class="fas fa-pump-soap"></i>
                             </div>
 
                             <div>
                                 <h3>Produtos de Higiene</h3>
-                                <p>15 itens</p>
+                                <p class="qtdEstoque">15 itens</p>
+                                <span class="alertaEstoque oculto">Estoque baixo</span>
                             </div>
 
-                            <div class="estoque">
-                                <div class="barraPreenchida"></div>
-                                <div class="barraTotal"></div>
+                            <div class="estoqueContainer">
+                                <div class="estoque" aria-label="Nível de estoque">
+                                    <div class="barraPreenchida nivel-30"></div>
+                                </div>
+                                <div class="controleEstoque">
+                                    <button type="button" class="btnEstoque" data-acao="diminuir" aria-label="Diminuir higiene">-</button>
+                                    <button type="button" class="btnEstoque" data-acao="aumentar" aria-label="Aumentar higiene">+</button>
+                                </div>
                             </div>
                         </li>
 
-                        <li class="lista2Lados">
+                        <li class="lista2Lados itemEstoque" data-estoque-id="roupas" data-qtd="30" data-max="50">
                             <div class="colorVerdeE">
                                 <i class="fas fa-tshirt"></i>
                             </div>
 
                             <div>
                                 <h3>Roupas</h3>
-                                <p>30 itens</p>
+                                <p class="qtdEstoque">30 itens</p>
+                                <span class="alertaEstoque oculto">Estoque baixo</span>
                             </div>
 
-                            <div class="estoque">
-                                <div class="barraPreenchida"></div>
-                                <div class="barraTotal"></div>
+                            <div class="estoqueContainer">
+                                <div class="estoque" aria-label="Nível de estoque">
+                                    <div class="barraPreenchida nivel-60"></div>
+                                </div>
+                                <div class="controleEstoque">
+                                    <button type="button" class="btnEstoque" data-acao="diminuir" aria-label="Diminuir roupas">-</button>
+                                    <button type="button" class="btnEstoque" data-acao="aumentar" aria-label="Aumentar roupas">+</button>
+                                </div>
                             </div>
                         </li>
 
-                        <li class="lista2Lados">
+                        <li class="lista2Lados itemEstoque" data-estoque-id="brinquedos" data-qtd="20" data-max="50">
                             <div class="colorVerdeE">
                                 <i class="fas fa-puzzle-piece"></i>
                             </div>
 
                             <div>
                                 <h3>Brinquedos</h3>
-                                <p>20 itens</p>
+                                <p class="qtdEstoque">20 itens</p>
+                                <span class="alertaEstoque oculto">Estoque baixo</span>
                             </div>
 
-                            <div class="estoque">
-                                <div class="barraPreenchida"></div>
-                                <div class="barraTotal"></div>
+                            <div class="estoqueContainer">
+                                <div class="estoque" aria-label="Nível de estoque">
+                                    <div class="barraPreenchida nivel-40"></div>
+                                </div>
+                                <div class="controleEstoque">
+                                    <button type="button" class="btnEstoque" data-acao="diminuir" aria-label="Diminuir brinquedos">-</button>
+                                    <button type="button" class="btnEstoque" data-acao="aumentar" aria-label="Aumentar brinquedos">+</button>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="lista2Lados itemEstoque itemExtra oculto" data-estoque-id="cobertores" data-qtd="12" data-max="40">
+                            <div class="colorVerdeE">
+                                <i class="fas fa-bed"></i>
+                            </div>
+
+                            <div>
+                                <h3>Cobertores</h3>
+                                <p class="qtdEstoque">12 itens</p>
+                                <span class="alertaEstoque oculto">Estoque baixo</span>
+                            </div>
+
+                            <div class="estoqueContainer">
+                                <div class="estoque" aria-label="Nível de estoque">
+                                    <div class="barraPreenchida nivel-30"></div>
+                                </div>
+                                <div class="controleEstoque">
+                                    <button type="button" class="btnEstoque" data-acao="diminuir" aria-label="Diminuir cobertores">-</button>
+                                    <button type="button" class="btnEstoque" data-acao="aumentar" aria-label="Aumentar cobertores">+</button>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="lista2Lados itemEstoque itemExtra oculto" data-estoque-id="agua" data-qtd="40" data-max="50">
+                            <div class="colorVerdeE">
+                                <i class="fas fa-tint"></i>
+                            </div>
+
+                            <div>
+                                <h3>Água Mineral</h3>
+                                <p class="qtdEstoque">40 itens</p>
+                                <span class="alertaEstoque oculto">Estoque baixo</span>
+                            </div>
+
+                            <div class="estoqueContainer">
+                                <div class="estoque" aria-label="Nível de estoque">
+                                    <div class="barraPreenchida nivel-80"></div>
+                                </div>
+                                <div class="controleEstoque">
+                                    <button type="button" class="btnEstoque" data-acao="diminuir" aria-label="Diminuir água mineral">-</button>
+                                    <button type="button" class="btnEstoque" data-acao="aumentar" aria-label="Aumentar água mineral">+</button>
+                                </div>
                             </div>
                         </li>
                     </ul>
@@ -319,7 +516,7 @@
                 <section>
                     <div class="textoBotao">
                         <h2 class="colorPreto">Suas Ações</h2>
-                        <button class="verTodos">Ver todas</button>
+                        <button type="button" class="verTodos">Ver todas</button>
                     </div>
 
                     <ul class="listaScroll">
@@ -337,7 +534,7 @@
                                     <p>09h às 16h</p>
                                 </div>
 
-                                <p class="statusAções">Andamento</p>
+                                <p class="statusAcoes">Andamento</p>
                             </div>
                         </li>
 
@@ -355,14 +552,13 @@
                                     <p>08h às 14h</p>
                                 </div>
 
-                                <p class="statusAções">Concluído</p>
+                                <p class="statusAcoes">Concluído</p>
                             </div>
                         </li>
 
                         <li class="lista2Lados">
                             <div class="perfil">
-                                <img class="fotoPerfil" src="src/Distribuição de alimentos.jpg"
-                                    alt="Distribuição de alimentos">
+                                <img class="fotoPerfil" src="src/Distribuição de alimentos.jpg" alt="Distribuição de alimentos">
                             </div>
 
                             <div class="perfilConteudo">
@@ -374,7 +570,43 @@
                                     <p>10h às 15h</p>
                                 </div>
 
-                                <p class="statusAções">Pendente</p>
+                                <p class="statusAcoes">Pendente</p>
+                            </div>
+                        </li>
+
+                        <li class="lista2Lados itemExtra oculto">
+                            <div class="perfil">
+                                <img class="fotoPerfil" src="src/campanha do agasalho.jpg" alt="Campanha de cobertores">
+                            </div>
+
+                            <div class="perfilConteudo">
+                                <h3>Noite Solidária</h3>
+
+                                <div class="dataHora">
+                                    <p>04/08/2026</p>
+                                    <p class="separador">•</p>
+                                    <p>19h às 22h</p>
+                                </div>
+
+                                <p class="statusAcoes">Andamento</p>
+                            </div>
+                        </li>
+
+                        <li class="lista2Lados itemExtra oculto">
+                            <div class="perfil">
+                                <img class="fotoPerfil" src="src/alimento para todos.jpg" alt="Café comunitário">
+                            </div>
+
+                            <div class="perfilConteudo">
+                                <h3>Café Comunitário</h3>
+
+                                <div class="dataHora">
+                                    <p>18/08/2026</p>
+                                    <p class="separador">•</p>
+                                    <p>07h às 11h</p>
+                                </div>
+
+                                <p class="statusAcoes">Concluído</p>
                             </div>
                         </li>
                     </ul>
@@ -383,7 +615,7 @@
                 <section>
                     <div class="textoBotao">
                         <h2 class="colorPreto">Transações</h2>
-                        <button class="verTodos">Ver todas</button>
+                        <button type="button" class="verTodos">Ver todas</button>
                     </div>
 
                     <ul class="listaScroll">
@@ -425,12 +657,52 @@
                                 <p class="statusRecebimento">Recebida</p>
                             </div>
                         </li>
+
+                        <li class="lista2Lados itemExtra oculto">
+                            <div class="colorVerdeE">
+                                <i class="fa-solid fa-sack-dollar"></i>
+                            </div>
+
+                            <div>
+                                <h3>Apoio Mercado União</h3>
+                                <p>02/08/2026</p>
+                                <p>R$ 450,00</p>
+                                <p class="statusRecebimento">Recebida</p>
+                            </div>
+                        </li>
+
+                        <li class="lista2Lados itemExtra oculto">
+                            <div class="colorVerdeE">
+                                <i class="fa-solid fa-sack-dollar"></i>
+                            </div>
+
+                            <div>
+                                <h3>Kit Higiene Comunitário</h3>
+                                <p>11/08/2026</p>
+                                <p>R$ 150,00</p>
+                                <p class="statusRecebimento">Processando</p>
+                            </div>
+                        </li>
+
+                        <li class="lista2Lados itemExtra oculto">
+                            <div class="colorVerdeE">
+                                <i class="fa-solid fa-sack-dollar"></i>
+                            </div>
+
+                            <div>
+                                <h3>Cestas do Mês</h3>
+                                <p>22/08/2026</p>
+                                <p>R$ 600,00</p>
+                                <p class="statusRecebimento">Recebida</p>
+                            </div>
+                        </li>
                     </ul>
                 </section>
 
             </div>
 
-            <div class="Doador">
+            <!-- ÁREA DO DOADOR -->
+            <div class="Doador oculto">
 
                 <section>
                     <h2 class="colorPreto">Escolha uma ONG para doar</h2>
@@ -445,82 +717,81 @@
                             <span>Filtros</span>
                         </button>
                     </div>
-                </section>
-                <nav id= "DesProx" class="seletorArrasta">
-                    <button type="button">EmDestaque</button>
-                    <button type="button" class="ativo">MaisPróximas</button>
-                </nav>
-                <section id="OngsPerfil" class="Tipos">
 
-                    <div class="EmDestaque">
-                        <ul class="listaScroll">
-                            
-                        </ul>
+                    <div id="painelFiltros" class="painelFiltros oculto">
+                        <div class="campoFiltro">
+                            <label for="filtroCategoria">Categoria</label>
+                            <select id="filtroCategoria" class="seletorCaixa">
+                                <option value="Todas">Todas</option>
+                            </select>
+                        </div>
+                        <div class="campoFiltro">
+                            <label for="ordenarOngs">Ordenar por</label>
+                            <select id="ordenarOngs" class="seletorCaixa">
+                                <option value="padrao">Padrão</option>
+                                <option value="distancia">Menor distância</option>
+                                <option value="nome">Nome (A-Z)</option>
+                            </select>
+                        </div>
+                    </div>
+                </section>
+
+                <nav id="DesProx" class="seletorArrasta">
+                    <button type="button">Em Destaque</button>
+                    <button type="button" class="ativo">Mais Próximas</button>
+                </nav>
+
+                <section id="OngsPerfil" class="Tipos">
+                    <div class="EmDestaque oculto">
+                        <ul class="listaScroll"></ul>
                     </div>
                     <div class="MaisPróximas">
-                        <ul class="listaScroll">
-                            <li class="lista2Lados">
-                                <div class="perfil">
-                                    <img class="fotoPerfil" src="src/projeto luz.jpg" alt="Logo do Projeto Luz">
-                                </div>
-
-                                <div class="perfilConteudo">
-                                    <h3>Projeto Luz</h3>
-
-                                    <div class="dataHora">
-                                        <p>Ipatinga - MG</p>
-                                        <p class="separador">•</p>
-                                        <p>15.2km</p>
-                                    </div>
-
-                                    <p class="status">Orfanatos</p>
-                                    <p>
-                                        Apoia crianças e adolescentes em situação de
-                                        vulnerabilidade.
-                                    </p>
-                                </div>
-
-                                <div class="botaoPequeno">
-                                    <button>Doar</button>
-                                </div>
-                            </li>
-                            <li class="lista2Lados">
-                                <div class="perfil">
-                                    <img class="fotoPerfil" src="src/projeto viver com dignidade.jpg"
-                                        alt="Logo do Projeto Viver com Dignidade">
-                                </div>
-
-                                <div class="perfilConteudo">
-                                    <h3>Projeto Viver com Dignidade</h3>
-
-                                    <div class="dataHora">
-                                        <p>Timóteo - MG</p>
-                                        <p class="separador">•</p>
-                                        <p>5.0km</p>
-                                    </div>
-
-                                    <p class="status">Idosos</p>
-                                    <p>
-                                        Apoia pessoas idosas em situação de vulnerabilidade.
-                                    </p>
-                                </div>
-
-                                <div class="botaoPequeno">
-                                    <button>Doar</button>
-                                </div>
-                            </li>
-                        </ul>
+                        <ul class="listaScroll"></ul>
                     </div>
+                    <p id="semResultadosOng" class="mensagemVazia oculto">Nenhuma ONG encontrada para essa busca.</p>
                 </section>
+
                 <section>
-                    <h2 class="colorPreto">Mapa de ONGs proximas</h2>
-                    <div>
-                        <img class="mapa" src="src/imagemMapa.jpg" alt="Mapa de ONGs próximas">
+                    <div class="textoBotao">
+                        <h2 class="colorPreto">Mapa de ONGs próximas</h2>
+                        <p id="resumoMapaDoado" class="valorDoadoOng">Total doado no mapa: R$ 0,00</p>
+                    </div>
+                    <div class="mapaWrapper">
+                        <div class="mapaFiltros">
+                            <button type="button" class="btnMapaFiltro ativo" data-filtro="todas">Todas no mapa</button>
+                            <button type="button" class="btnMapaFiltro" data-filtro="proximas">Mais próximas</button>
+                            <button type="button" class="btnMapaFiltro" data-filtro="destaque">Em destaque</button>
+                        </div>
+                        <div class="mapaContainer">
+                            <img class="mapa" src="src/imagemMapa.jpg" alt="Mapa de ONGs próximas">
+                            <div id="pinosMapa"></div>
+                        </div>
+                        <div id="detalheOngMapa" class="lista2Lados detalheMapa oculto">
+                            <div class="perfil">
+                                <img id="mapaOngFoto" class="fotoPerfil" src="src/logoPreta.png" alt="Logo da ONG selecionada">
+                            </div>
+                            <div class="perfilConteudo">
+                                <h3 id="mapaOngNome">Selecione uma ONG no mapa</h3>
+                                <div class="dataHora">
+                                    <p id="mapaOngCidade"></p>
+                                    <p class="separador">•</p>
+                                    <p id="mapaOngDistancia"></p>
+                                </div>
+                                <p id="mapaOngCategoria" class="status"></p>
+                                <p id="mapaOngDoado" class="valorDoadoOng"></p>
+                            </div>
+                            <div class="botaoPequeno">
+                                <button type="button" id="btnDoarMapa">Doar</button>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
                 <section>
-                    <h2 class="colorPreto">Minhas Doações</h2>
+                    <div class="textoBotao">
+                        <h2 class="colorPreto">Minhas Doações</h2>
+                        <button type="button" class="verTodos">Ver todas</button>
+                    </div>
                     <div class="caixas2Lado">
                         <ul class="lista2Lados">
                             <li class="lista2Lados">
@@ -530,7 +801,7 @@
 
                                 <div>
                                     <h3>Total doado</h3>
-                                    <p>R$ 200,00</p>
+                                    <p id="totalDoadoValor">R$ 1550,00</p>
                                 </div>
                             </li>
 
@@ -541,13 +812,13 @@
 
                                 <div>
                                     <h3>Transações</h3>
-                                    <p>12</p>
+                                    <p id="totalTransacoesValor">6</p>
                                 </div>
                             </li>
                         </ul>
                     </div>
 
-                    <ul class="listaScroll">
+                    <ul id="listaMinhasDoacoes" class="listaScroll">
                         <li class="lista2Lados">
                             <div class="perfil">
                                 <img class="fotoPerfil" src="src/doação de roupa.jpg" alt="Doação de roupas">
@@ -581,8 +852,7 @@
 
                         <li class="lista2Lados">
                             <div class="perfil">
-                                <img class="fotoPerfil" src="src/Distribuição de alimentos.jpg"
-                                    alt="Distribuição de alimentos">
+                                <img class="fotoPerfil" src="src/Distribuição de alimentos.jpg" alt="Distribuição de alimentos">
                             </div>
 
                             <div class="perfilConteudo">
@@ -594,14 +864,73 @@
                                 <p>Pendente</p>
                             </div>
                         </li>
+
+                        <li class="lista2Lados itemExtra oculto">
+                            <div class="perfil">
+                                <img class="fotoPerfil" src="src/projeto amor.jpg" alt="Projeto Amor">
+                            </div>
+
+                            <div class="perfilConteudo">
+                                <h3>Projeto Amor</h3>
+                                <p>04/08/2026</p>
+                                <p>R$ 150,00</p>
+                            </div>
+                            <div class="botaoPequeno">
+                                <p>Concluída</p>
+                            </div>
+                        </li>
+
+                        <li class="lista2Lados itemExtra oculto">
+                            <div class="perfil">
+                                <img class="fotoPerfil" src="src/projeto luz.jpg" alt="Projeto Luz">
+                            </div>
+
+                            <div class="perfilConteudo">
+                                <h3>Projeto Luz</h3>
+                                <p>19/08/2026</p>
+                                <p>R$ 250,00</p>
+                            </div>
+                            <div class="botaoPequeno">
+                                <p>Concluída</p>
+                            </div>
+                        </li>
+
+                        <li class="lista2Lados itemExtra oculto">
+                            <div class="perfil">
+                                <img class="fotoPerfil" src="src/projeto esperança.jpg" alt="Projeto Esperança">
+                            </div>
+
+                            <div class="perfilConteudo">
+                                <h3>Sorriso de Esperança</h3>
+                                <p>01/09/2026</p>
+                                <p>R$ 150,00</p>
+                            </div>
+                            <div class="botaoPequeno">
+                                <p>Concluída</p>
+                            </div>
+                        </li>
                     </ul>
                 </section>
             </div>
         </section>
-
-
-
     </main>
+
+    <div id="modalDoacao" class="modalFundo oculto" role="dialog" aria-modal="true" aria-labelledby="modalDoacaoOng">
+        <div class="modalCaixa">
+            <div class="modalCabecalho">
+                <h3 id="modalDoacaoOng">Doar para ONG</h3>
+                <button type="button" id="fecharModalDoacao" class="modalFechar" aria-label="Fechar">&times;</button>
+            </div>
+            <form id="formDoacao" class="modalCorpo">
+                <label for="valorDoacao">Valor da doação (R$):</label>
+                <input type="number" id="valorDoacao" class="seletorCaixa" min="5" step="5" value="50" required>
+                <div class="modalAcoes">
+                    <button type="button" id="cancelarDoacao" class="botaoSecundario">Cancelar</button>
+                    <button type="submit" class="botaoPrincipal">Confirmar Doação</button>
+                </div>
+            </form>
+        </div>
+    </div>
 
     <article id="menu" class="menuClose">
         <div>
@@ -610,7 +939,7 @@
                 <h1>Juntos</h1>
             </div>
 
-            <button class="fecharMenu" aria-label="Fechar menu">
+            <button type="button" class="fecharMenu" aria-label="Fechar menu">
                 <i class="fa fa-close"></i>
             </button>
         </div>
@@ -628,7 +957,7 @@
 
             <div>
                 <i class="fas fa-chart-bar white"></i>
-                <a href="dashboard.html">Dashboard</a>
+                <a href="Dashboard.html">Dashboard</a>
             </div>
 
             <div>
@@ -644,6 +973,7 @@
     </article>
 
     <script src="script.js" defer></script>
+    <script src="js/minhaArea.js" defer></script>
 
 </body>
 

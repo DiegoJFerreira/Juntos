@@ -1,0 +1,242 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0 16px 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #FDFDFD;
+    color: #222222;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin-top: 48px;
+}
+
+.oculto {
+    display: none;
+}
+
+
+.claro {
+    background-color: #FDFDFD;
+    color: #222222;
+}
+
+.escuro {
+    background-color: #201F1F;
+    color: #F5F5F5;
+}
+
+.colorVerdeP {
+    color: #056534;
+}
+
+.colorVerdeE {
+    color: #015F29;
+}
+
+.colorVerdeS {
+    color: #237141;
+}
+
+.colorBranco {
+    color: #FDFDFD;
+}
+
+.colorCinzaBorda {
+    color: #CFCFC9;
+}
+
+.colorPreto {
+    color: #333333;
+}
+
+.escuro .colorPreto,
+.escuro .texto-cinza {
+    color: #E5E5E5;
+}
+
+.colorLaranja,
+.colorLaranja i {
+    color: #dd6b20;
+}
+
+.colorAzul {
+    color: #2b6cb0;
+}
+
+.colorRoxo i {
+    color: #7b2cbf;
+}
+
+.colorVermelho i {
+    color: #d62828;
+}
+
+.colorVerdeE i {
+    color: #015F29;
+}
+
+.tamanhoLetra {
+    font-size: 20px;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-top: 16px;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 12px;
+    padding: 8px 0;
+    position: relative;
+}
+
+header h1 {
+    font-size: 28pt;
+    padding: 0;
+    margin: 0;
+}
+
+header button {
+    border: none;
+    background: none;
+    padding: 4px;
+    cursor: pointer;
+    color: inherit;
+}
+
+header > button i {
+    font-size: 22pt;
+}
+
+.headerAcoes {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.abrirMenu i {
+    font-size: 26pt;
+    padding: 4px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo * {
+    margin-top: 0;
+}
+
+.logo > h1 {
+    font-size: 28pt;
+}
+
+.logo > img {
+    width: auto;
+    height: 44px;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.menuClose {
+    display: none;
+}
+
+.menuOpen {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #015e29;
+    padding: 20px 24px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+#menu * {
+    color: #FDFDFD;
+}
+
+#menu > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.fecharMenu {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.fecharMenu i {
+    color: #FDFDFD;
+    font-size: 32pt;
+    cursor: pointer;
+}
+
+.redirecionadorMenu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.redirecionadorMenu > div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 4px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.redirecionadorMenu * {
+    font-size: 16pt;
+    cursor: pointer;
+}
+
+.redirecionadorMenu a {
+    flex: 1;
+}
+
+.redirecionadorMenu a:hover,
+.abrirMenu:hover,
+.fecharMenu:hover {
+    opacity: 0.75;
+}

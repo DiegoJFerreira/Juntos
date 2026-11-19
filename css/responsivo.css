@@ -1,0 +1,302 @@
+
+@media (max-width: 480px) {
+    header h1,
+    .logo > h1 {
+        font-size: 20pt;
+    }
+
+    .logo > img {
+        height: 34px;
+    }
+
+    header .verTodos {
+        font-size: 14pt;
+    }
+
+    .textoBotao h2 {
+        font-size: 18pt;
+    }
+
+    .lista2Lados {
+        flex-wrap: wrap;
+    }
+
+    .lista2Lados > div:first-child {
+        width: 72px;
+        min-height: 64px;
+    }
+
+    .listaScroll .lista2Lados .perfil,
+    .listaScroll .lista2Lados .fotoPerfil {
+        width: 62px;
+        height: 62px;
+        min-height: 62px;
+    }
+
+    .lista2Lados .botaoPequeno {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .estoqueContainer {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .setaCarrosel {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+    }
+
+    .setaCarrosel.anterior {
+        left: 6px;
+    }
+
+    .setaCarrosel.proxima {
+        right: 6px;
+    }
+
+    .pinoMapa {
+        padding: 4px 8px;
+        font-size: 11px;
+        gap: 4px;
+    }
+
+    .pinoMapa i {
+        font-size: 12px;
+    }
+
+    .carrosel > li > div {
+        padding: 14px;
+    }
+
+    .carrosel > li > div h2 {
+        font-size: 17px;
+    }
+
+    .carrosel > li > div p {
+        font-size: 13px;
+    }
+
+    #pesquisaFiltro {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #pesquisa {
+        height: 54px;
+    }
+
+    .botaoFiltro {
+        width: 100%;
+        height: 46px;
+    }
+
+    .cardInfo i {
+        font-size: 30pt;
+    }
+
+    .cardInfo p {
+        font-size: 14pt;
+    }
+
+    .rankingNome,
+    .rankingPeso {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        max-width: 1200px;
+        padding: 0 24px 48px;
+    }
+
+    .menuOpen {
+        padding: 28px 10%;
+    }
+
+    header h1,
+    .logo > h1 {
+        font-size: 32pt;
+    }
+
+    .textoBotao h2 {
+        font-size: 26pt;
+    }
+
+    .listaScroll {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .listaScroll > li,
+    .listaScroll > button {
+        width: calc(50% - 10px);
+    }
+
+    body#login .listaScroll {
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        gap: 20px;
+    }
+
+    body#login .listaScroll > button {
+        flex: 1 1 0;
+        width: auto;
+        max-width: 320px;
+        min-height: 260px;
+    }
+
+    body#login main section:last-child form {
+        max-width: 700px;
+    }
+
+    body#login main section:last-child form > div.linhaCampos {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    body#login main section:last-child form .campo {
+        flex: 1;
+        min-width: 0;
+        margin-top: 0;
+    }
+
+    body#login main section:last-child form .acaoCentralizada {
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    .caixas2Lado > .lista2Lados {
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    .caixas2Lado > .lista2Lados > .lista2Lados {
+        flex: 1;
+    }
+
+    .carrosel > li {
+        aspect-ratio: 5 / 2;
+    }
+
+    .carrosel > li > div {
+        padding: 28px;
+    }
+
+    .carrosel > li > div h2 {
+        font-size: 26px;
+    }
+
+    .carrosel > li > div p {
+        font-size: 16px;
+    }
+
+    #pesquisa {
+        height: 70px;
+    }
+
+    .mapaWrapper,
+    .seletorArrasta {
+        max-width: 760px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .iconesLadoLado li {
+        width: auto;
+        flex: 1;
+    }
+
+    .listaLadoLado .cardTextoInferior {
+        width: calc(33.333% - 12px);
+    }
+
+    #dashboard .listaLadoLado .cardTextoInferior {
+        width: calc(50% - 10px);
+    }
+
+    .grafico {
+        justify-content: center;
+        gap: 16px;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        padding: 0 40px 56px;
+    }
+
+    .menuOpen {
+        padding: 32px 15%;
+    }
+
+    header h1,
+    .logo > h1 {
+        font-size: 36pt;
+    }
+
+    .textoBotao h2 {
+        font-size: 28pt;
+    }
+
+    body#login .listaScroll > button:hover {
+        transform: translateY(-3px);
+    }
+
+    .carrosel > li {
+        flex: 0 0 calc(50% - 10px);
+        width: calc(50% - 10px);
+        aspect-ratio: 2 / 1;
+    }
+
+    .carrosel > li > div {
+        padding: 24px;
+    }
+
+    .carrosel > li > div h2 {
+        font-size: 23px;
+    }
+
+    .carrosel > li > div p {
+        font-size: 15px;
+    }
+
+    #dashboard .listaLadoLado .cardTextoInferior {
+        width: calc(25% - 14px);
+    }
+
+    .botaoFiltro {
+        width: 180px;
+    }
+
+    .mapaWrapper,
+    .seletorArrasta {
+        max-width: 900px;
+    }
+
+    .cardInfo i {
+        font-size: 46pt;
+    }
+}
+
+@media (min-width: 1400px) {
+    body {
+        max-width: 1320px;
+    }
+
+    .carrosel > li > div h2 {
+        font-size: 26px;
+    }
+
+    .carrosel > li > div p {
+        font-size: 16px;
+    }
+}

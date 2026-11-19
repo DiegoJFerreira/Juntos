@@ -1,0 +1,154 @@
+
+.claro {
+    background-color: #FDFDFD;
+    color: #222222;
+}
+
+.escuro {
+    background-color: #1A1A1A;
+    color: #F1F1F1;
+}
+
+.escuro .colorPreto,
+.escuro .texto-cinza,
+.escuro #dashboard span,
+.escuro .campoFiltro label,
+.escuro .modalFechar,
+.escuro #pesquisa i,
+.escuro #pesquisa input {
+    color: #F1F1F1;
+}
+
+.escuro #pesquisa input::placeholder {
+    color: #AAAAAA;
+}
+
+.escuro .lista2Lados,
+.escuro .cardTextoInferior,
+.escuro .rankingLista li,
+.escuro .caixaBoletim,
+.escuro .modalCaixa,
+.escuro .painelFiltros {
+    background-color: #262626;
+    border-color: #3D3D3D;
+    color: #F1F1F1;
+}
+
+.escuro #pesquisa,
+.escuro .botaoFiltro,
+.escuro .seletorCaixa,
+.escuro .btnMapaFiltro,
+.escuro .btnEstoque,
+.escuro .iconeData > div,
+.escuro .botaoSecundario,
+.escuro body#login .listaScroll > button,
+.escuro body#login main section:last-child form input {
+    background-color: #2E2E2E;
+    border-color: #4A4A4A;
+    color: #F1F1F1;
+}
+
+.escuro .caixas2Lado > .lista2Lados,
+.escuro body#login .lista2Lados {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.escuro .botaoFiltro:hover {
+    background-color: #383838;
+}
+
+.escuro .btnMapaFiltro.ativo {
+    background-color: #056534;
+    border-color: #056534;
+    color: #FFFFFF;
+}
+
+.escuro body#login .listaScroll > button.selecionado {
+    background-color: #1E3325;
+    border-color: #4ADE80;
+}
+
+.escuro .seletorArrasta {
+    border-bottom-color: #3D3D3D;
+}
+
+.escuro .seletorArrasta button {
+    color: #D4D4D4;
+}
+
+.escuro .seletorArrasta .ativo {
+    color: #6EE7A8;
+    border-bottom-color: #6EE7A8;
+}
+
+.escuro .iconeData > div {
+    background-color: #1E3325;
+    border-color: #3A5A44;
+    border-top-color: #4ADE80;
+    color: #E5E5E5;
+}
+
+.escuro .iconeData h4:last-child {
+    color: #A7F3D0;
+}
+
+.escuro .verTodos,
+.escuro .valorDoadoOng,
+.escuro .statusAcoes,
+.escuro .statusRecebimento,
+.escuro .rankingPeso,
+.escuro .iconeData h4:first-child,
+.escuro .iconeTexto i,
+.escuro .colorVerdeP,
+.escuro .colorVerdeE,
+.escuro .colorVerdeE i,
+.escuro .iconesLadoLado i {
+    color: #6EE7A8;
+}
+
+.escuro .colorAzul {
+    color: #60A5FA;
+}
+
+.escuro .colorLaranja,
+.escuro .colorLaranja i {
+    color: #FB923C;
+}
+
+.escuro .colorRoxo i {
+    color: #C084FC;
+}
+
+.escuro .colorVermelho i,
+.escuro .barraInferior button.curtido {
+    color: #F87171;
+}
+
+.escuro .rankingLista .rankingPrimeiros::before {
+    border-color: #FB923C;
+    color: #FB923C;
+}
+
+.escuro .estoque {
+    background-color: #3D3D3D;
+}
+
+.escuro .mensagemVazia {
+    color: #CCCCCC;
+    border-color: #4A4A4A;
+}
+
+.escuro .mensagemErro {
+    background-color: #3B1D1D;
+    border-color: #7F1D1D;
+    color: #FCA5A5;
+}
+
+.escuro body#login .linha {
+    border-bottom-color: #3D3D3D;
+}
+
+.escuro .barraInferior button:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}

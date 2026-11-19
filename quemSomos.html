@@ -6,24 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <title>Quem Somos</title>
+    <title>Quem Somos - Juntos</title>
 </head>
 
-<body id="quemSomos">
-    <main>
-        <header>
-            <button class="abrirMenu" aria-label="Abrir menu" aria-expanded="false">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <div class="logo">
-                <img src="src/logoPreta.png" alt="Juntos">
-                <h1>Quem Somos</h1>
-            </div>
-            <div>
-                <a class="verTodos" href="Login.html">Login</a>
-            </div>
-        </header>
+<body id="quemSomos" class="claro">
+    <header>
+        <button type="button" class="abrirMenu" aria-label="Abrir menu" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="logo">
+            <img src="src/logoPreta.png" alt="Juntos">
+            <h1>Quem Somos</h1>
+        </div>
+        <div class="headerAcoes">
+            <a class="verTodos" href="Login.html">Login</a>
+            <button type="button" id="tema" aria-label="Mudar tema"><i class="fa fa-sun"></i></button>
+        </div>
+    </header>
 
+    <main>
         <img class="banner" src="src/quemSomos.jpg" alt="Equipe Juntos reunida em uma campanha de doação de alimentos">
 
         <section>
@@ -37,19 +38,19 @@
             <h3 class="colorVerdeE">Nossos Valores</h3>
             <ul class="iconesLadoLado">
                 <li class="icone">
-                    <i class="fas fa-handshake green"></i>
+                    <i class="fas fa-handshake"></i>
                     <h4>Solidariedade</h4>
                 </li>
                 <li class="icone">
-                    <i class="fas fa-eye green"></i>
+                    <i class="fas fa-eye"></i>
                     <h4>Transparência</h4>
                 </li>
                 <li class="icone">
-                    <i class="fas fa-hand-holding-heart green"></i>
+                    <i class="fas fa-hand-holding-heart"></i>
                     <h4>Confiança</h4>
                 </li>
                 <li class="icone">
-                    <i class="fas fa-leaf green"></i>
+                    <i class="fas fa-leaf"></i>
                     <h4>Impacto Social</h4>
                 </li>
             </ul>
@@ -80,8 +81,7 @@
                     <h4>Famílias Carentes</h4>
                 </li>
                 <li class="cardTextoInferior">
-                    <img src="src/comunidadesReligiosas.jpg"
-                        alt="Instituição religiosa apoiando a comunidade com doações">
+                    <img src="src/comunidadesReligiosas.jpg" alt="Instituição religiosa apoiando a comunidade com doações">
                     <h4>Instituições Religiosas</h4>
                 </li>
             </ul>
@@ -94,16 +94,17 @@
                 <img src="src/logoBranca.png" alt="Logo do Juntos">
                 <h1>Juntos</h1>
             </div>
-            <button class="fecharMenu"><i class="fa fa-close"></i></button>
+            <button type="button" class="fecharMenu" aria-label="Fechar menu"><i class="fa fa-close"></i></button>
         </div>
         <nav class="redirecionadorMenu">
-            <div><i class="fas fa-home white"></i><a href="home.html">Inicio</a></div>
+            <div><i class="fas fa-home white"></i><a href="home.html">Início</a></div>
             <div><i class="fas fa-user-alt white"></i><a href="minhaArea.html">Minha Área</a></div>
-            <div><i class="fas fa-chart-bar white"></i><a href="dashboard.html">Dashboard</a></div>
+            <div><i class="fas fa-chart-bar white"></i><a href="Dashboard.html">Dashboard</a></div>
             <div><i class="fas fa-newspaper white"></i><a href="boletim.html">Boletim</a></div>
             <div><i class="fas fa-question-circle white"></i><a href="quemSomos.html">Quem Somos</a></div>
         </nav>
     </article>
+
     <script src="script.js" defer></script>
 </body>
 

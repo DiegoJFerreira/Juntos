@@ -2,194 +2,304 @@
 <html lang="pt-BR">
 
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Juntos</title>
-        <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juntos</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
-<body id="home">
-        <header>
-                <button class="abrirMenu" aria-label="Abrir menu" aria-expanded="false">
-                        <i class="fa-solid fa-bars"></i>
+<body id="home" class="claro">
+    <header>
+        <button class="abrirMenu" type="button" aria-label="Abrir menu" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="logo">
+            <img src="src/logoPreta.png" alt="Juntos">
+            <h1>Juntos</h1>
+        </div>
+        <div class="headerAcoes">
+            <a class="verTodos" href="Login.html">Login</a>
+            <button type="button" id="tema" aria-label="Mudar tema"><i class="fa fa-sun"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="carroselWrapper">
+                <button type="button" class="setaCarrosel anterior" aria-label="Slide anterior">
+                    <i class="fa-solid fa-chevron-left"></i>
                 </button>
-                <div class="logo">
-                        <img src="src/logoPreta.png" alt="Juntos">
-                        <h1>Juntos</h1>
+                <ul class="carrosel">
+                    <li>
+                        <img src="src/home1.jpg" alt="Imagem de mulheres separando alimentos para doação">
+                        <div>
+                            <h3>NOTÍCIA</h3>
+                            <h2>Solidariedade que transforma vidas.</h2>
+                            <p>Conectamos doadores, voluntários e ONGs para um mundo melhor.</p>
+                            <button type="button">Saiba mais</button>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="src/home2.jpg" alt="Imagem de pessoas ajudando outras pessoas">
+                        <div>
+                            <h3>NOTÍCIA</h3>
+                            <h2>Voluntariado com impacto positivo</h2>
+                            <p>Descubra como o voluntariado pode criar mudanças significativas em nossas comunidades.</p>
+                            <button type="button">Saiba mais</button>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="src/noticias2.jpg" alt="Imagem de voluntários distribuindo alimentos e roupas">
+                        <div>
+                            <h3>NOTÍCIA</h3>
+                            <h2>Voluntários transformam vidas com ações solidárias</h2>
+                            <p>Projetos locais mobilizam pessoas para apoiar comunidades em momentos de necessidade.</p>
+                            <button type="button">Saiba mais</button>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="src/noticias1.jpg" alt="Imagem de pessoas doando roupas para pessoas necessitadas">
+                        <div>
+                            <h3>NOTÍCIA</h3>
+                            <h2>Campanha de inverno arrecada 2 toneladas de alimentos</h2>
+                            <p>Uma ação coletiva fortalece a ajuda às famílias e amplia o impacto da solidariedade.</p>
+                            <button type="button">Saiba mais</button>
+                        </div>
+                    </li>
+                </ul>
+                <button type="button" class="setaCarrosel proxima" aria-label="Próximo slide">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="indicadores">
+                <button type="button" class="indicador ativo" aria-label="Slide 1"></button>
+                <button type="button" class="indicador" aria-label="Slide 2"></button>
+                <button type="button" class="indicador" aria-label="Slide 3"></button>
+                <button type="button" class="indicador" aria-label="Slide 4"></button>
+            </div>
+        </section>
+
+        <section>
+            <div class="textoBotao">
+                <h2 class="colorPreto">Notícias</h2>
+                <button type="button" class="verTodos">Ver todos</button>
+            </div>
+            <ul class="listaScroll">
+                <li class="lista2Lados">
+                    <div>
+                        <img src="src/noticias1.jpg" alt="Imagem de pessoas doando roupas para pessoas necessitadas">
+                    </div>
+                    <div>
+                        <h3>Campanha de inverno arrecada 2 toneladas de alimentos</h3>
+                        <p>7 de outubro de 2026</p>
+                    </div>
+                </li>
+                <li class="lista2Lados">
+                    <div>
+                        <img src="src/noticias2.jpg" alt="Imagem de voluntários entregando doações">
+                    </div>
+                    <div>
+                        <h3>Voluntários transformam vidas com ações solidárias</h3>
+                        <p>15 de outubro de 2026</p>
+                    </div>
+                </li>
+                <li class="lista2Lados itemExtra oculto">
+                    <div>
+                        <img src="src/Doação de alimentos.jpg" alt="Distribuição de cestas básicas">
+                    </div>
+                    <div>
+                        <h3>Mais de 400 famílias recebem cestas básicas em mutirão mensal</h3>
+                        <p>22 de outubro de 2026</p>
+                    </div>
+                </li>
+                <li class="lista2Lados itemExtra oculto">
+                    <div>
+                        <img src="src/campanha do agasalho.jpg" alt="Campanha do agasalho em andamento">
+                    </div>
+                    <div>
+                        <h3>Campanha do agasalho supera meta com apoio de escolas locais</h3>
+                        <p>30 de outubro de 2026</p>
+                    </div>
+                </li>
+                <li class="lista2Lados itemExtra oculto">
+                    <div>
+                        <img src="src/alimento para todos.jpg" alt="Alimentos organizados para distribuição">
+                    </div>
+                    <div>
+                        <h3>Parceria entre mercados e ONGs reduz desperdício de alimentos</h3>
+                        <p>5 de novembro de 2026</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <div class="textoBotao">
+                <h2 class="colorPreto">Destaques</h2>
+                <button type="button" class="verTodos">Ver todos</button>
+            </div>
+            <ul class="listaScroll">
+                <li class="lista2Lados">
+                    <div class="iconeData">
+                        <div>
+                            <h4>12</h4>
+                            <h4>NOV</h4>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Doação de roupas e cobertores</h3>
+                        <p>Vila Mariana - São Paulo/SP</p>
+                        <div class="iconeTexto">
+                            <i class="fa-solid fa-clock"></i>
+                            <p>14h às 17h</p>
+                        </div>
+                        <div class="iconeTexto">
+                            <i class="fa-solid fa-user"></i>
+                            <p>12 Voluntários confirmados</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="lista2Lados">
+                    <div class="iconeData">
+                        <div>
+                            <h4>27</h4>
+                            <h4>DEZ</h4>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Entrega de cestas básicas</h3>
+                        <p>Jardim da Saúde - São Paulo/SP</p>
+                        <div class="iconeTexto">
+                            <i class="fa-solid fa-clock"></i>
+                            <p>08h às 11h</p>
+                        </div>
+                        <div class="iconeTexto">
+                            <i class="fa-solid fa-user"></i>
+                            <p>18 Voluntários confirmados</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="lista2Lados">
+                    <div class="iconeData">
+                        <div>
+                            <h4>03</h4>
+                            <h4>SET</h4>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Ação de higiene e limpeza</h3>
+                        <p>Centro - Santos/SP</p>
+                        <div class="iconeTexto">
+                            <i class="fa-solid fa-clock"></i>
+                            <p>10h às 13h</p>
+                        </div>
+                        <div class="iconeTexto">
+                            <i class="fa-solid fa-user"></i>
+                            <p>08 Voluntários confirmados</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="lista2Lados">
+                    <div class="iconeData">
+                        <div>
+                            <h4>19</h4>
+                            <h4>NOV</h4>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Mutirão de sopão solidário</h3>
+                        <p>Centro - Belo Horizonte/MG</p>
+                        <div class="iconeTexto">
+                            <i class="fa-solid fa-clock"></i>
+                            <p>18h às 21h</p>
+                        </div>
+                        <div class="iconeTexto">
+                            <i class="fa-solid fa-user"></i>
+                            <p>15 Voluntários confirmados</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="lista2Lados itemExtra oculto">
+                    <div class="iconeData">
+                        <div>
+                            <h4>06</h4>
+                            <h4>DEZ</h4>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Oficina de leitura e recreação</h3>
+                        <p>São Mateus - Juiz de Fora/MG</p>
+                        <div class="iconeTexto">
+                            <i class="fa-solid fa-clock"></i>
+                            <p>09h às 12h</p>
+                        </div>
+                        <div class="iconeTexto">
+                            <i class="fa-solid fa-user"></i>
+                            <p>10 Voluntários confirmados</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="lista2Lados itemExtra oculto">
+                    <div class="iconeData">
+                        <div>
+                            <h4>14</h4>
+                            <h4>DEZ</h4>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Feira de arrecadação natalina</h3>
+                        <p>Boa Vista - Barbacena/MG</p>
+                        <div class="iconeTexto">
+                            <i class="fa-solid fa-clock"></i>
+                            <p>13h às 17h</p>
+                        </div>
+                        <div class="iconeTexto">
+                            <i class="fa-solid fa-user"></i>
+                            <p>22 Voluntários confirmados</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <div id="modalNoticia" class="modalFundo oculto" role="dialog" aria-modal="true" aria-labelledby="modalNoticiaTitulo">
+        <div class="modalCaixa">
+            <div class="modalCabecalho">
+                <h3 id="modalNoticiaTitulo">Notícia</h3>
+                <button type="button" id="fecharModalNoticia" class="modalFechar" aria-label="Fechar">&times;</button>
+            </div>
+            <div class="modalCorpo">
+                <p id="modalNoticiaTexto"></p>
+                <div class="modalAcoes">
+                    <a class="botaoPrincipal" href="minhaArea.html">Participar agora</a>
                 </div>
-                <div>
-                        <a class="verTodos" href="Login.html">Login</a>
-                </div>
-        </header>
-        <main>
-                <section>
-                        <ul class="carrosel">
-                                <li>
-                                        <img src="src/home1.jpg"
-                                                alt="imagem de mulheres separando alimentos para doação">
-                                        <div>
-                                                <h3 >NOTÍCIA</h3>
-                                                <h2>Solidariedade que transforma vidas.</h2>
-                                                <p>Conectamos doadores, voluntários e ONGs para um mundo melhor.</p>
-                                                <Button>Saiba mais</Button>
-                                        </div>
-                                </li>
-                                <li>
-                                        <img src="src/home2.jpg" alt="imagem de pessoas ajudando outras pessoas">
-                                        <div>
-                                                <h3>NOTÍCIA</h3>
-                                                <h2>Voluntariado com impacto positivo</h2>
-                                                <p>Descubra como o voluntariado pode criar mudanças significativas em
-                                                        nossas comunidades.</p>
-                                                <Button>Saiba mais</Button>
-                                        </div>
-                                </li>
-                                <li>
-                                        <img src="src/noticias2.jpg"
-                                                alt="imagem de voluntários distribuindo alimentos e roupas para pessoas em vulnerabilidade">
-                                        <div>
-                                                <h3>NOTÍCIA</h3>
-                                                <h2>Voluntários transformam vidas com ações solidárias</h2>
-                                                <p>Projetos locais mobilizam pessoas para apoiar comunidades em momentos
-                                                        de necessidade.</p>
-                                                <button>Saiba mais</button>
-                                        </div>
-                                </li>
-                                <li>
-                                        <img src="src/noticias1.jpg"
-                                                alt="imagem de pessoas doando roupas para pessoas necessitadas">
-                                        <div>
-                                                <h3>NOTÍCIA</h3>
-                                                <h2>Campanha de inverno arrecada 2 toneladas de alimentos</h2>
-                                                <p>Uma ação coletiva fortalece a ajuda às famílias e amplia o impacto da
-                                                        solidariedade.</p>
-                                                <button>Saiba mais</button>
-                                        </div>
-                                </li>
-                        </ul>
-                        <div class="indicadores">
-                                <button class="indicador ativo"></button>
-                                <button class="indicador"></button>
-                                <button class="indicador"></button>
-                                <button class="indicador"></button>
-                        </div>
-                </section>
-                <section>
-                        <div class="textoBotao">
-                                <h2 class="colorPreto">Notícias</h2>
-                                <button class="verTodos">Ver todos</button>
-                        </div>
-                        <ul class="listaScroll">
-                                <li class="lista2Lados">
-                                        <div>
-                                                <img src="src/noticias1.jpg"
-                                                        alt="imagem de pessoas doando roupas para pessoas necessitadas">
-                                        </div>
-                                        <div>
-                                                <h3>Campanha de inverno arrecada 2 toneladas de alimentos</h3>
-                                                <p>7 de outubro de 2026</p>
-                                        </div>
-                                </li>
-                                <li class="lista2Lados">
-                                        <div>
-                                                <img src="src/noticias2.jpg"
-                                                        alt="imagem de pessoas doando roupas para pessoas necessitadas">
-                                        </div>
-                                        <div>
-                                                <h3>Voluntários transformam vidas com ações solidárias</h3>
-                                                <p>15 de outubro de 2026</p>
-                                        </div>
-                                </li>
-                        </ul>
-                </section>
-                <section>
-                        <div class="textoBotao">
-                                <h2 class="colorPreto">Destaques</h2>
-                                <button class="verTodos">Ver todos</button>
-                        </div>
-                        <ul class="listaScroll">
-                                <li class="lista2Lados">
-                                        <div class="iconeData">
-                                                <div>
-                                                        <h4>12</h4>
-                                                        <h4>NOV</h4>
-                                                </div>
-                                        </div>
-                                        <div>
-                                                <h3>Doação de roupas e cobertores</h3>
-                                                <p>Vila Mariana - São Paulo/SP</p>
-                                                <div class="iconeTexto">
-                                                        <i class="fa-solid fa-clock"></i>
-                                                        <p>14h às 17h</p>
-                                                </div>
-                                                <div class="iconeTexto">
-                                                        <i class="fa-solid fa-user"></i>
-                                                        <p>12 Voluntários confirmados</p>
-                                                </div>
-                                        </div>
-                                </li>
-                                <li class="lista2Lados">
-                                        <div class="iconeData">
-                                                <div>
-                                                        <h4>27</h4>
-                                                        <h4>DEZ</h4>
-                                                </div>
-                                        </div>
-                                        <div>
-                                                <h3>Entrega de cestas básicas</h3>
-                                                <p>Jardim da Saúde - São Paulo/SP</p>
-                                                <div class="iconeTexto">
-                                                        <i class="fa-solid fa-clock"></i>
-                                                        <p>08h às 11h</p>
-                                                </div>
-                                                <div class="iconeTexto">
-                                                        <i class="fa-solid fa-user"></i>
-                                                        <p>18 Voluntários confirmados</p>
-                                                </div>
-                                        </div>
-                                </li>
-                                <li class="lista2Lados">
-                                        <div class="iconeData">
-                                                <div>
-                                                        <h4>03</h4>
-                                                        <h4>SET</h4>
-                                                </div>
-                                        </div>
-                                        <div>
-                                                <h3>Ação de higiene e limpeza</h3>
-                                                <p>Centro - Santos/SP</p>
-                                                <div class="iconeTexto">
-                                                        <i class="fa-solid fa-clock"></i>
-                                                        <p>10h às 13h</p>
-                                                </div>
-                                                <div class="iconeTexto">
-                                                        <i class="fa-solid fa-user"></i>
-                                                        <p>08 Voluntários confirmados</p>
-                                                </div>
-                                        </div>
-                                </li>
-                        </ul>
-                </section>
-        </main>
-        <article id="menu" class="menuClose">
-                <div>
-                        <div class="logo">
-                                <img src="src/logoBranca.png" alt="Logo do Juntos">
-                                <h1>Juntos</h1>
-                        </div>
-                        <button class="fecharMenu"><i class="fa fa-close"></i></button>
-                </div>
-                <nav class="redirecionadorMenu">
-                        <div><i class="fas fa-home white"></i><a href="home.html">Inicio</a></div>
-                        <div><i class="fas fa-user-alt white"></i><a href="minhaArea.html">Minha Área</a></div>
-                        <div><i class="fas fa-chart-bar white"></i><a href="dashboard.html">Dashboard</a></div>
-                        <div><i class="fas fa-newspaper white"></i><a href="boletim.html">Boletim</a></div>
-                        <div><i class="fas fa-question-circle white"></i><a href="quemSomos.html">Quem Somos</a></div>
-                </nav>
-        </article>
-        <script src="script.js" defer></script>
+            </div>
+        </div>
+    </div>
+
+    <article id="menu" class="menuClose">
+        <div>
+            <div class="logo">
+                <img src="src/logoBranca.png" alt="Logo do Juntos">
+                <h1>Juntos</h1>
+            </div>
+            <button type="button" class="fecharMenu" aria-label="Fechar menu">
+                <i class="fa fa-close"></i>
+            </button>
+        </div>
+        <nav class="redirecionadorMenu">
+            <div><i class="fas fa-home white"></i><a href="home.html">Início</a></div>
+            <div><i class="fas fa-user-alt white"></i><a href="minhaArea.html">Minha Área</a></div>
+            <div><i class="fas fa-chart-bar white"></i><a href="Dashboard.html">Dashboard</a></div>
+            <div><i class="fas fa-newspaper white"></i><a href="boletim.html">Boletim</a></div>
+            <div><i class="fas fa-question-circle white"></i><a href="quemSomos.html">Quem Somos</a></div>
+        </nav>
+    </article>
+
+    <script src="script.js" defer></script>
+    <script src="js/home.js" defer></script>
 </body>
 
 </html>

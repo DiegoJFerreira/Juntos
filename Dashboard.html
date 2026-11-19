@@ -2,223 +2,230 @@
 <html lang="pt-br">
 
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-        <title>Dashboard</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Dashboard - Juntos</title>
 </head>
 
-<body id="dashboard">
-        <header>
-                <button class="abrirMenu" aria-label="Abrir menu" aria-expanded="false">
-                        <i class="fa-solid fa-bars"></i>
-                </button>
-                <div class="logo">
-                        <img src="src/logoPreta.png" alt="Juntos">
-                        <h1>Dashboard</h1>
+<body id="dashboard" class="claro">
+    <header>
+        <button type="button" class="abrirMenu" aria-label="Abrir menu" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="logo">
+            <img src="src/logoPreta.png" alt="Juntos">
+            <h1>Dashboard</h1>
+        </div>
+        <div class="headerAcoes">
+            <a class="verTodos" href="Login.html">Login</a>
+            <button type="button" id="tema" aria-label="Mudar tema"><i class="fa fa-sun"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="textoBotao">
+                <h2>Visão Geral</h2>
+                <div class="pediodo">
+                    <p>Período:</p>
+                    <select class="seletorCaixa" aria-label="Selecionar mês">
+                        <option>Janeiro</option>
+                        <option>Fevereiro</option>
+                        <option>Março</option>
+                        <option>Abril</option>
+                        <option>Maio</option>
+                        <option selected>Junho</option>
+                        <option>Julho</option>
+                        <option>Agosto</option>
+                        <option>Setembro</option>
+                        <option>Outubro</option>
+                        <option>Novembro</option>
+                        <option>Dezembro</option>
+                    </select>
                 </div>
-                <div>
-                        <a class="verTodos" href="Login.html">Login</a>
+            </div>
+            <div class="visaoGeral">
+                <div class="listaLadoLado">
+                    <div class="cardTextoInferior">
+                        <h3 class="tamanhoLetra">Total de Doações</h3>
+                        <div class="cardInfo">
+                            <span class="colorVerdeE"><i class="fa-solid fa-money-bill-wave verde"></i></span>
+                            <p id="kpiDoacoes">2.850 kg</p>
+                        </div>
+                    </div>
+                    <div class="cardTextoInferior">
+                        <h3 class="tamanhoLetra">Total de Eventos</h3>
+                        <div class="cardInfo">
+                            <span class="colorLaranja"><i class="fa-regular fa-calendar-days laranja"></i></span>
+                            <p id="kpiEventos">48</p>
+                        </div>
+                    </div>
+                    <div class="cardTextoInferior">
+                        <h3 class="tamanhoLetra">Voluntários Ativos</h3>
+                        <div class="cardInfo">
+                            <span class="colorRoxo"><i class="fa-solid fa-users roxo"></i></span>
+                            <p id="kpiVoluntarios">320</p>
+                        </div>
+                    </div>
+                    <div class="cardTextoInferior">
+                        <h3 class="tamanhoLetra">Pessoas Beneficiadas</h3>
+                        <div class="cardInfo">
+                            <span class="colorVermelho"><i class="fa-solid fa-heart vermelho"></i></span>
+                            <p id="kpiBeneficiadas">6.420</p>
+                        </div>
+                    </div>
                 </div>
-        </header>
-        <main>
-                <section>
-                        <div class="textoBotao">
-                                <h2>Visão Geral</h2>
-                                <div class="pediodo">
-                                        <p>Período:</p>
-                                        <select class="seletorCaixa">
-                                                <option>Janeiro</option>
-                                                <option>Fevereiro</option>
-                                                <option>Março</option>
-                                                <option>Abril</option>
-                                                <option>Maio</option>
-                                                <option>Junho</option>
-                                                <option>Julho</option>
-                                                <option>Agosto</option>
-                                                <option>Setembro</option>
-                                                <option>Outubro</option>
-                                                <option>Novembro</option>
-                                                <option>Dezembro</option>
-                                        </select>
-                                </div>
-                        </div>
-                        <div class="visaoGeral">
+            </div>
+        </section>
 
-                                <div class="listaLadoLado">
-                                        <div class="cardTextoInferior">
-                                                <h3 class="tamanhoLetra">Total de Doações</h3>
-                                                <div class="cardInfo">
-                                                        <span class="colorVerdeE"><i class="fa-solid fa-money-bill-wave verde"></i></span>
-                                                        <p>2.850 kg</p>
-                                                </div>
-                                        </div>
-                                        <div class="cardTextoInferior">
-                                                <h3 class="tamanhoLetra">Total de Eventos</h3>
-                                                <span class="colorLaranja">
-                                                <div class="cardInfo">
-                                                        <i class="fa-regular fa-calendar-days laranja"></i>
-                                                </span>
-                                                        <p>48</p>
-                                                </div>
-                                        </div>
-                                        <div class="cardTextoInferior">
-                                                <h3 class="TamanhoLetra">Voluntários Ativos</h3>
-                                                <div class="cardInfo">
-                                                        <span class="colorRoxo">
-                                                        <i class="fa-solid fa-users roxo"></i></span>
-                                                        <p>320</p>
-                                                </div>
-                                        </div>
-                                        <div class="cardTextoInferior">
-                                                <h3 class="tamanhoLetra">Pessoas Beneficiadas</h3>
-                                                <div class="cardInfo">
-                                                        <span class="colorVermelho">
-                                                        <i class="fa-solid fa-heart vermelho"></i></span>
-                                                        <p>6.420</p>
-                                                </div>
-                                        </div>
-                                </div>
-                        </div>
-                </section>
-
-                <section>
-                        <h2>Doações por Mês <span>(kg)</span></h2>
-                        <div class="grafico">
-                                <div class="barra">
-                                        <p>1.230</p>
-                                        <div>
-                                                <div class="barraPreenchida" id="Janeiro"></div>
-                                        </div>
-                                        <p>Janeiro</p>
-                                </div>
-                                <div class="barra">
-                                        <p>1.500</p>
-                                        <div class="barraPreenchida" id="Fevereiro"></div>
-                                        <p>Fevereiro</p>
-                                </div>
-                                <div class="barra">
-                                        <p>1.800</p>
-                                        <div class="barraPreenchida" id="Março"></div>
-                                        <p>Março</p>
-                                </div>
-                                <div class="barra">
-                                        <p>2.100</p>
-                                        <div class="barraPreenchida" id="Abril"></div>
-                                        <p>Abril</p>
-                                </div>
-                                <div class="barra">
-                                        <p>2.400</p>
-                                        <div class="barraPreenchida" id="Maio"></div>
-                                        <p>Maio</p>
-                                </div>
-                                <div class="barra">
-                                        <p>2.700</p>
-                                        <div class="barraPreenchida" id="Junho"></div>
-                                        <p>Junho</p>
-                                </div>
-                        </div>
-                </section>
-
-                <section>
-                        <h2>Top Doadores <span>(kg)</span>
-                        </h2>
-                        <ol class="rankingLista">
-                                <li class="rankingPrimeiros">
-                                        <h4 class="rankingNome">Supermercado Bom Preço</h4>
-                                        <h3 class="rankingPeso">500 kg</h3>
-                                </li>
-                                <li class="rankingPrimeiros">
-                                        <h4 class="rankingNome">Mercado União</h4>
-                                        <h3 class="rankingPeso">450 kg</h3>
-                                </li>
-                                <li class="rankingPrimeiros">
-                                        <h4 class="rankingNome">Alimentos do Bem</h4>
-                                        <h3 class="rankingPeso">400 kg</h3>
-                                </li>
-                                <li>
-                                        <h4 class="rankingNome">Atacadão Solidário</h4>
-                                        <h3 class="rankingPeso">350 kg</h3>
-                                </li>
-                                <li>
-                                        <h4 class="rankingNome">Padaria Municipal</h4>
-                                        <h3 class="rankingPeso">300 kg</h3>
-                                </li>
-                        </ol>
-                </section>
-
-                <section>
-                        <h2>Top ONGs <span>(mais eventos)</span>
-                        </h2>
-                        <ol class="rankingLista">
-                                <li class="rankingPrimeiros">
-                                        <h4 class="rankingNome">Projeto Esperança</h4>
-                                        <h3 class="rankingPeso">50 eventos</h3>
-                                </li>
-                                <li class="rankingPrimeiros">
-                                        <h4 class="rankingNome">Rede de Apoio</h4>
-                                        <h3 class="rankingPeso">45 eventos</h3>
-                                </li>
-                                <li class="rankingPrimeiros">
-                                        <h4 class="rankingNome">Programa de Alimentação</h4>
-                                        <h3 class="rankingPeso">40 eventos</h3>
-                                </li>
-                                <li>
-                                        <h4 class="rankingNome">ONG de Apoio</h4>
-                                        <h3 class="rankingPeso">35 eventos</h3>
-                                </li>
-                                <li>
-                                        <h4 class="rankingNome">Programa de Voluntariado</h4>
-                                        <h3 class="rankingPeso">30 eventos</h3>
-                                </li>
-                        </ol>
-                </section>
-
-                <section>
-                        <h2>Top Voluntários <span>(mais participações)</span>
-                        </h2>
-                        <ol class="rankingLista">
-                                <li class="rankingPrimeiros">
-                                        <h4 class="rankingNome">Ana Silva</h4>
-                                        <h3 class="rankingPeso">50 participações</h3>
-                                </li>
-                                <li class="rankingPrimeiros">
-                                        <h4 class="rankingNome">Carlos Oliveira</h4>
-                                        <h3 class="rankingPeso">45 participações</h3>
-                                </li>
-                                <li class="rankingPrimeiros">
-                                        <h4 class="rankingNome">Maria Santos</h4>
-                                        <h3 class="rankingPeso">40 participações</h3>
-                                </li>
-                                <li>
-                                        <h4 class="rankingNome">João Pereira</h4>
-                                        <h3 class="rankingPeso">35 participações</h3>
-                                </li>
-                                <li>
-                                        <h4 class="rankingNome">Pedro Costa</h4>
-                                        <h3 class="rankingPeso">30 participações</h3>
-                                </li>
-                        </ol>
-                </section>
-        </main>
-        <article id="menu" class="menuClose">
-                <div>
-                        <div class="logo">
-                                <img src="src/logoBranca.png" alt="Logo do Juntos">
-                                <h1>Juntos</h1>
-                        </div>
-                        <button class="fecharMenu"><i class="fa fa-close"></i></button>
+        <section>
+            <h2>Doações por Mês <span>(kg)</span></h2>
+            <div class="grafico">
+                <div class="barra">
+                    <p>1.230</p>
+                    <div>
+                        <div class="barraPreenchida altura-40" id="Janeiro"></div>
+                    </div>
+                    <p>Janeiro</p>
                 </div>
-                <nav class="redirecionadorMenu">
-                        <div><i class="fas fa-home white"></i><a href="home.html">Inicio</a></div>
-                        <div><i class="fas fa-user-alt white"></i><a href="minhaArea.html">Minha Área</a></div>
-                        <div><i class="fas fa-chart-bar white"></i><a href="dashboard.html">Dashboard</a></div>
-                        <div><i class="fas fa-newspaper white"></i><a href="boletim.html">Boletim</a></div>
-                        <div><i class="fas fa-question-circle white"></i><a href="quemSomos.html">Quem Somos</a></div>
-                </nav>
-        </article>
-        <script src="script.js" defer></script>
+                <div class="barra">
+                    <p>1.500</p>
+                    <div>
+                        <div class="barraPreenchida altura-50" id="Fevereiro"></div>
+                    </div>
+                    <p>Fevereiro</p>
+                </div>
+                <div class="barra">
+                    <p>1.800</p>
+                    <div>
+                        <div class="barraPreenchida altura-60" id="Março"></div>
+                    </div>
+                    <p>Março</p>
+                </div>
+                <div class="barra">
+                    <p>2.100</p>
+                    <div>
+                        <div class="barraPreenchida altura-70" id="Abril"></div>
+                    </div>
+                    <p>Abril</p>
+                </div>
+                <div class="barra">
+                    <p>2.400</p>
+                    <div>
+                        <div class="barraPreenchida altura-80" id="Maio"></div>
+                    </div>
+                    <p>Maio</p>
+                </div>
+                <div class="barra">
+                    <p>2.700</p>
+                    <div>
+                        <div class="barraPreenchida altura-90" id="Junho"></div>
+                    </div>
+                    <p>Junho</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Top Doadores <span>(kg)</span></h2>
+            <ol class="rankingLista">
+                <li class="rankingPrimeiros">
+                    <h4 class="rankingNome">Supermercado Bom Preço</h4>
+                    <h3 class="rankingPeso">500 kg</h3>
+                </li>
+                <li class="rankingPrimeiros">
+                    <h4 class="rankingNome">Mercado União</h4>
+                    <h3 class="rankingPeso">450 kg</h3>
+                </li>
+                <li class="rankingPrimeiros">
+                    <h4 class="rankingNome">Alimentos do Bem</h4>
+                    <h3 class="rankingPeso">400 kg</h3>
+                </li>
+                <li>
+                    <h4 class="rankingNome">Atacadão Solidário</h4>
+                    <h3 class="rankingPeso">350 kg</h3>
+                </li>
+                <li>
+                    <h4 class="rankingNome">Padaria Municipal</h4>
+                    <h3 class="rankingPeso">300 kg</h3>
+                </li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Top ONGs <span>(mais eventos)</span></h2>
+            <ol class="rankingLista">
+                <li class="rankingPrimeiros">
+                    <h4 class="rankingNome">Projeto Esperança</h4>
+                    <h3 class="rankingPeso">50 eventos</h3>
+                </li>
+                <li class="rankingPrimeiros">
+                    <h4 class="rankingNome">Rede de Apoio</h4>
+                    <h3 class="rankingPeso">45 eventos</h3>
+                </li>
+                <li class="rankingPrimeiros">
+                    <h4 class="rankingNome">Programa de Alimentação</h4>
+                    <h3 class="rankingPeso">40 eventos</h3>
+                </li>
+                <li>
+                    <h4 class="rankingNome">ONG de Apoio</h4>
+                    <h3 class="rankingPeso">35 eventos</h3>
+                </li>
+                <li>
+                    <h4 class="rankingNome">Programa de Voluntariado</h4>
+                    <h3 class="rankingPeso">30 eventos</h3>
+                </li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Top Voluntários <span>(mais participações)</span></h2>
+            <ol class="rankingLista">
+                <li class="rankingPrimeiros">
+                    <h4 class="rankingNome">Ana Silva</h4>
+                    <h3 class="rankingPeso">50 participações</h3>
+                </li>
+                <li class="rankingPrimeiros">
+                    <h4 class="rankingNome">Carlos Oliveira</h4>
+                    <h3 class="rankingPeso">45 participações</h3>
+                </li>
+                <li class="rankingPrimeiros">
+                    <h4 class="rankingNome">Maria Santos</h4>
+                    <h3 class="rankingPeso">40 participações</h3>
+                </li>
+                <li>
+                    <h4 class="rankingNome">João Pereira</h4>
+                    <h3 class="rankingPeso">35 participações</h3>
+                </li>
+                <li>
+                    <h4 class="rankingNome">Pedro Costa</h4>
+                    <h3 class="rankingPeso">30 participações</h3>
+                </li>
+            </ol>
+        </section>
+    </main>
+
+    <article id="menu" class="menuClose">
+        <div>
+            <div class="logo">
+                <img src="src/logoBranca.png" alt="Logo do Juntos">
+                <h1>Juntos</h1>
+            </div>
+            <button type="button" class="fecharMenu" aria-label="Fechar menu"><i class="fa fa-close"></i></button>
+        </div>
+        <nav class="redirecionadorMenu">
+            <div><i class="fas fa-home white"></i><a href="home.html">Início</a></div>
+            <div><i class="fas fa-user-alt white"></i><a href="minhaArea.html">Minha Área</a></div>
+            <div><i class="fas fa-chart-bar white"></i><a href="Dashboard.html">Dashboard</a></div>
+            <div><i class="fas fa-newspaper white"></i><a href="boletim.html">Boletim</a></div>
+            <div><i class="fas fa-question-circle white"></i><a href="quemSomos.html">Quem Somos</a></div>
+        </nav>
+    </article>
+
+    <script src="script.js" defer></script>
+    <script src="js/dashboard.js" defer></script>
 </body>
 
 </html>

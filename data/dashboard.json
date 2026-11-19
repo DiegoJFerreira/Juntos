@@ -1,0 +1,84 @@
+{
+  "periodos": {
+    "Janeiro": {
+      "doacoes": "1.230 kg",
+      "eventos": "24",
+      "voluntarios": "195",
+      "beneficiadas": "2.890"
+    },
+    "Fevereiro": {
+      "doacoes": "1.500 kg",
+      "eventos": "29",
+      "voluntarios": "220",
+      "beneficiadas": "3.410"
+    },
+    "Março": {
+      "doacoes": "1.800 kg",
+      "eventos": "34",
+      "voluntarios": "255",
+      "beneficiadas": "4.120"
+    },
+    "Abril": {
+      "doacoes": "2.100 kg",
+      "eventos": "39",
+      "voluntarios": "280",
+      "beneficiadas": "4.950"
+    },
+    "Maio": {
+      "doacoes": "2.400 kg",
+      "eventos": "43",
+      "voluntarios": "305",
+      "beneficiadas": "5.780"
+    },
+    "Junho": {
+      "doacoes": "2.850 kg",
+      "eventos": "48",
+      "voluntarios": "320",
+      "beneficiadas": "6.420"
+    },
+    "Julho": {
+      "doacoes": "2.620 kg",
+      "eventos": "45",
+      "voluntarios": "310",
+      "beneficiadas": "5.980"
+    },
+    "Agosto": {
+      "doacoes": "2.940 kg",
+      "eventos": "51",
+      "voluntarios": "342",
+      "beneficiadas": "6.850"
+    },
+    "Setembro": {
+      "doacoes": "2.710 kg",
+      "eventos": "46",
+      "voluntarios": "318",
+      "beneficiadas": "6.190"
+    },
+    "Outubro": {
+      "doacoes": "3.150 kg",
+      "eventos": "54",
+      "voluntarios": "360",
+      "beneficiadas": "7.240"
+    },
+    "Novembro": {
+      "doacoes": "3.420 kg",
+      "eventos": "58",
+      "voluntarios": "385",
+      "beneficiadas": "7.890"
+    },
+    "Dezembro": {
+      "doacoes": "3.980 kg",
+      "eventos": "65",
+      "voluntarios": "420",
+      "beneficiadas": "8.950"
+    }
+  },
+  "mesesGrafico": [
+    { "mes": "Janeiro", "valor": "1.230", "classeAltura": "altura-40" },
+    { "mes": "Fevereiro", "valor": "1.500", "classeAltura": "altura-50" },
+    { "mes": "Março", "valor": "1.800", "classeAltura": "altura-60" },
+    { "mes": "Abril", "valor": "2.100", "classeAltura": "altura-70" },
+    { "mes": "Maio", "valor": "2.400", "classeAltura": "altura-80" },
+    { "mes": "Junho", "valor": "2.700", "classeAltura": "altura-90" }
+  ]
+}

@@ -1,0 +1,740 @@
+
+body#login main {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 16px 8px 40px;
+}
+
+body#login main section {
+    margin-top: 28px;
+}
+
+body#login main section:first-child {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+body#login main section:first-child h2 {
+    font-size: 28px;
+    margin: 0 0 10px;
+}
+
+body#login main section:first-child p {
+    font-size: 18px;
+    margin: 0;
+}
+
+body#login main section:nth-child(2) > h3 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+
+body#login .listaScroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+body#login .listaScroll > button {
+    width: 100%;
+    max-width: 460px;
+    padding: 22px 20px;
+    border: 2px solid #CFCFC9;
+    border-radius: 14px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.14);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+body#login .listaScroll > button.selecionado {
+    border-color: #056534;
+    box-shadow: 0 4px 12px rgba(5, 101, 52, 0.25);
+
+}
+
+body#login .lista2Lados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    padding: 0;
+}
+
+body#login .lista2Lados > div:first-child {
+    width: auto;
+    min-height: 0;
+}
+
+body#login .lista2Lados i {
+    font-size: 40px;
+}
+
+body#login .lista2Lados h4 {
+    font-size: 19px;
+    margin: 0 0 8px;
+}
+
+body#login .lista2Lados p {
+    font-size: 16px;
+    line-height: 1.45;
+    margin: 0;
+}
+
+body#login article {
+    max-width: 650px;
+    margin: 28px auto;
+}
+
+body#login .linha {
+    border-bottom: 1px solid #CFCFC9;
+    margin: 0;
+}
+
+body#login main section:last-child form {
+    width: 100%;
+    max-width: 560px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    font-size: 18px;
+}
+
+body#login main section:last-child form > div {
+    width: 100%;
+}
+
+body#login main section:last-child form label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 17px;
+}
+
+body#login main section:last-child form input {
+    display: block;
+    width: 100%;
+    height: 48px;
+    padding: 10px 14px;
+    border: 1px solid #aaa;
+    border-radius: 7px;
+    font-family: inherit;
+    font-size: 17px;
+}
+
+.campo + .campo {
+    margin-top: 14px;
+}
+
+.botaoLogin {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 7px;
+    background-color: #087f46;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: inherit;
+    font-size: 19px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.botaoLogin:hover {
+    background-color: #056534;
+}
+
+body#login main section:last-child form > div:last-child p {
+    margin-top: 16px;
+    text-align: center;
+    font-size: 17px;
+}
+
+
+.listaScroll .lista2Lados .perfil {
+    width: 74px;
+    height: 74px;
+    min-height: 74px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.listaScroll .lista2Lados .perfilConteudo {
+    flex: 1;
+    min-width: 0;
+}
+
+.listaScroll .lista2Lados .fotoPerfil {
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #237141;
+    width: 74px;
+    height: 74px;
+}
+
+.caixas2Lado {
+    margin-bottom: 18px;
+}
+
+.caixas2Lado > .lista2Lados {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    background: transparent;
+}
+
+.caixas2Lado > .lista2Lados > .lista2Lados {
+    width: 100%;
+    min-height: 90px;
+    gap: 12px;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+}
+
+.estoqueContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.estoque {
+    width: 115px;
+    height: 12px;
+    border-radius: 99px;
+    background-color: #e5e7eb;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+}
+
+.estoque .barraPreenchida {
+    height: 100%;
+    border-radius: 99px;
+    background-color: #056534;
+    transition: width 0.25s ease, background-color 0.25s ease;
+}
+
+.estoque .barraPreenchida.estoqueBaixo {
+    background-color: #dd6b20;
+}
+
+.estoque .nivel-0 { width: 0%; }
+.estoque .nivel-10 { width: 10%; }
+.estoque .nivel-20 { width: 20%; }
+.estoque .nivel-30 { width: 30%; }
+.estoque .nivel-40 { width: 40%; }
+.estoque .nivel-50 { width: 50%; }
+.estoque .nivel-60 { width: 60%; }
+.estoque .nivel-70 { width: 70%; }
+.estoque .nivel-80 { width: 80%; }
+.estoque .nivel-90 { width: 90%; }
+.estoque .nivel-100 { width: 100%; }
+
+.controleEstoque {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.btnEstoque {
+    width: 28px;
+    height: 28px;
+    border: 1px solid #CFCFC9;
+    border-radius: 6px;
+    background-color: #F5F5F5;
+    color: #222222;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.btnEstoque:hover {
+    background-color: #056534;
+    color: #FFFFFF;
+    border-color: #056534;
+}
+
+.alertaEstoque {
+    font-size: 12px;
+    font-weight: bold;
+    color: #dd6b20;
+}
+
+.descricaoBoletim {
+    margin: 0 0 12px;
+    font-size: 13pt;
+    line-height: 1.45;
+}
+
+.statusAcoes,
+.statusRecebimento {
+    font-weight: bold;
+    color: #056534;
+}
+
+.valorDoadoOng {
+    font-weight: bold;
+    color: #056534;
+}
+
+.mapaWrapper {
+    width: 100%;
+    margin: 12px auto 0;
+}
+
+.mapaFiltros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.btnMapaFiltro {
+    border: 1px solid #CFCFC9;
+    background-color: #FFFFFF;
+    color: #222222;
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btnMapaFiltro.ativo {
+    background-color: #056534;
+    border-color: #056534;
+    color: #FFFFFF;
+}
+
+.mapaContainer {
+    position: relative;
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #CFCFC9;
+}
+
+.mapa {
+    display: block;
+    margin: 0;
+    height: auto;
+    width: 100%;
+}
+
+.pinoMapa {
+    position: absolute;
+    transform: translate(-50%, -100%);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 10px;
+    border: 2px solid #FFFFFF;
+    border-radius: 20px;
+    background-color: #056534;
+    color: #FFFFFF;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: bold;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.pinoMapa:hover,
+.pinoMapa.ativo {
+    background-color: #dd6b20;
+    transform: translate(-50%, -108%) scale(1.06);
+    z-index: 5;
+}
+
+.pinoMapa i {
+    font-size: 15px;
+}
+
+.pino-1 { top: 24%; left: 22%; }
+.pino-2 { top: 42%; left: 54%; }
+.pino-3 { top: 68%; left: 32%; }
+.pino-4 { top: 30%; left: 76%; }
+.pino-5 { top: 55%; left: 74%; }
+.pino-6 { top: 76%; left: 58%; }
+.pino-7 { top: 50%; left: 26%; }
+.pino-8 { top: 32%; left: 45%; }
+
+.detalheMapa {
+    margin-top: 14px;
+}
+
+
+#dashboard span {
+    font-size: 13pt;
+    color: #333333;
+    font-weight: normal;
+}
+
+.pediodo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.pediodo p {
+    margin: 0;
+    font-size: 15px;
+}
+
+.listaLadoLado {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 0;
+    list-style: none;
+}
+
+.cardTextoInferior {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.listaLadoLado .cardTextoInferior {
+    list-style-type: none;
+    width: calc(50% - 8px);
+    border: 1px solid #CFCFC9;
+    border-radius: 10px;
+    box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+#dashboard .listaLadoLado .cardTextoInferior {
+    padding: 16px 12px;
+    min-height: 140px;
+}
+
+.cardTextoInferior h3 {
+    font-size: 14pt;
+    margin: 0 0 10px;
+}
+
+.cardTextoInferior h4 {
+    font-size: 12pt;
+    margin: 10px 8px;
+}
+
+.cardInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.cardInfo i {
+    font-size: 38pt;
+}
+
+.cardInfo p {
+    font-size: 16pt;
+    font-weight: bold;
+    margin: 0;
+}
+
+.grafico {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 12px;
+    overflow-x: auto;
+    padding: 16px 8px 8px;
+    margin: 10px auto 0;
+    max-width: 720px;
+}
+
+.barra {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    flex: 1;
+    min-width: 68px;
+    gap: 8px;
+}
+
+.barra > div {
+    display: flex;
+    align-items: flex-end;
+    height: 130px;
+}
+
+.barra p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.grafico .barraPreenchida {
+    width: 34px;
+    border-radius: 10px;
+    background-color: #1e8d41;
+    transition: height 0.3s ease;
+}
+
+.barra:nth-child(1) .barraPreenchida { background-color: #309d4a; }
+.barra:nth-child(2) .barraPreenchida { background-color: #2b9045; }
+.barra:nth-child(3) .barraPreenchida { background-color: #1e8d41; }
+.barra:nth-child(4) .barraPreenchida { background-color: #18863d; }
+.barra:nth-child(5) .barraPreenchida { background-color: #137e38; }
+.barra:nth-child(6) .barraPreenchida { background-color: #0d6f30; }
+
+.altura-20 { height: 26px; }
+.altura-30 { height: 38px; }
+.altura-40 { height: 50px; }
+.altura-50 { height: 62px; }
+.altura-60 { height: 74px; }
+.altura-70 { height: 86px; }
+.altura-80 { height: 98px; }
+.altura-90 { height: 112px; }
+.altura-100 { height: 126px; }
+
+.rankingLista {
+    list-style: none;
+    counter-reset: item;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.rankingLista li {
+    display: flex;
+    counter-increment: item;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 14px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+
+.rankingLista li::before {
+    display: flex;
+    content: counter(item);
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+    border: 2px solid #237141;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.rankingLista .rankingPrimeiros::before {
+    border-color: #E68A00;
+    color: #b45309;
+}
+
+.rankingNome {
+    font-weight: bold;
+    margin: 0;
+    font-size: 16px;
+}
+
+.rankingPeso {
+    font-weight: bold;
+    margin: 0 0 0 auto;
+    font-size: 16px;
+    color: #056534;
+    white-space: nowrap;
+}
+
+
+.centralizado {
+    display: block;
+    text-align: center;
+}
+
+.texto-cinza {
+    color: #323433;
+    margin: 12px 0 6px;
+}
+
+.section-boletim {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 24px auto 0;
+}
+
+.caixaBoletim {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 18px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+.escuro .caixaBoletim {
+    background-color: #2b2a2a;
+    border-color: #444444;
+    color: #f5f5f5;
+}
+
+.escuro .seletorCaixa {
+    background-color: #2b2a2a;
+    border-color: #555555;
+    color: #f5f5f5;
+}
+
+.alinhamento {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 16px;
+}
+
+.alinhamento div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo-boletim {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.caixaBoletim h4 {
+    font-size: 18pt;
+    margin: 0;
+}
+
+.caixaBoletim p {
+    font-size: 12pt;
+    margin: 4px 0 0;
+}
+
+.imagem-vertical {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.barraInferior {
+    margin-top: 16px;
+    gap: 12px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.barraInferior button {
+    border: 0;
+    background: none;
+    cursor: pointer;
+    color: inherit;
+    padding: 6px 8px;
+    border-radius: 8px;
+}
+
+.barraInferior button:hover {
+    background-color: rgba(5, 101, 52, 0.08);
+}
+
+.barraInferior button.curtido {
+    color: #d62828;
+}
+
+.barraInferior i {
+    font-size: 16pt;
+}
+
+.barraInferior p {
+    font-size: 13pt;
+    margin: 0;
+}
+
+
+.iconesLadoLado {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-around;
+    gap: 18px;
+    margin-top: 16px;
+}
+
+.iconesLadoLado li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(50% - 12px);
+    gap: 8px;
+    text-align: center;
+}
+
+.iconesLadoLado i {
+    color: #237141;
+    font-size: 36pt;
+}
+
+.iconesLadoLado h4 {
+    margin: 0;
+    font-size: 15px;
+}
+
+#quemSomos .cardTextoInferior {
+    padding: 0;
+    justify-content: flex-start;
+}
+
+#quemSomos .cardTextoInferior img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+}

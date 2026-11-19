@@ -6,106 +6,292 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <title>Boletim</title>
+    <title>Boletim - Juntos</title>
 </head>
 
 <body id="boletim" class="claro">
     <header>
-        <button class="abrirMenu" aria-label="Abrir menu" aria-expanded="false">
+        <button type="button" class="abrirMenu" aria-label="Abrir menu" aria-expanded="false">
             <i class="fa-solid fa-bars"></i>
         </button>
         <div class="logo">
             <img src="src/logoPreta.png" alt="Juntos">
             <h1>Boletim</h1>
         </div>
-        <div>
+        <div class="headerAcoes">
             <a class="verTodos" href="Login.html">Login</a>
+            <button type="button" id="tema" aria-label="Mudar tema"><i class="fa fa-sun"></i></button>
         </div>
-        <button id= "tema"><i class="fa fa-sun"></i></button>
     </header>
+
     <main>
-        <span class="centralizado">
+        <div class="centralizado">
             <div>
                 <p>Acompanhe os relatórios de impacto das ações realizadas pelas ONGs</p>
-                <p class="texto-cinza">Filtrar por ONG</p>
-                <select class="seletorCaixa">
-                    <option value="Todas">Todas</option>
-                    <option value="Projeto Amor">Projeto Amor</option>
-                    <option value="Viver com Dignidade">Viver com Dignidade</option>
-                    <option value="Comunidade Solidária">Comunidade Solidária</option>
-                    <option value="Alimentar o Futuro">Alimentar o Futuro</option>
-                    <option value="Educação para Todos">Educação para Todos</option>
-                    <option value="Saúde em Ação">Saúde em Ação</option>
-                    <option value="Direitos Humanos">Direitos Humanos</option>
-                    <option value="Meio Ambiente">Meio Ambiente</option>
-                </select>
             </div>
 
-            <Section class="section-boletim">
+            <section class="section-boletim">
                 <ul class="listaScroll">
-                    <li class="caixaBoletim">
+                    <li class="caixaBoletim" data-ong="Projeto Amor">
                         <div class="alinhamento">
-                            <img class="logo-boletim" src="src/projeto amor.jpg" alt="logo projeto amor">
+                            <img class="logo-boletim" src="src/projeto amor.jpg" alt="Logo Projeto Amor">
                             <div>
                                 <h4>Projeto Amor</h4>
                                 <p>Boletim - Abril/2025</p>
                             </div>
                         </div>
-                            <img class="imagem-vertical" src="src/imagem_boletim.jpeg"
-                                alt="Imagem do boletim abril de 2026">
+                        <p class="descricaoBoletim">Entrega de 320 cestas básicas e acolhimento noturno com apoio de 28 voluntários.</p>
+                        <img class="imagem-vertical" src="src/imagem_boletim.jpeg" alt="Imagem do boletim abril de 2025">
                         <div class="barraInferior">
-                            <button>
+                            <button type="button" class="btnCurtir">
                                 <div class="iconeTexto">
                                     <i class="far fa-heart"></i>
                                     <p>Curtir</p>
                                 </div>
                             </button>
-                            <button>
+                            <button type="button" class="btnCompartilhar">
                                 <div class="iconeTexto">
                                     <i class="fa fa-share"></i>
                                     <p>Compartilhar</p>
                                 </div>
                             </button>
-                            <button>
+                            <button type="button" class="btnDownload">
                                 <div class="iconeTexto">
                                     <i class="fa fa-download"></i>
-                                    <p>download</p>
+                                    <p>Download</p>
                                 </div>
                             </button>
                         </div>
                     </li>
-                    <li class="caixaBoletim">
+
+                    <li class="caixaBoletim" data-ong="Viver com Dignidade">
                         <div class="alinhamento">
-                            <img class="logo-boletim" src="src/projeto viver com dignidade.jpg"
-                                alt="logo viver com dignidade">
+                            <img class="logo-boletim" src="src/projeto viver com dignidade.jpg" alt="Logo Viver com Dignidade">
                             <div>
                                 <h4>Viver com Dignidade</h4>
                                 <p>Boletim - Maio/2025</p>
                             </div>
                         </div>
-                        <img class="imagem-vertical" src="src/imagem_Boletim2.jpg" alt="Imagem boletim maio de 2026">
+                        <p class="descricaoBoletim">Campanha voltada a idosos e famílias vulneráveis com distribuição de kits de higiene e cobertores.</p>
+                        <img class="imagem-vertical" src="src/imagem_Boletim2.jpg" alt="Imagem boletim maio de 2025">
                         <div class="barraInferior">
-                            <button>
+                            <button type="button" class="btnCurtir">
                                 <div class="iconeTexto">
                                     <i class="far fa-heart"></i>
                                     <p>Curtir</p>
                                 </div>
                             </button>
-                            <button>
+                            <button type="button" class="btnCompartilhar">
                                 <div class="iconeTexto">
                                     <i class="fa fa-share"></i>
                                     <p>Compartilhar</p>
                                 </div>
                             </button>
-                            <button>
+                            <button type="button" class="btnDownload">
                                 <div class="iconeTexto">
                                     <i class="fa fa-download"></i>
-                                    <p>download</p>
+                                    <p>Download</p>
                                 </div>
                             </button>
                         </div>
                     </li>
-            </Section>
+
+                    <li class="caixaBoletim" data-ong="Comunidade Solidária">
+                        <div class="alinhamento">
+                            <img class="logo-boletim" src="src/projeto luz.jpg" alt="Logo Comunidade Solidária">
+                            <div>
+                                <h4>Comunidade Solidária</h4>
+                                <p>Boletim - Junho/2025</p>
+                            </div>
+                        </div>
+                        <p class="descricaoBoletim">Mutirão comunitário arrecadou 850 kg de alimentos não perecíveis e roupas de inverno.</p>
+                        <img class="imagem-vertical" src="src/campanha do agasalho.jpg" alt="Campanha do agasalho Comunidade Solidária">
+                        <div class="barraInferior">
+                            <button type="button" class="btnCurtir">
+                                <div class="iconeTexto">
+                                    <i class="far fa-heart"></i>
+                                    <p>Curtir</p>
+                                </div>
+                            </button>
+                            <button type="button" class="btnCompartilhar">
+                                <div class="iconeTexto">
+                                    <i class="fa fa-share"></i>
+                                    <p>Compartilhar</p>
+                                </div>
+                            </button>
+                            <button type="button" class="btnDownload">
+                                <div class="iconeTexto">
+                                    <i class="fa fa-download"></i>
+                                    <p>Download</p>
+                                </div>
+                            </button>
+                        </div>
+                    </li>
+
+                    <li class="caixaBoletim" data-ong="Alimentar o Futuro">
+                        <div class="alinhamento">
+                            <img class="logo-boletim" src="src/projeto esperança.jpg" alt="Logo Alimentar o Futuro">
+                            <div>
+                                <h4>Alimentar o Futuro</h4>
+                                <p>Boletim - Julho/2025</p>
+                            </div>
+                        </div>
+                        <p class="descricaoBoletim">Mais de 1.100 marmitas preparadas e entregues em quatro bairros durante as ações semanais.</p>
+                        <img class="imagem-vertical" src="src/Distribuição de alimentos.jpg" alt="Distribuição de alimentos Alimentar o Futuro">
+                        <div class="barraInferior">
+                            <button type="button" class="btnCurtir">
+                                <div class="iconeTexto">
+                                    <i class="far fa-heart"></i>
+                                    <p>Curtir</p>
+                                </div>
+                            </button>
+                            <button type="button" class="btnCompartilhar">
+                                <div class="iconeTexto">
+                                    <i class="fa fa-share"></i>
+                                    <p>Compartilhar</p>
+                                </div>
+                            </button>
+                            <button type="button" class="btnDownload">
+                                <div class="iconeTexto">
+                                    <i class="fa fa-download"></i>
+                                    <p>Download</p>
+                                </div>
+                            </button>
+                        </div>
+                    </li>
+
+                    <li class="caixaBoletim itemExtra oculto" data-ong="Educação para Todos">
+                        <div class="alinhamento">
+                            <img class="logo-boletim" src="src/Logo Educação e comunidade.jpg" alt="Logo Educação para Todos">
+                            <div>
+                                <h4>Educação para Todos</h4>
+                                <p>Boletim - Agosto/2025</p>
+                            </div>
+                        </div>
+                        <p class="descricaoBoletim">Entrega de 180 kits escolares e abertura de três turmas de reforço para crianças e jovens.</p>
+                        <img class="imagem-vertical" src="src/orfanatos.jpg" alt="Atividades educativas para crianças">
+                        <div class="barraInferior">
+                            <button type="button" class="btnCurtir">
+                                <div class="iconeTexto">
+                                    <i class="far fa-heart"></i>
+                                    <p>Curtir</p>
+                                </div>
+                            </button>
+                            <button type="button" class="btnCompartilhar">
+                                <div class="iconeTexto">
+                                    <i class="fa fa-share"></i>
+                                    <p>Compartilhar</p>
+                                </div>
+                            </button>
+                            <button type="button" class="btnDownload">
+                                <div class="iconeTexto">
+                                    <i class="fa fa-download"></i>
+                                    <p>Download</p>
+                                </div>
+                            </button>
+                        </div>
+                    </li>
+
+                    <li class="caixaBoletim itemExtra oculto" data-ong="Saúde em Ação">
+                        <div class="alinhamento">
+                            <img class="logo-boletim" src="src/projeto amor.jpg" alt="Logo Saúde em Ação">
+                            <div>
+                                <h4>Saúde em Ação</h4>
+                                <p>Boletim - Setembro/2025</p>
+                            </div>
+                        </div>
+                        <p class="descricaoBoletim">Atendimento preventivo e distribuição de kits de higiene pessoal para 240 moradores.</p>
+                        <img class="imagem-vertical" src="src/asilos.jpg" alt="Ação de cuidado com idosos">
+                        <div class="barraInferior">
+                            <button type="button" class="btnCurtir">
+                                <div class="iconeTexto">
+                                    <i class="far fa-heart"></i>
+                                    <p>Curtir</p>
+                                </div>
+                            </button>
+                            <button type="button" class="btnCompartilhar">
+                                <div class="iconeTexto">
+                                    <i class="fa fa-share"></i>
+                                    <p>Compartilhar</p>
+                                </div>
+                            </button>
+                            <button type="button" class="btnDownload">
+                                <div class="iconeTexto">
+                                    <i class="fa fa-download"></i>
+                                    <p>Download</p>
+                                </div>
+                            </button>
+                        </div>
+                    </li>
+
+                    <li class="caixaBoletim itemExtra oculto" data-ong="Direitos Humanos">
+                        <div class="alinhamento">
+                            <img class="logo-boletim" src="src/projeto viver com dignidade.jpg" alt="Logo Direitos Humanos">
+                            <div>
+                                <h4>Direitos Humanos</h4>
+                                <p>Boletim - Outubro/2025</p>
+                            </div>
+                        </div>
+                        <p class="descricaoBoletim">Rodas de conversa, emissão de documentos e encaminhamento de famílias para redes de apoio.</p>
+                        <img class="imagem-vertical" src="src/familiasCarentes.jpg" alt="Apoio a famílias carentes">
+                        <div class="barraInferior">
+                            <button type="button" class="btnCurtir">
+                                <div class="iconeTexto">
+                                    <i class="far fa-heart"></i>
+                                    <p>Curtir</p>
+                                </div>
+                            </button>
+                            <button type="button" class="btnCompartilhar">
+                                <div class="iconeTexto">
+                                    <i class="fa fa-share"></i>
+                                    <p>Compartilhar</p>
+                                </div>
+                            </button>
+                            <button type="button" class="btnDownload">
+                                <div class="iconeTexto">
+                                    <i class="fa fa-download"></i>
+                                    <p>Download</p>
+                                </div>
+                            </button>
+                        </div>
+                    </li>
+
+                    <li class="caixaBoletim itemExtra oculto" data-ong="Meio Ambiente">
+                        <div class="alinhamento">
+                            <img class="logo-boletim" src="src/projeto luz.jpg" alt="Logo Meio Ambiente">
+                            <div>
+                                <h4>Meio Ambiente</h4>
+                                <p>Boletim - Novembro/2025</p>
+                            </div>
+                        </div>
+                        <p class="descricaoBoletim">Mutirão de reciclagem comunitária e implantação de horta solidária que abastece cozinhas sociais.</p>
+                        <img class="imagem-vertical" src="src/comunidades.jpg" alt="Ação ambiental comunitária">
+                        <div class="barraInferior">
+                            <button type="button" class="btnCurtir">
+                                <div class="iconeTexto">
+                                    <i class="far fa-heart"></i>
+                                    <p>Curtir</p>
+                                </div>
+                            </button>
+                            <button type="button" class="btnCompartilhar">
+                                <div class="iconeTexto">
+                                    <i class="fa fa-share"></i>
+                                    <p>Compartilhar</p>
+                                </div>
+                            </button>
+                            <button type="button" class="btnDownload">
+                                <div class="iconeTexto">
+                                    <i class="fa fa-download"></i>
+                                    <p>Download</p>
+                                </div>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+                <button type="button" id="verMaisBoletim" class="verTodos">Ver mais boletins</button>
+                <p id="semBoletins" class="mensagemVazia oculto">Nenhum boletim publicado para esta ONG ainda.</p>
+            </section>
+        </div>
     </main>
 
     <article id="menu" class="menuClose">
@@ -114,17 +300,19 @@
                 <img src="src/logoBranca.png" alt="Logo do Juntos">
                 <h1>Juntos</h1>
             </div>
-            <button class="fecharMenu"><i class="fa fa-close"></i></button>
+            <button type="button" class="fecharMenu" aria-label="Fechar menu"><i class="fa fa-close"></i></button>
         </div>
         <nav class="redirecionadorMenu">
-            <div><i class="fas fa-home white"></i><a href="home.html">Inicio</a></div>
+            <div><i class="fas fa-home white"></i><a href="home.html">Início</a></div>
             <div><i class="fas fa-user-alt white"></i><a href="minhaArea.html">Minha Área</a></div>
-            <div><i class="fas fa-chart-bar white"></i><a href="dashboard.html">Dashboard</a></div>
+            <div><i class="fas fa-chart-bar white"></i><a href="Dashboard.html">Dashboard</a></div>
             <div><i class="fas fa-newspaper white"></i><a href="boletim.html">Boletim</a></div>
             <div><i class="fas fa-question-circle white"></i><a href="quemSomos.html">Quem Somos</a></div>
         </nav>
     </article>
+
     <script src="script.js" defer></script>
+    <script src="js/boletim.js" defer></script>
 </body>
 
 </html>
